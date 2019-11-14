@@ -1,378 +1,375 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
-</head>
-
-<body>
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html" aria-label="Логотип погнали">
-      Погнали?
-    </a>
-    <menu class="main-menu">
-      <button class="main-menu__toggle" type="button">Открыть меню</button>
-      <nav class="main-menu__site-nav site-nav">
-        <ul class="site-nav__list">
-          <li class="site-nav__item">О сервисе</li>
-          <li class="site-nav__item">
-            <a href="form.html" aria-label="">Направления</a>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html" aria-label="Логотип погнали">
+        Погнали?
+      </a>
+      <menu class="main-menu">
+        <button class="main-menu__toggle" type="button">Открыть меню</button>
+        <nav class="main-menu__site-nav site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">О сервисе</li>
+            <li class="site-nav__item">
+              <a href="form.html" aria-label="">Направления</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="catalog.html" aria-label="">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="main-menu__user-nav user-nav">
+          <ul class="user-nav__list">
+            <li class="user-nav__item">Авторизация</li>
+            <li class="user-nav__item">
+              <a href="tel:88005558628" aria-label="Телефон">
+                8 800 555-86-28
+              </a>
+            </li>
+            <li class="user-nav__item">
+              <a href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта">
+                mail@htmlacademy.ru
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <footer class="main-menu__footer">
+          <ul class="social-network">
+            <li class="social-network__item">
+              <a href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
+                Фейсбук
+              </a>
+            </li>
+            <li class="social-network__item">
+              <a href="https://vk.com" aria-label="Погнали во Вконтакте">
+                Вконтакте
+              </a>
+            </li>
+            <li class="social-network__item">
+              <a href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
+                Инстаграм
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </menu>
+    </header>
+    <main class="catalog-main">
+      <h1 class="form-main__title">Попутчики</h1>
+      <section class="applicants">
+        <ul class="applicants__list">
+          <li class="applicants__item">
+            <figure class="companion" >
+              <img class="companion__photo" src="img/firsova-mobile.jpg" 
+              width="70" height="70" alt="Аватарка Тани Фирсовой">
+              <figcaption>
+                <h3 class="companion__name">Таня Фирсова</h3>
+                <div class="companion__like like">
+                  <button class="like__toggle like__toggle--liked" type="button" 
+                  aria-label="Мне нравится">
+                    like
+                  </button>
+                  <p class="like__count">1,5 М</p>
+                </div>
+                <div class="companion__hashtag hashtag">
+                  <ul class="hashtag__list">
+                    <li class="hashtag__item"><a href="">#ЗОЖ</a></li>
+                    <li class="hashtag__item"><a href="">#ПП</a></li>
+                    <li class="hashtag__item"><a href="">#Фитнес</a></li>
+                    <li class="hashtag__item"><a href="">#пляж</a></li>
+                    <li class="hashtag__item"><a href="">#авокадо</a></li>
+                    <li class="hashtag__item"><a href="">#смузи</a></li>
+                  </ul>
+                </div>
+                <div class="companion__countries countries">
+                  <h4 class="countries__title">Хочет посетить:</h4>
+                  <ul class="countries__list">
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Шри-Ланку">
+                        <img class="countries__flag" src="img/sri-lanka.png" 
+                        width="35" height="24" alt="Шри-Ланка">Шри-Ланка
+                      </a>
+                    </li>
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Таиланд">
+                        <img class="countries__flag" src="img/thailand.png" 
+                        width="35" height="24" alt="Таиланд">Таиланд
+                      </a>
+                    </li>
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики на Сейшельские Острова">
+                        <img class="countries__flag" src="img/seychelles.png" 
+                        width="35" height="24" alt="Сейшельские Острова">Сейшелы
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <form class="companion__way-to-travel transport-list" 
+                action="https://echo.htmlacademy.ru" method="POST">
+                  <h4 class="transport-list__title">Транспорт:</h4>
+                  <input class="visually-hidden" id="airplane" type="checkbox" 
+                  name="airplane" checked disabled>
+                  <label class="transport-list__item transport-list__item--active" 
+                  for="airplane">На самолёте</label>
+                  <input class="visually-hidden" id="ground-transportation" type="checkbox" 
+                  name="ground-transportation" disabled>
+                  <label class="transport-list__item" 
+                  for="ground-transportation">Наземным транспортом</label>
+                  <input class="visually-hidden" id="bicycle" type="checkbox" 
+                  name="bicycle" disabled>
+                  <label class="transport-list__item" 
+                  for="bicycle">На велосипеде</label>
+                  <input class="visually-hidden" id="walking" type="checkbox" 
+                  name="walking" disabled>
+                  <label class="transport-list__item" 
+                  for="walking">Пешком</label>
+                </form>
+                <div class="companion__lavel level">
+                  <h4 class="level__title">Левел:</h4>
+                  <p class="level__value">99 level</p>
+                </div>
+              </figcaption>
+            </figure>
+            <button type="button" aria-label="Отправить приглашение">Позвать!</button>
           </li>
-          <li class="site-nav__item">
-            <a href="catalog.html" aria-label="">Попутчики</a>
+          <li class="applicants__item">
+            <figure class="companion" >
+              <img class="companion__photo" src="img/demin-mobile.jpg" 
+              width="70" height="70" alt="Аватарка Пети Демина">
+              <figcaption>
+                <h3 class="companion__name">Петя Демин</h3>
+                <div class="companion__like like">
+                  <button class="like__toggle" type="button" aria-label="Мне нравится">
+                    like
+                  </button>
+                  <p class="like__count">150</p>
+                </div>
+                <div class="companion__hashtag hashtag">
+                  <ul class="hashtag__list">
+                    <li class="hashtag__item"><a href="">#бургер</a></li>
+                    <li class="hashtag__item"><a href="">#бар</a></li>
+                    <li class="hashtag__item"><a href="">#футбол</a></li>
+                    <li class="hashtag__item"><a href="">#концерт</a></li>
+                    <li class="hashtag__item"><a href="">#крафт</a></li>
+                  </ul>
+                </div>
+                <div class="companion__countries countries">
+                  <h4 class="countries__title">Хочет посетить:</h4>
+                  <ul class="countries__list">
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Бельгию">
+                        <img class="countries__flag" src="img/belgium.png"
+                        width="35" height="24" alt="Бельгия">Бельгия
+                      </a>
+                    </li>
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Чехию">
+                        <img class="countries__flag" src="img/сzech.png" 
+                        width="35" height="24" alt="Чехия">Чехия
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <form class="companion__way-to-travel transport-list" 
+                action="https://echo.htmlacademy.ru" method="POST">
+                  <h4 class="transport-list__title">Транспорт:</h4>
+                  <input class="visually-hidden" id="airplane" type="checkbox" 
+                  name="airplane" checked disabled>
+                  <label class="transport-list__item transport-list__item--active" 
+                  for="airplane">На самолёте</label>
+                  <input class="visually-hidden" id="ground-transportation" type="checkbox" 
+                  name="ground-transportation" checked disabled>
+                  <label class="transport-list__item" 
+                  for="ground-transportation">Наземным транспортом</label>
+                  <input class="visually-hidden" id="bicycle" type="checkbox" 
+                  name="bicycle" disabled>
+                  <label class="transport-list__item" 
+                  for="bicycle">На велосипеде</label>
+                  <input class="visually-hidden" id="walking" type="checkbox" 
+                  name="walking" checked disabled>
+                  <label class="transport-list__item" 
+                  for="walking">Пешком</label>
+                </form>
+                <div class="companion__lavel level">
+                  <h4 class="level__title">Левел:</h4>
+                  <p class="level__value">80 level</p>
+                </div>
+              </figcaption>
+            </figure>
+            <button type="button" aria-label="Отправить приглашение">Позвать!</button>
+          </li>
+          <li class="applicants__item">
+            <figure class="companion" >
+              <img class="companion__photo" src="img/smolov-mobile.jpg" 
+              width="70" height="70" alt="Аватарка Марка Смолова">
+              <figcaption>
+                <h3 class="companion__name">Марк Смолов</h3>
+                <div class="companion__like like">
+                  <button class="like__toggle" type="button" aria-label="Мне нравится">
+                    like
+                  </button>
+                  <p class="like__count">1700</p>
+                </div>
+                <div class="companion__hashtag hashtag">
+                  <ul class="hashtag__list">
+                    <li class="hashtag__item"><a href="">#рэп</a></li>
+                    <li class="hashtag__item"><a href="">#тату</a></li>
+                    <li class="hashtag__item"><a href="">#хайпбист</a></li>
+                    <li class="hashtag__item"><a href="">#кроссовки</a></li>
+                    <li class="hashtag__item"><a href="">#суприм</a></li>
+                  </ul>
+                </div>
+                <div class="companion__countries countries">
+                  <h4 class="countries__title">Хочет посетить:</h4>
+                  <ul class="countries__list">
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в США">
+                        <img class="countries__flag" src="img/usa.png"
+                        width="35" height="24" alt="США">США
+                      </a>
+                    </li>
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Австралию">
+                        <img class="countries__flag" src="img/australia.png" 
+                        width="35" height="24" alt="Австралия">Австралия
+                      </a>
+                    </li>
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Доминикану">
+                        <img class="countries__flag" src="img/dominica.png" 
+                        width="35" height="24" alt="Доминикана">Доминикана
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <form class="companion__way-to-travel transport-list" 
+                action="https://echo.htmlacademy.ru" method="POST">
+                  <h4 class="transport-list__title">Транспорт:</h4>
+                  <input class="visually-hidden" id="airplane" type="checkbox" 
+                  name="airplane" checked disabled>
+                  <label class="transport-list__item transport-list__item--active" 
+                  for="airplane">На самолёте</label>
+                  <input class="visually-hidden" id="ground-transportation" type="checkbox" 
+                  name="ground-transportation" disabled>
+                  <label class="transport-list__item" 
+                  for="ground-transportation">Наземным транспортом</label>
+                  <input class="visually-hidden" id="bicycle" type="checkbox" 
+                  name="bicycle" checked disabled>
+                  <label class="transport-list__item" 
+                  for="bicycle">На велосипеде</label>
+                  <input class="visually-hidden" id="walking" type="checkbox" 
+                  name="walking" disabled>
+                  <label class="transport-list__item" 
+                  for="walking">Пешком</label>
+                </form>
+                <div class="companion__lavel level">
+                  <h4 class="level__title">Левел:</h4>
+                  <p class="level__value">25 level</p>
+                </div>
+              </figcaption>
+            </figure>
+            <button type="button" aria-label="Отправить приглашение">Позвать!</button>
+          </li>
+          <li class="applicants__item">
+            <figure class="companion" >
+              <img class="companion__photo" src="img/rogovaya-mobile.jpg" 
+              width="70" height="70" alt="Аватарка Ларисы Роговой">
+              <figcaption>
+                <h3 class="companion__name">Лариса Роговая</h3>
+                <div class="companion__like like">
+                  <button class="like__toggle" type="button" aria-label="Мне нравится">
+                    like
+                  </button>
+                  <p class="like__count">23</p>
+                </div>
+                <div class="companion__hashtag hashtag">
+                  <ul class="companion__hashtag hashtag__list">
+                    <li class="hashtag__item"><a href="">#образование</a></li>
+                    <li class="hashtag__item"><a href="">#карьера</a></li>
+                    <li class="hashtag__item"><a href="">#учеба</a></li>
+                    <li class="hashtag__item"><a href="">#линкедин</a></li>
+                  </ul>
+                </div>
+                <div class="companion__countries countries">
+                  <h4 class="countries__title">Хочет посетить:</h4>
+                  <ul class="countries__list">
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Великобританию">
+                        <img class="countries__flag" src="img/united-kingdom.png"
+                        width="35" height="24" alt="Великобритания">Великобритания
+                      </a>
+                    </li>
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Германию">
+                        <img class="countries__flag" src="img/germany.png" 
+                        width="35" height="24" alt="Германия">Германия
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <form class="companion__way-to-travel transport-list" 
+                action="https://echo.htmlacademy.ru" method="POST">
+                  <h4 class="transport-list__title">Транспорт:</h4>
+                  <input class="visually-hidden" id="airplane" type="checkbox" 
+                  name="airplane" checked disabled>
+                  <label class="transport-list__item transport-list__item--active" 
+                  for="airplane">На самолёте</label>
+                  <input class="visually-hidden" id="ground-transportation" type="checkbox" 
+                  name="ground-transportation" checked disabled>
+                  <label class="transport-list__item" 
+                  for="ground-transportation">Наземным транспортом</label>
+                  <input class="visually-hidden" id="bicycle" type="checkbox" 
+                  name="bicycle" disabled>
+                  <label class="transport-list__item" 
+                  for="bicycle">На велосипеде</label>
+                  <input class="visually-hidden" id="walking" type="checkbox" 
+                  name="walking" disabled>
+                  <label class="transport-list__item" 
+                  for="walking">Пешком</label>
+                </form>
+                <div class="companion__lavel level">
+                  <h4 class="level__title">Левел:</h4>
+                  <p class="level__value">50 level</p>
+                </div>
+              </figcaption>
+            </figure>
+            <button type="button" aria-label="Отправить приглашение">Позвать!</button>
           </li>
         </ul>
-      </nav>
-      <nav class="main-menu__user-nav user-nav">
-        <ul class="user-nav__list">
-          <li class="user-nav__item">Авторизация</li>
-          <li class="user-nav__item">
-            <a href="tel:88005558628" aria-label="Телефон">
-              8 800 555-86-28
-            </a>
-          </li>
-          <li class="user-nav__item">
-            <a href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта">
-              mail@htmlacademy.ru
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <footer class="main-menu__footer">
-        <ul class="social-network">
-          <li class="social-network__item">
-            <a href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
-              Фейсбук
-            </a>
-          </li>
-          <li class="social-network__item">
-            <a href="https://vk.com" aria-label="Погнали во Вконтакте">
-              Вконтакте
-            </a>
-          </li>
-          <li class="social-network__item">
-            <a href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
-              Инстаграм
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </menu>
-  </header>
-  <main class="catalog-main">
-    <h1 class="form-main__title">Попутчики</h1>
-    <section class="applicants">
-      <ul class="applicants__list">
-        <li class="applicants__item">
-          <figure class="companion" >
-            <img class="companion__photo" src="img/firsova-mobile.jpg" 
-            width="70" height="70" alt="Аватарка Тани Фирсовой">
-            <figcaption>
-              <h3 class="companion__name">Таня Фирсова</h3>
-              <div class="companion__like like">
-                <button class="like__toggle like__toggle--liked" type="button" 
-                aria-label="Мне нравится">
-                  like
-                </button>
-                <p class="like__count">1,5 М</p>
-              </div>
-              <div class="companion__hashtag hashtag">
-                <ul class="hashtag__list">
-                  <li class="hashtag__item"><a href="">#ЗОЖ</a></li>
-                  <li class="hashtag__item"><a href="">#ПП</a></li>
-                  <li class="hashtag__item"><a href="">#Фитнес</a></li>
-                  <li class="hashtag__item"><a href="">#пляж</a></li>
-                  <li class="hashtag__item"><a href="">#авокадо</a></li>
-                  <li class="hashtag__item"><a href="">#смузи</a></li>
-                </ul>
-              </div>
-              <div class="companion__countries countries">
-                <h4 class="countries__title">Хочет посетить:</h4>
-                <ul class="countries__list">
-                  <li class="countries__item">
-                    <a href="#" aria-label="Попутчики в Шри-Ланку">
-                      <img class="countries__flag" src="img/sri-lanka.png" 
-                      width="35" height="24" alt="Шри-Ланка">Шри-Ланка
-                    </a>
-                  </li>
-                  <li class="countries__item">
-                    <a href="#" aria-label="Попутчики в Таиланд">
-                      <img class="countries__flag" src="img/thailand.png" 
-                      width="35" height="24" alt="Таиланд">Таиланд
-                    </a>
-                  </li>
-                  <li class="countries__item">
-                    <a href="#" aria-label="Попутчики на Сейшельские Острова">
-                      <img class="countries__flag" src="img/seychelles.png" 
-                      width="35" height="24" alt="Сейшельские Острова">Сейшелы
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <form class="companion__way-to-travel transport-list" 
-              action="https://echo.htmlacademy.ru" method="POST">
-                <h4 class="transport-list__title">Транспорт:</h4>
-                <input class="visually-hidden" id="airplane" type="checkbox" 
-                name="airplane" checked disabled>
-                <label class="transport-list__item transport-list__item--active" 
-                for="airplane">На самолёте</label>
-                <input class="visually-hidden" id="ground-transportation" type="checkbox" 
-                name="ground-transportation" disabled>
-                <label class="transport-list__item" 
-                for="ground-transportation">Наземным транспортом</label>
-                <input class="visually-hidden" id="bicycle" type="checkbox" 
-                name="bicycle" disabled>
-                <label class="transport-list__item" 
-                for="bicycle">На велосипеде</label>
-                <input class="visually-hidden" id="walking" type="checkbox" 
-                name="walking" disabled>
-                <label class="transport-list__item" 
-                for="walking">Пешком</label>
-              </form>
-              <div class="companion__lavel level">
-                <h4 class="level__title">Левел:</h4>
-                <p class="level__value">99 level</p>
-              </div>
-            </figcaption>
-          </figure>
-          <button type="button" aria-label="Отправить приглашение">Позвать!</button>
+        <a class="applicants__to-all" href="#" aria-label="Показать всех возможных попутчиков">
+          Показать еще
+        </a>
+        <button class="applicants__previous" type="button" aria-label="Предыдущие попутчики">
+          Предыдушее
+        </button>
+        <button class="applicants__next" type="button" aria-label="Следующие попутчики">
+          Следующее
+        </button>
+      </section>
+    </main>
+    <footer class="page-foter">
+      <a class="page-header__logo" href="index.html" aria-label="Логотип погнали">
+        Погнали?
+      </a>
+      <ul class="social-network">
+        <li class="social-network__item">
+          <a href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">Фейсбук</a>
         </li>
-        <li class="applicants__item">
-          <figure class="companion" >
-            <img class="companion__photo" src="img/demin-mobile.jpg" 
-            width="70" height="70" alt="Аватарка Пети Демина">
-            <figcaption>
-              <h3 class="companion__name">Петя Демин</h3>
-              <div class="companion__like like">
-                <button class="like__toggle" type="button" aria-label="Мне нравится">
-                  like
-                </button>
-                <p class="like__count">150</p>
-              </div>
-              <div class="companion__hashtag hashtag">
-                <ul class="hashtag__list">
-                  <li class="hashtag__item"><a href="">#бургер</a></li>
-                  <li class="hashtag__item"><a href="">#бар</a></li>
-                  <li class="hashtag__item"><a href="">#футбол</a></li>
-                  <li class="hashtag__item"><a href="">#концерт</a></li>
-                  <li class="hashtag__item"><a href="">#крафт</a></li>
-                </ul>
-              </div>
-              <div class="companion__countries countries">
-                <h4 class="countries__title">Хочет посетить:</h4>
-                <ul class="countries__list">
-                  <li class="countries__item">
-                    <a href="#" aria-label="Попутчики в Бельгию">
-                      <img class="countries__flag" src="img/belgium.png"
-                      width="35" height="24" alt="Бельгия">Бельгия
-                    </a>
-                  </li>
-                  <li class="countries__item">
-                    <a href="#" aria-label="Попутчики в Чехию">
-                      <img class="countries__flag" src="img/сzech.png" 
-                      width="35" height="24" alt="Чехия">Чехия
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <form class="companion__way-to-travel transport-list" 
-              action="https://echo.htmlacademy.ru" method="POST">
-                <h4 class="transport-list__title">Транспорт:</h4>
-                <input class="visually-hidden" id="airplane" type="checkbox" 
-                name="airplane" checked disabled>
-                <label class="transport-list__item transport-list__item--active" 
-                for="airplane">На самолёте</label>
-                <input class="visually-hidden" id="ground-transportation" type="checkbox" 
-                name="ground-transportation" checked disabled>
-                <label class="transport-list__item" 
-                for="ground-transportation">Наземным транспортом</label>
-                <input class="visually-hidden" id="bicycle" type="checkbox" 
-                name="bicycle" disabled>
-                <label class="transport-list__item" 
-                for="bicycle">На велосипеде</label>
-                <input class="visually-hidden" id="walking" type="checkbox" 
-                name="walking" checked disabled>
-                <label class="transport-list__item" 
-                for="walking">Пешком</label>
-              </form>
-              <div class="companion__lavel level">
-                <h4 class="level__title">Левел:</h4>
-                <p class="level__value">80 level</p>
-              </div>
-            </figcaption>
-          </figure>
-          <button type="button" aria-label="Отправить приглашение">Позвать!</button>
+        <li class="social-network__item">
+          <a href="https://vk.com" aria-label="Погнали во Вконтакте">Вконтакте</a>
         </li>
-        <li class="applicants__item">
-          <figure class="companion" >
-            <img class="companion__photo" src="img/smolov-mobile.jpg" 
-            width="70" height="70" alt="Аватарка Марка Смолова">
-            <figcaption>
-              <h3 class="companion__name">Марк Смолов</h3>
-              <div class="companion__like like">
-                <button class="like__toggle" type="button" aria-label="Мне нравится">
-                  like
-                </button>
-                <p class="like__count">1700</p>
-              </div>
-              <div class="companion__hashtag hashtag">
-                <ul class="hashtag__list">
-                  <li class="hashtag__item"><a href="">#рэп</a></li>
-                  <li class="hashtag__item"><a href="">#тату</a></li>
-                  <li class="hashtag__item"><a href="">#хайпбист</a></li>
-                  <li class="hashtag__item"><a href="">#кроссовки</a></li>
-                  <li class="hashtag__item"><a href="">#суприм</a></li>
-                </ul>
-              </div>
-              
-              <div class="companion__countries countries">
-                <h4 class="countries__title">Хочет посетить:</h4>
-                <ul class="countries__list">
-                  <li class="countries__item">
-                    <a href="#" aria-label="Попутчики в США">
-                      <img class="countries__flag" src="img/usa.png"
-                      width="35" height="24" alt="США">США
-                    </a>
-                  </li>
-                  <li class="countries__item">
-                    <a href="#" aria-label="Попутчики в Австралию">
-                      <img class="countries__flag" src="img/australia.png" 
-                      width="35" height="24" alt="Австралия">Австралия
-                    </a>
-                  </li>
-                  <li class="countries__item">
-                    <a href="#" aria-label="Попутчики в Доминикану">
-                      <img class="countries__flag" src="img/dominica.png" 
-                      width="35" height="24" alt="Доминикана">Доминикана
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <form class="companion__way-to-travel transport-list" 
-              action="https://echo.htmlacademy.ru" method="POST">
-                <h4 class="transport-list__title">Транспорт:</h4>
-                <input class="visually-hidden" id="airplane" type="checkbox" 
-                name="airplane" checked disabled>
-                <label class="transport-list__item transport-list__item--active" 
-                for="airplane">На самолёте</label>
-                <input class="visually-hidden" id="ground-transportation" type="checkbox" 
-                name="ground-transportation" disabled>
-                <label class="transport-list__item" 
-                for="ground-transportation">Наземным транспортом</label>
-                <input class="visually-hidden" id="bicycle" type="checkbox" 
-                name="bicycle" checked disabled>
-                <label class="transport-list__item" 
-                for="bicycle">На велосипеде</label>
-                <input class="visually-hidden" id="walking" type="checkbox" 
-                name="walking" disabled>
-                <label class="transport-list__item" 
-                for="walking">Пешком</label>
-              </form>
-              <div class="companion__lavel level">
-                <h4 class="level__title">Левел:</h4>
-                <p class="level__value">25 level</p>
-              </div>
-            </figcaption>
-          </figure>
-          <button type="button" aria-label="Отправить приглашение">Позвать!</button>
-        </li>
-        <li class="applicants__item">
-          <figure class="companion" >
-            <img class="companion__photo" src="img/rogovaya-mobile.jpg" 
-            width="70" height="70" alt="Аватарка Ларисы Роговой">
-            <figcaption>
-              <h3 class="companion__name">Лариса Роговая</h3>
-              <div class="companion__like like">
-                <button class="like__toggle" type="button" aria-label="Мне нравится">
-                  like
-                </button>
-                <p class="like__count">23</p>
-              </div>
-              <div class="companion__hashtag hashtag">
-                <ul class="companion__hashtag hashtag__list">
-                  <li class="hashtag__item"><a href="">#образование</a></li>
-                  <li class="hashtag__item"><a href="">#карьера</a></li>
-                  <li class="hashtag__item"><a href="">#учеба</a></li>
-                  <li class="hashtag__item"><a href="">#линкедин</a></li>
-                </ul>
-              </div>
-              <div class="companion__countries countries">
-                <h4 class="countries__title">Хочет посетить:</h4>
-                <ul class="countries__list">
-                  <li class="countries__item">
-                    <a href="#" aria-label="Попутчики в Великобританию">
-                      <img class="countries__flag" src="img/united-kingdom.png"
-                      width="35" height="24" alt="Великобритания">Великобритания
-                    </a>
-                  </li>
-                  <li class="countries__item">
-                    <a href="#" aria-label="Попутчики в Германию">
-                      <img class="countries__flag" src="img/germany.png" 
-                      width="35" height="24" alt="Германия">Германия
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <form class="companion__way-to-travel transport-list" 
-              action="https://echo.htmlacademy.ru" method="POST">
-                <h4 class="transport-list__title">Транспорт:</h4>
-                <input class="visually-hidden" id="airplane" type="checkbox" 
-                name="airplane" checked disabled>
-                <label class="transport-list__item transport-list__item--active" 
-                for="airplane">На самолёте</label>
-                <input class="visually-hidden" id="ground-transportation" type="checkbox" 
-                name="ground-transportation" checked disabled>
-                <label class="transport-list__item" 
-                for="ground-transportation">Наземным транспортом</label>
-                <input class="visually-hidden" id="bicycle" type="checkbox" 
-                name="bicycle" disabled>
-                <label class="transport-list__item" 
-                for="bicycle">На велосипеде</label>
-                <input class="visually-hidden" id="walking" type="checkbox" 
-                name="walking" disabled>
-                <label class="transport-list__item" 
-                for="walking">Пешком</label>
-              </form>
-              <div class="companion__lavel level">
-                <h4 class="level__title">Левел:</h4>
-                <p class="level__value">50 level</p>
-              </div>
-            </figcaption>
-          </figure>
-          <button type="button" aria-label="Отправить приглашение">Позвать!</button>
+        <li class="social-network__item">
+          <a href="https://www.instagram.com" aria-label="Погнали в Инстаграме">Инстаграм</a>
         </li>
       </ul>
-      <a class="applicants__to-all" href="#" aria-label="Показать всех возможных попутчиков">
-        Показать еще
-      </a>
-      <button class="applicants__previous" type="button" aria-label="Предыдущие попутчики">
-        Предыдушее
-      </button>
-      <button class="applicants__next" type="button" aria-label="Следующие попутчики">
-        Следующее
-      </button>
-    </section>
-  </main>
-  <footer class="page-foter">
-    <a class="page-header__logo" href="index.html" aria-label="Логотип погнали">
-      Погнали?
-    </a>
-    <ul class="social-network">
-      <li class="social-network__item">
-        <a href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">Фейсбук</a>
-      </li>
-      <li class="social-network__item">
-        <a href="https://vk.com" aria-label="Погнали во Вконтакте">Вконтакте</a>
-      </li>
-      <li class="social-network__item">
-        <a href="https://www.instagram.com" aria-label="Погнали в Инстаграме">Инстаграм</a>
-      </li>
-    </ul>
-    <div class="page-foter__copyright copyright">
-      <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://up.htmlacademy.ru">HTML Academy</a>
-    </div>
-  </footer>
-</body>
+      <div class="page-foter__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://up.htmlacademy.ru">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
 </html>
