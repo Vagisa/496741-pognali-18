@@ -152,6 +152,7 @@
               width="270" height="270" alt="Аватарка Тани Фирсовой">
               <div>
                 <h3 class="companion__name">Таня Фирсова</h3>
+                <div class="companion__mode companion__mode--offline"></div>
                 <div class="companion__level level">
                   <p class="level__value">99 level</p>
                 </div>
@@ -171,14 +172,14 @@
                     </li>
                   </ul>
                 </div>
-                <div class="companion__hashtag hashtag">
-                  <ul class="hashtag__list">
-                    <li class="hashtag__item">#ЗОЖ</li>
-                    <li class="hashtag__item">#ПП</li>
-                    <li class="hashtag__item">#Фитнес</li>
-                    <li class="hashtag__item">#пляж</li>
-                    <li class="hashtag__item">#авокадо</li>
-                    <li class="hashtag__item">#смузи</li>
+                <div class="companion__hashtags hashtags">
+                  <ul class="hashtags__list">
+                    <li class="hashtags__item">#ЗОЖ</li>
+                    <li class="hashtags__item">#ПП</li>
+                    <li class="hashtags__item">#Фитнес</li>
+                    <li class="hashtags__item">#пляж</li>
+                    <li class="hashtags__item">#авокадо</li>
+                    <li class="hashtags__item">#смузи</li>
                   </ul>
                 </div>
                 <div class="companion__way-to-travel transport">
@@ -198,6 +199,7 @@
               width="270" height="270" alt="Аватарка Пети Демина">
               <div>
                 <h3 class="companion__name">Петя Демин</h3>
+                <div class="companion__mode companion__mode--online"></div>
                 <div class="companion__level level">
                   <p class="level__value">80 level</p>
                 </div>
@@ -213,13 +215,13 @@
                     </li>
                   </ul>
                 </div>
-                <div class="companion__hashtag hashtag">
-                  <ul class="hashtag__list">
-                    <li class="hashtag__item">#бургер</li>
-                    <li class="hashtag__item">#бар</li>
-                    <li class="hashtag__item">#футбол</li>
-                    <li class="hashtag__item">#концерт</li>
-                    <li class="hashtag__item">#крафт</li>
+                <div class="companion__hashtags hashtags">
+                  <ul class="hashtags__list">
+                    <li class="hashtags__item">#бургер</li>
+                    <li class="hashtags__item">#бар</li>
+                    <li class="hashtags__item">#футбол</li>
+                    <li class="hashtags__item">#концерт</li>
+                    <li class="hashtags__item">#крафт</li>
                   </ul>
                 </div>
                 <div class="companion__way-to-travel transport">
@@ -254,9 +256,27 @@
             Кастомный цвет карточки
             <span class="price__cost">59 руб./мес</span>
         </ol>
-        <a class="price__to-all modal-oppen" href="#" aria-label="Тарифы для бизнеса">
+        <a class="price__to-all modal-oppen" href="#">
           Показать тарифы для бизнеса
         </a>
+        <div class="modal modal-show price">
+          <h2 class="price__title">Бизнес-тарифы</h2>
+          <ul class="price__list">
+            <li class="price__service">Реклама у блоггера
+              <span class="price__cost">300 000 руб./пост</span>
+            </li>
+            <li class="price__service">Накрутка подписчиков
+                <span class="price__cost">от 1 руб./шт.</span>
+            </li>
+            <li class="price__service">Лайки от ботов
+                <span class="price__cost">от 20 коп./лайк</span>
+            </li>
+            <li class="price__service">Ваш продакт-плейсмент
+                <span class="price__cost">Индивидуально</span>
+            </li>
+          </ul>
+          <button class="modal__close" type="button">Закрыть окно</button>
+        </div>
       </section>
       <section class="registration">
         <h2 class="visually-hidden">Регистрация</h2>
@@ -307,23 +327,5 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
-    <section class="modal modal-show price">
-      <h2 class="price__title">Бизнес-тарифы</h2>
-      <ul class="price__list">
-        <li class="price__service">Реклама у блоггера
-          <span class="price__cost">300 000 руб./пост</span>
-        </li>
-        <li class="price__service">Накрутка подписчиков
-            <span class="price__cost">от 1 руб./шт.</span>
-        </li>
-        <li class="price__service">Лайки от ботов
-            <span class="price__cost">от 20 коп./лайк</span>
-        </li>
-        <li class="price__service">Ваш продакт-плейсмент
-            <span class="price__cost">Индивидуально</span>
-        </li>
-      </ul>
-      <button class="modal__close" type="button">Закрыть окно</button>
-    </section>
   </body>
 </html>
