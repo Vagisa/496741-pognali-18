@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html" aria-label="Логотип погнали">
+        Погнали?
+      </a>
+      <div class="main-menu">
+        <button class="main-menu__toggle" type="button">Открыть меню</button>
+        <nav class="main-menu__site-nav site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">О сервисе</li>
+            <li class="site-nav__item">
+              <a href="form.html">Направления</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-menu__contacts contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">Авторизация</li>
+            <li class="contacts__item">
+              <a href="tel:88005558628" aria-label="Телефон">
+                8 800 555-86-28
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта">
+                mail@htmlacademy.ru
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-menu__footer">
+          <ul class="social-network">
+            <li class="social-network__item">
+              <a href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
+                Фейсбук
+              </a>
+            </li>
+            <li class="social-network__item">
+              <a href="https://vk.com" aria-label="Погнали во Вконтакте">
+                Вконтакте
+              </a>
+            </li>
+            <li class="social-network__item">
+              <a href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
+                Инстаграм
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="catalog-main">
+      <h1 class="catalog-main__title">Попутчики</h1>
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <div class="filter__countries countries">
+          <h3 class="countries__title">Фильтрация по странам</h3>
+          <button class="countries__toggle" type="button">Открыть фильтр</button>
+          <ul class="countries__parts-world">
+            <li class="countries__part-world">
+              <button type="button" class="countries__button countries__button--active">
+                Европа
+              </button>
+            </li>
+            <li class="countries__part-world">
+              <button type="button" class="countries__button">
+                Азия
+              </button>
+            </li>
+            <li class="countries__part-world">
+              <button type="button" class="countries__button">
+                Америка
+              </button>
+            </li>
+            <li class="countries__part-world">
+              <button type="button" class="countries__button">
+                Острова
+              </button>
+            </li>
+          </ul>
+          <ul class="countries__alphabet alphabet">
+            <li class="alphabet__letter alphabet__letter--active">
+              <button type="button" class="alphabet__button">А</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Б</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">В</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Г</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Д</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Е</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">З</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">И</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">К</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Л</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">М</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Н</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">О</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">П</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Р</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">С</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Т</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">У</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Ф</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Х</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Ч</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Ш</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Э</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Ю</button>
+            </li>
+            <li class="alphabet__letter">
+              <button type="button" class="alphabet__button">Я</button>
+            </li>
+          </ul>
+          <ul class="countries__countries-list countries-list">
+            <li class="countries-list__item">
+              <a class="countries-list__state" href="#">Афганистан</a>
+            </li>
+            <li class="countries-list__item">
+              <a class="countries-list__state" href="#">Албания</a>
+            </li>
+            <li class="countries-list__item">
+              <a class="countries-list__state" href="#">Алжир</a>
+            </li>
+            <li class="countries-list__item">
+              <a class="countries-list__state" href="#">Андорра</a>
+            </li>
+            <li class="countries-list__item">
+              <a class="countries-list__state" href="#">Аргентина</a>
+            </li>
+            <li class="countries-list__item">
+              <a class="countries-list__state" href="#">Армения</a>
+            </li>
+            <li class="countries-list__item">
+              <a class="countries-list__state" href="#">Австралия</a>
+            </li>
+            <li class="countries-list__item">
+              <a class="countries-list__state" href="#">Австрия</a>
+            </li>
+            <li class="countries-list__item">
+              <a class="countries-list__state" href="#">Азербайджан</a>
+            </li>
+          </ul>
+          <button class="countries__button" type="button">Свернуть</button>
+        </div>
+      </section>
+      <section class="applicants">
+        <ul class="applicants__list">
+          <li class="applicants__item">
+            <div class="companion" >
+              <img class="companion__photo" src=""
+              width="70" height="70" alt="Аватарка Тани Фирсовой">
+              <div>
+                <h3 class="companion__name">Таня Фирсова</h3>
+                <div class="companion__like like">
+                  <button class="like__toggle like__toggle--liked" type="button"
+                  aria-label="Мне нравится">
+                    like
+                  </button>
+                  <p class="like__count">1,5 М</p>
+                </div>
+                <div class="companion__mode companion__mode--offline"></div>
+                <div class="companion__hashtags hashtags">
+                  <ul class="hashtags__list">
+                    <li class="hashtags__item">#ЗОЖ</li>
+                    <li class="hashtags__item">#ПП</li>
+                    <li class="hashtags__item">#Фитнес</li>
+                    <li class="hashtags__item">#пляж</li>
+                    <li class="hashtags__item">#авокадо</li>
+                    <li class="hashtags__item">#смузи</li>
+                  </ul>
+                </div>
+                <div class="companion__countries countries">
+                  <h4 class="countries__title">Хочет посетить:</h4>
+                  <ul class="countries__list">
+                    <li class="countries__item">
+                      <img class="countries__flag" src=""
+                      width="35" height="24" alt="Флаг Шри-Ланки">Шри-Ланка
+                    </li>
+                    <li class="countries__item">
+                      <img class="countries__flag" src=""
+                      width="35" height="24" alt="Флаг Таиланда">Таиланд
+                    </li>
+                    <li class="countries__item">
+                      <img class="countries__flag" src=""
+                      width="35" height="24" alt="Флаг Сейшельских Островов">Сейшелы
+                    </li>
+                  </ul>
+                </div>
+                <div class="companion__way-to-travel transport">
+                  <ul class="transport__list">
+                    <li class="transport__item transport__item--active">На самолёте</li>
+                    <li class="transport__item">Наземным транспортом</li>
+                    <li class="transport__item">На велосипеде</li>
+                    <li class="transport__item">Пешком</li>
+                  </ul>
+                </div>
+                <div class="companion__lavel level">
+                  <h4 class="level__title">Левел:</h4>
+                  <p class="level__value">99 level</p>
+                </div>
+              </div>
+            </div>
+            <button type="button" aria-label="Отправить приглашение">Позвать!</button>
+          </li>
+          <li class="applicants__item">
+            <div class="companion" >
+              <img class="companion__photo" src=""
+              width="70" height="70" alt="Аватарка Пети Демина">
+              <div>
+                <h3 class="companion__name">Петя Демин</h3>
+                <div class="companion__like like">
+                  <button class="like__toggle" type="button" aria-label="Мне нравится">
+                    like
+                  </button>
+                  <p class="like__count">150</p>
+                </div>
+                <div class="companion__mode companion__mode--offline"></div>
+                <div class="companion__hashtags hashtags">
+                  <ul class="hashtags__list">
+                    <li class="hashtags__item">#бургер</li>
+                    <li class="hashtags__item">#бар</li>
+                    <li class="hashtags__item">#футбол</li>
+                    <li class="hashtags__item">#концерт</li>
+                    <li class="hashtags__item">#крафт</li>
+                  </ul>
+                </div>
+                <div class="companion__countries countries">
+                  <h4 class="countries__title">Хочет посетить:</h4>
+                  <ul class="countries__list">
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Бельгию">
+                        <img class="countries__flag" src=""
+                        width="35" height="24" alt="Бельгия">Бельгия
+                      </a>
+                    </li>
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Чехию">
+                        <img class="countries__flag" src=""
+                        width="35" height="24" alt="Чехия">Чехия
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="companion__way-to-travel transport">
+                  <ul class="transport__list">
+                    <li class="transport__item transport__item--active">На самолёте</li>
+                    <li class="transport__item transport__item--active">Наземным транспортом</li>
+                    <li class="transport__item">На велосипеде</li>
+                    <li class="transport__item transport__item--active">Пешком</li>
+                  </ul>
+                </div>
+                <div class="companion__lavel level">
+                  <h4 class="level__title">Левел:</h4>
+                  <p class="level__value">80 level</p>
+                </div>
+              </div>
+            </div>
+            <button type="button" aria-label="Отправить приглашение">Позвать!</button>
+          </li>
+          <li class="applicants__item">
+            <div class="companion" >
+              <img class="companion__photo" src=""
+              width="70" height="70" alt="Аватарка Марка Смолова">
+              <div>
+                <h3 class="companion__name">Марк Смолов</h3>
+                <div class="companion__like like">
+                  <button class="like__toggle" type="button" aria-label="Мне нравится">
+                    like
+                  </button>
+                  <p class="like__count">1700</p>
+                </div>
+                <div class="companion__mode companion__mode--offline"></div>
+                <div class="companion__hashtags hashtags">
+                  <ul class="hashtags__list">
+                    <li class="hashtags__item">#рэп</li>
+                    <li class="hashtags__item">#тату</li>
+                    <li class="hashtags__item">#хайпбист</li>
+                    <li class="hashtags__item">#кроссовки</li>
+                    <li class="hashtags__item">#суприм</li>
+                  </ul>
+                </div>
+                <div class="companion__countries countries">
+                  <h4 class="countries__title">Хочет посетить:</h4>
+                  <ul class="countries__list">
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в США">
+                        <img class="countries__flag" src=""
+                        width="35" height="24" alt="США">США
+                      </a>
+                    </li>
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Австралию">
+                        <img class="countries__flag" src=""
+                        width="35" height="24" alt="Австралия">Австралия
+                      </a>
+                    </li>
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Доминикану">
+                        <img class="countries__flag" src=""
+                        width="35" height="24" alt="Доминикана">Доминикана
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="companion__way-to-travel transport">
+                  <ul class="transport__list">
+                    <li class="transport__item transport__item--active">На самолёте</li>
+                    <li class="transport__item">Наземным транспортом</li>
+                    <li class="transport__item transport__item--active">На велосипеде</li>
+                    <li class="transport__item">Пешком</li>
+                  </ul>
+                </div>
+                <div class="companion__lavel level">
+                  <h4 class="level__title">Левел:</h4>
+                  <p class="level__value">25 level</p>
+                </div>
+              </div>
+            </div>
+            <button type="button" aria-label="Отправить приглашение">Позвать!</button>
+          </li>
+          <li class="applicants__item">
+            <div class="companion" >
+              <img class="companion__photo" src=""
+              width="70" height="70" alt="Аватарка Ларисы Роговой">
+              <div>
+                <h3 class="companion__name">Лариса Роговая</h3>
+                <div class="companion__like like">
+                  <button class="like__toggle" type="button" aria-label="Мне нравится">
+                    like
+                  </button>
+                  <p class="like__count">23</p>
+                </div>
+                <div class="companion__mode companion__mode--online"></div>
+                <div class="companion__hashtags hashtags">
+                  <ul class="companion__hashtags hashtags__list">
+                    <li class="hashtags__item">#образование</li>
+                    <li class="hashtags__item">#карьера</li>
+                    <li class="hashtags__item">#учеба</li>
+                    <li class="hashtags__item">#линкедин</li>
+                  </ul>
+                </div>
+                <div class="companion__countries countries">
+                  <h4 class="countries__title">Хочет посетить:</h4>
+                  <ul class="countries__list">
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Великобританию">
+                        <img class="countries__flag" src=""
+                        width="35" height="24" alt="Великобритания">Великобритания
+                      </a>
+                    </li>
+                    <li class="countries__item">
+                      <a href="#" aria-label="Попутчики в Германию">
+                        <img class="countries__flag" src=""
+                        width="35" height="24" alt="Германия">Германия
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="companion__way-to-travel transport">
+                  <ul class="transport__list">
+                    <li class="transport__item transport__item--active">На самолёте</li>
+                    <li class="transport__item transport__item--active">Наземным транспортом</li>
+                    <li class="transport__item">На велосипеде</li>
+                    <li class="transport__item">Пешком</li>
+                  </ul>
+                </div>
+                <div class="companion__lavel level">
+                  <h4 class="level__title">Левел:</h4>
+                  <p class="level__value">50 level</p>
+                </div>
+              </div>
+            </div>
+            <button type="button" aria-label="Отправить приглашение">Позвать!</button>
+          </li>
+        </ul>
+        <a class="applicants__to-all" href="#" aria-label="Показать всех возможных попутчиков">
+          Показать еще
+        </a>
+        <button class="applicants__previous" type="button">
+          Предыдушее
+        </button>
+        <button class="applicants__next" type="button">
+          Следующее
+        </button>
+      </section>
+    </main>
+    <footer class="page-foter">
+      <a class="page-header__logo" href="index.html" aria-label="Логотип погнали">
+        Погнали?
+      </a>
+      <ul class="social-network">
+        <li class="social-network__item">
+          <a href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">Фейсбук</a>
+        </li>
+        <li class="social-network__item">
+          <a href="https://vk.com" aria-label="Погнали во Вконтакте">Вконтакте</a>
+        </li>
+        <li class="social-network__item">
+          <a href="https://www.instagram.com" aria-label="Погнали в Инстаграме">Инстаграм</a>
+        </li>
+      </ul>
+      <div class="page-foter__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
