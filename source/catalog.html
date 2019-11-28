@@ -64,137 +64,206 @@
         <h2 class="visually-hidden">Фильтр</h2>
         <div class="filter__countries countries">
           <h3 class="countries__title">Фильтрация по странам</h3>
-          <button class="countries__toggle" type="button">Открыть фильтр</button>
-          <ul class="countries__parts-world">
-            <li class="countries__part-world">
-              <button type="button" class="countries__button countries__button--active">
-                Европа
-              </button>
-            </li>
-            <li class="countries__part-world">
-              <button type="button" class="countries__button">
-                Азия
-              </button>
-            </li>
-            <li class="countries__part-world">
-              <button type="button" class="countries__button">
-                Америка
-              </button>
-            </li>
-            <li class="countries__part-world">
-              <button type="button" class="countries__button">
-                Острова
-              </button>
-            </li>
-          </ul>
-          <ul class="countries__alphabet alphabet">
-            <li class="alphabet__letter alphabet__letter--active">
-              <button type="button" class="alphabet__button">А</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Б</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">В</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Г</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Д</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Е</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">З</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">И</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">К</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Л</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">М</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Н</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">О</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">П</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Р</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">С</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Т</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">У</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Ф</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Х</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Ч</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Ш</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Э</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Ю</button>
-            </li>
-            <li class="alphabet__letter">
-              <button type="button" class="alphabet__button">Я</button>
-            </li>
-          </ul>
-          <ul class="countries__countries-list countries-list">
-            <li class="countries-list__item">
-              <a class="countries-list__state" href="#">Афганистан</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__state" href="#">Албания</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__state" href="#">Алжир</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__state" href="#">Андорра</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__state" href="#">Аргентина</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__state" href="#">Армения</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__state" href="#">Австралия</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__state" href="#">Австрия</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__state" href="#">Азербайджан</a>
-            </li>
-          </ul>
-          <button class="countries__button" type="button">Свернуть</button>
+          <button class="countries__toggle" type="button" aria-label="тумблер"></button>
+          <div class="countries__popup">
+            <ul class="countries__parts-world">
+              <li class="countries__part-world">
+                <button type="button" class="countries__button countries__button--active">
+                  Европа
+                </button>
+              </li>
+              <li class="countries__part-world">
+                <button type="button" class="countries__button">
+                  Азия
+                </button>
+              </li>
+              <li class="countries__part-world">
+                <button type="button" class="countries__button">
+                  Америка
+                </button>
+              </li>
+              <li class="countries__part-world">
+                <button type="button" class="countries__button">
+                  Острова
+                </button>
+              </li>
+            </ul>
+            <ul class="countries__alphabet alphabet">
+              <li class="alphabet__letter alphabet__letter--active">
+                <button type="button" class="alphabet__button">А</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Б</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">В</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Г</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Д</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Е</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">З</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">И</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">К</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Л</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">М</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Н</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">О</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">П</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Р</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">С</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Т</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">У</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Ф</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Х</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Ч</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Ш</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Э</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Ю</button>
+              </li>
+              <li class="alphabet__letter">
+                <button type="button" class="alphabet__button">Я</button>
+              </li>
+            </ul>
+            <ul class="countries__countries-list countries-list">
+              <li class="countries-list__item">
+                <a class="countries-list__state" href="#">Афганистан</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__state" href="#">Албания</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__state" href="#">Алжир</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__state" href="#">Андорра</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__state" href="#">Аргентина</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__state" href="#">Армения</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__state" href="#">Австралия</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__state" href="#">Австрия</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__state" href="#">Азербайджан</a>
+              </li>
+            </ul>
+            <button class="countries__button" type="button">Свернуть</button>
+          </div>
         </div>
+        <form class="filter__form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">
+              Хобби
+              <button class="filter__toggle" type="button" aria-label="тумблер"></button>
+            </legend>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">
+              Музыка
+              <button class="filter__toggle" type="button" aria-label="тумблер"></button>
+            </legend>
+            <input class="visually-hidden" type="checkbox" id="rock" name="rock" checked>
+            <label for="rock">Тяжелый рок</label>
+            <input class="visually-hidden" type="checkbox" id="rap" name="rap">
+            <label for="rap">Русский реп</label>
+            <input class="visually-hidden" type="checkbox" id="eurodens" name="eurodens">
+            <label for="eurodens">Евроденс</label>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">
+              Еда
+              <button class="filter__toggle" type="button" aria-label="тумблер"></button>
+            </legend>
+          </fieldset>
+          <fieldset class="filter__fieldset transport">
+            <legend class="filter__legend">
+              Транспорт
+              <button class="filter__toggle" type="button" aria-label="тумблер"></button>
+            </legend>
+            <input class="visually-hidden" type="checkbox" id="plane" name="plane" checked>
+            <label class="transport__item" for="plane">
+              <img src="" alt="На самолёте" width="32" height="32">
+            </label>
+            <input class="visually-hidden" type="checkbox" id="ground-transportation"
+            name="ground-transportation" checked>
+            <label class="transport__item" for="ground-transportation">
+              <img src="" alt="Наземным транспортом" width="32" height="32">
+            </label>
+            <input class="visually-hidden" type="checkbox" id="bike" name="bike">
+            <label class="transport__item" for="bike">
+              <img src="" alt="На велосипеде" width="32" height="32">
+            </label>
+            <input class="visually-hidden" type="checkbox" id="on-foot" name="on-foot" checked>
+            <label class="transport__item" for="on-foot">
+              <img src="" alt="Пешком" width="32" height="32">
+            </label>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">
+              Левел
+              <button class="filter__toggle" type="button" aria-label="тумблер"></button>
+            </legend>
+            <input type="text" name="search" value="30">
+            <input type="text" name="search" value="100">
+            <div class="filter__range range">
+              <input class="visually-hidden" type="range" min="0" max="100">
+              <input class="visually-hidden" type="range" min="0" max="100">
+              <div class="range__scale">
+                <div class="range__bar"></div>
+              </div>
+              <div class="range__toggle range__toggle--min"></div>
+              <div class="range__toggle range__toggle--max"></div>
+            </div>
+          </fieldset>
+          <button class="filter__button" type="submit">Показать</button>
+        </form>
       </section>
       <section class="applicants">
         <ul class="applicants__list">
