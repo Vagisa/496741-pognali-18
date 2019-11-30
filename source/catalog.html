@@ -209,11 +209,14 @@
               Музыка
               <button class="filter__toggle" type="button" aria-label="тумблер"></button>
             </legend>
-            <input class="visually-hidden" type="checkbox" id="rock" name="rock" checked>
+            <input class="visually-hidden" type="checkbox" id="rock" 
+            name="music" value="rock" checked>
             <label for="rock">Тяжелый рок</label>
-            <input class="visually-hidden" type="checkbox" id="rap" name="rap">
+            <input class="visually-hidden" type="checkbox" id="rap" 
+            name="music" value="rap">
             <label for="rap">Русский реп</label>
-            <input class="visually-hidden" type="checkbox" id="eurodens" name="eurodens">
+            <input class="visually-hidden" type="checkbox" id="eurodens" 
+            name="music" value="eurodens">
             <label for="eurodens">Евроденс</label>
           </fieldset>
           <fieldset class="filter__fieldset">
@@ -227,20 +230,23 @@
               Транспорт
               <button class="filter__toggle" type="button" aria-label="тумблер"></button>
             </legend>
-            <input class="visually-hidden" type="checkbox" id="plane" name="plane" checked>
+            <input class="visually-hidden" type="checkbox" id="plane" 
+            name="transport" value="plane" checked>
             <label class="transport__item" for="plane">
               <img src="" alt="На самолёте" width="32" height="32">
             </label>
             <input class="visually-hidden" type="checkbox" id="ground-transportation"
-            name="ground-transportation" checked>
+            name="transport" value="ground-transportation" checked>
             <label class="transport__item" for="ground-transportation">
               <img src="" alt="Наземным транспортом" width="32" height="32">
             </label>
-            <input class="visually-hidden" type="checkbox" id="bike" name="bike">
+            <input class="visually-hidden" type="checkbox" id="bike" 
+            name="transport" value="bike">
             <label class="transport__item" for="bike">
               <img src="" alt="На велосипеде" width="32" height="32">
             </label>
-            <input class="visually-hidden" type="checkbox" id="on-foot" name="on-foot" checked>
+            <input class="visually-hidden" type="checkbox" id="on-foot" 
+            name="transport" value="on-foot" checked>
             <label class="transport__item" for="on-foot">
               <img src="" alt="Пешком" width="32" height="32">
             </label>
@@ -253,8 +259,6 @@
             <input type="text" name="search" value="30">
             <input type="text" name="search" value="100">
             <div class="filter__range range">
-              <input class="visually-hidden" type="range" min="0" max="100">
-              <input class="visually-hidden" type="range" min="0" max="100">
               <div class="range__scale">
                 <div class="range__bar"></div>
               </div>

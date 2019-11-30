@@ -70,27 +70,38 @@
               <p class="level__value">80 level</p>
             </div>
             <button class="companion__button" type="button">Сменить фото</button>
-            <div class="companion__hashtags hashtags">
-              <h4 class="hashtags__title">Тэги</h4>
-              <ul class="hashtags__list">
-                <li class="hashtags__item">#бургер</li>
-                <li class="hashtags__item">#бар</li>
-                <li class="hashtags__item">#футбол</li>
-                <li class="hashtags__item">#концерт</li>
-                <li class="hashtags__item">#крафт</li>
-              </ul>
-            </div>
-            <div class="companion__way-to-travel transport">
-              <h4 class="transport__title">Транспорт</h4>
-              <ul class="transport__list">
-                <li class="transport__item transport__item--active">На самолёте</li>
-                <li class="transport__item transport__item--active">Наземным транспортом</li>
-                <li class="transport__item">На велосипеде</li>
-                <li class="transport__item transport__item--active">Пешком</li>
-              </ul>
-            </div>
           </div>
         </div>
+        <form class="companion__form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="companion__hashtags hashtags">
+            <legend class="hashtags__legend">Тэги</legend>
+            <textarea name="hashtags" cols="27" rows="4" 
+            placeholder="#бургер #бар #футбол #концерт #крафт"></textarea>
+          </fieldset>
+          <fieldset class="companion__transport transport">
+            <legend class="transport__legend">Транспорт</legend>
+            <input class="visually-hidden" type="checkbox" id="plane" 
+            name="transport" value="plane" checked>
+            <label class="transport__item" for="plane">
+              <img src="" alt="На самолёте" width="32" height="32">
+            </label>
+            <input class="visually-hidden" type="checkbox" id="ground-transportation"
+            name="transport" value="ground-transportation" checked>
+            <label class="transport__item" for="ground-transportation">
+              <img src="" alt="Наземным транспортом" width="32" height="32">
+            </label>
+            <input class="visually-hidden" type="checkbox" id="bike" 
+            name="transport" value="bike">
+            <label class="transport__item" for="bike">
+              <img src="" alt="На велосипеде" width="32" height="32">
+            </label>
+            <input class="visually-hidden" type="checkbox" id="on-foot" 
+            name="transport" value="on-foot" checked>
+            <label class="transport__item" for="on-foot">
+              <img src="" alt="Пешком" width="32" height="32">
+            </label>
+          </fieldset>
+        </form>
       </section>
       <section class="plans">
         <h2 class="visually-hidden">Планы</h2>
@@ -128,12 +139,12 @@
               <button class="slider__button" type="button" aria-label="Третий шаг"></button>
             </li>
           </ul>
-          <ul class="procedure__list steps">
-            <li class="procedure__item steps__item">
-              <h4 class="steps__title">Шаг 1.<br>Даты пребывания</h4>
-              <p class="steps__intro">Укажите предпочтительное количество попутчиков, которых
-              вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-              <form class="steps__form" action="https://echo.htmlacademy.ru" method="POST">
+          <form class="steps__form" action="https://echo.htmlacademy.ru" method="POST">
+            <ul class="procedure__list steps">
+              <li class="procedure__item steps__item">
+                <h4 class="steps__title">Шаг 1.<br>Даты пребывания</h4>
+                <p class="steps__intro">Укажите предпочтительное количество попутчиков, которых
+                вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                 <label class="steps__companions-number" for="companions-number">
                   Ищу попутчиков: <span>чел.</span>
                 </label>
@@ -148,10 +159,10 @@
                 </label>
                 <div class="steps__calendar calendar">
                   <ul class="calendar__months">
-                    <!--<li class="calendar__month">Январь 2020</li>
+                    <li class="calendar__month">Январь 2020</li>
                     <li class="calendar__month">Февраль 2020</li>-->
                     <li class="calendar__month">Март 2019</li>
-                    <!--<li class="calendar__month">Апрель 2019</li>
+                    <li class="calendar__month">Апрель 2019</li>
                     <li class="calendar__month">Май 2019</li>
                     <li class="calendar__month">Июнь 2019</li>
                     <li class="calendar__month">Июль 2019</li>
@@ -159,7 +170,7 @@
                     <li class="calendar__month">Сентябрь 2019</li>
                     <li class="calendar__month">Октябрь 2019</li>
                     <li class="calendar__month">Ноябрь 2019</li>
-                    <li class="calendar__month">Декабрь 2019</li>-->
+                    <li class="calendar__month">Декабрь 2019</li>
                   </ul>
                   <button class="calendar__button" type="button"
                   aria-label="Предыдущий месяц"></button>
@@ -358,25 +369,21 @@
                   </table>
                 </div>
                 <button class="steps__button" type="button">Следующий шаг</button>
-              </form>
-            </li>
-            <li class="procedure__item steps__item">
-              <h4 class="steps__title">Шаг 2.<br>Маршрут</h4>
-              <p class="steps__intro">Укажите страны, которые вы хотели по посетить.
-              Это может быть одна или сразу несколько.</p>
-              <form class="steps__form  select" action="https://echo.htmlacademy.ru" method="POST">
-                <select class="select__item select-item" name="countries">
-                  <option value="choose a country">Выберите страну</option>
-                  <option value="Bosnia and Herzegovina" selected>Босния и Герцеговина</option>
-                  <option value="Czech Republic">Чехия</option>
-                </select>
+              </li>
+              <li class="procedure__item steps__item">
+                <h4 class="steps__title">Шаг 2.<br>Маршрут</h4>
+                <p class="steps__intro">Укажите страны, которые вы хотели по посетить.
+                Это может быть одна или сразу несколько.</p>
+                <input type="text" name="countries" value="Босния и Герцеговина"
+                id="Bosnia-and-Herzegovina">
+                <label for="Bosnia-and-Herzegovina"><img src="" alt="Флаг страны"></label>
                 <button class="select-item__button" type="button"
                 aria-label="Удалить стhану"></button>
-                <select class="select__item" name="countries">
-                  <option value="choose a country">Выберите страну</option>
-                  <option value="Bosnia and Herzegovina" selected>Босния и Герцеговина</option>
-                  <option value="Czech Republic" selected>Чехия</option>
-                </select>
+                <input type="text" name="countries" value="Чехия"
+                id="Czech-Republic">
+                <label for="Czech-Republic"><img src="" alt="Флаг страны"></label>
+                <button class="select-item__button" type="button"
+                aria-label="Удалить стhану"></button>
                 <button class="select-item__button modal-oppen" type="button">
                   Выберите страну
                 </button>
@@ -501,36 +508,33 @@
                 <button class="steps__button steps__button--back" type="button">
                   На шаг назад
                 </button>
-              </form>
-            </li>
-            <li class="procedure__item steps__item">
-              <h4 class="steps__title">Шаг 3.<br>Развелечения</h4>
-              <p class="steps__intro">Наконец, расскажите о своих планах времяпровождения.
-                  Можно писать в свободной форме и ставить тэги.</p>
-              <form class="steps__form" action="https://echo.htmlacademy.ru" method="POST">
-                <fieldset class="steps__fieldset fieldset">
-                  <legend class="fieldset__legend">
+              </li>
+              <li class="procedure__item steps__item">
+                <h4 class="steps__title">Шаг 3.<br>Развелечения</h4>
+                <p class="steps__intro">Наконец, расскажите о своих планах времяпровождения.
+                    Можно писать в свободной форме и ставить тэги.</p>
+                <div class="steps__entertainment entertainment">
+                  <label for="Bosnia-and-Herzegovina-plan">
                     Босния и герцеговина
                     <img src="" alt="Флаг Боснии и Герцеговины">
-                  </legend>
-                  <textarea name="plan" cols="20" rows="10" placeholder="План действий"></textarea>
-                </fieldset>
-                <fieldset class="steps__fieldset fieldset">
-                  <legend class="fieldset__legend">
+                  </label>
+                  <textarea name="plan" cols="20" rows="10" id="Bosnia-and-Herzegovina-plan"
+                  placeholder="План действий"></textarea>
+                  <label for="Czech-Republic-plan">
                     Чехия
                     <img src="" alt="Флаг Чехии">
-                  </legend>
-                  <textarea name="plan" cols="20" rows="10">
+                  </label>
+                  <textarea name="plan" cols="20" rows="10" id="Czech-Republic-plan">
                     Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
                   </textarea>
-                </fieldset>
+                </div>
                 <button class="steps__button" type="submit">Отправить</button>
                 <button class="steps__button steps__button--back" type="button">
                   На шаг назад
                 </button>
-              </form>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </form>
         </div>
       </section>
     </main>
