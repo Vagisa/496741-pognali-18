@@ -1,0 +1,85 @@
+.directions {
+  background-color: #edeff6;
+  color: #444444;
+}
+
+.directions__header {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.directions__title {
+  .title;
+}
+
+.directions__intro {
+  .intro;
+}
+
+.directions__list {
+  list-style: none;
+  padding: 0;
+}
+
+.directions__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.directions__photo {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.directions__flag {
+  img {
+    .flag;
+  }
+  min-width: 220px;
+}
+.directions__description {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  margin-top: -23px;
+  padding: 25px;
+  padding-top: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.directions__town {
+  min-width: 120px;
+  flex-shrink: 0;
+  margin: 0;
+  .font(21px; 21px; 700);
+}
+
+.directions__companions {
+  margin: 0;
+  min-width: 100px;
+  flex-shrink: 0;
+  line-height: 30px;
+  opacity: 0.3;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-image: url(img/user.svg);
+  }
+}
+
+.directions__slogan {
+  margin: 0;
+  flex-shrink: 0;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.directions__to-all {
+  .button-yellow;
+}

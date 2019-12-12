@@ -1,0 +1,54 @@
+.contacts__list {
+  padding: 0;
+}
+
+.contacts__item {
+  display: inline-flex;
+  list-style: none;
+  .font();
+  a {
+    color: rgb(25, 33, 68);
+    text-decoration: none;
+  }
+}
+
+.contacts__circle {
+  display: inline-flex;
+  width: 45px;
+  height: 45px;
+  .circle;
+  background-color: rgb(18, 25, 54);
+  svg {
+    fill: rgb(255, 215, 75);
+    margin: auto;
+  }
+}
+
+.contacts__button {
+  width: 270px;
+  .font-family;
+  .font(17px; 30px);
+  text-transform: uppercase;
+  color: rgb(22, 28, 53);
+  background-color: rgb(255, 215, 75);
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  &--text {
+    height: 40px;
+    width: 189px;
+  }
+  &--img {
+    height: 40px;
+    width: 40px;
+    a {
+      margin: auto;
+    }
+    &:first-child {
+      background-color: #ff8d30;
+    }
+    &:nth-child(2) {
+      background-color: #ffbd30;
+    }
+  }
+}

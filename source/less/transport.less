@@ -1,0 +1,38 @@
+.transport__title {
+  .lowercase-title;
+}
+
+.transport__list {
+  display: flex;
+  justify-content: space-between;
+  width: 121px;
+  padding: 0;
+  color: black;
+}
+.transport__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 32px;
+  list-style: none;
+  border-radius: 50%;
+  svg {
+    fill: #d9d9d9;
+  }
+
+  &--active svg {
+    fill: @blue;
+  }
+}
+
+
+.blue_circle {
+  
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 114px;
+  top: 2406px;
+  
+  z-index: 191;
+}

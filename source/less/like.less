@@ -1,0 +1,28 @@
+.like {
+  display: flex;
+  align-items: baseline;
+}
+.like__toggle {
+  flex-shrink: 0;
+  width: 31px;
+  height: 31px;
+  border: none;
+  border-radius: 50%;
+  background-color: #edeff6;
+  svg {
+    fill: #adb1c0;
+  }
+  &--liked {
+    background-color: #f9eaea;
+    svg {
+      fill: #f02323;
+    }
+  }
+}
+
+.like__count {
+  .font(14px; 21px; 700);
+  flex-shrink: 0;
+  margin: 0;
+  margin-left: 8px;
+}

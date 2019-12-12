@@ -1,0 +1,44 @@
+.level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 63px;
+  height: 63px;
+  position: absolute;
+  svg {
+    position: absolute;
+  }
+}
+
+.level__title {
+  .lowercase-title;
+}
+
+.level__value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  color: @white;
+}
+
+.level__number {
+  margin: 0;
+  .font(24px; 24px);
+}
+
+.level__text {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  .font(14px; 14px; 400);
+}
+
+.div {
+  background-image: url("div.png");
+  opacity: 0.302;
+  position: absolute;
+  left: 55px;
+  top: 3219px;
+  width: 31px;
+  height: 1px;
+  z-index: 91;
+}
