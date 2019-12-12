@@ -3,13 +3,12 @@
   position: relative;
   padding: 0;
   list-style: none;
-  counter-reset: section;   
+  counter-reset: section;
   margin: 25px;
   background-color: burlywood;
   border-radius: 10px;
   z-index: 11;
 }
-
 
 .generate-colors(@n) when (@n > 0) {
   .steps__item:nth-child(@{n}) {
