@@ -1,4 +1,3 @@
-
 .steps__list {
   position: relative;
   padding: 0;
@@ -9,14 +8,6 @@
   border-radius: 10px;
   z-index: 11;
 }
-
-.generate-colors(@n) when (@n > 0) {
-  .steps__item:nth-child(@{n}) {
-    background-color: spin(#ffa530, @n * 7);
-  }
-  .generate-colors(@n - 1);
-}
-.generate-colors(10);
 
 .steps__item {
   display: flex;
@@ -29,8 +20,24 @@
   .font(18px; 18px);
   color: #161c35;
 
+  &:first-child {
+    background-color: #ff8d30;
+  }
+
   &:not(:first-child) {
     margin-top: -10px;
+  }
+
+  &:nth-child(2) {
+    background-color: #ffa530;
+  }
+  
+  &:nth-child(3) {
+    background-color: #ffbd30;
+  }
+
+  &:nth-child(4) {
+    background-color: #ffd74b;
   }
 
   &:last-child {

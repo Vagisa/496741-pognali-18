@@ -5,14 +5,17 @@
   width: 63px;
   height: 63px;
   position: absolute;
-
-  svg {
-    position: absolute;
-  }
 }
 
-.level__title {
-  .lowercase-title;
+.level__circle {
+  position: absolute;
+}
+
+.level__circle--bottom {
+  bottom: 0;
+  width: 48px;
+  height: 48px;
+  fill: transparent;
 }
 
 .level__value {
@@ -28,18 +31,19 @@
   .font(24px; 24px);
 }
 
+.level__number--blue {
+  position: absolute;
+  bottom: 10px;
+  color: @blue;
+}
+
 .level__text {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   .font(14px; 14px; 400);
 }
 
-.div {
-  background-image: url("div.png");
-  opacity: 0.302;
-  position: absolute;
-  left: 55px;
-  top: 3219px;
-  width: 31px;
-  height: 1px;
-  z-index: 91;
+.level__title {
+  align-self: flex-start;
+  margin-top: 0;
+  width: 85px;
 }

@@ -13,7 +13,8 @@
           width="100px" height="19px">
         </a>
         <button class="main-menu__open" type="button" aria-label="Открыть меню">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          <svg class="main-menu__switch" version="1.1" id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25" height="11"
           viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
           <g>
@@ -31,7 +32,8 @@
               width="100px" height="19px">
             </a>
             <button class="main-menu__close" type="button" aria-label="Закрыть меню">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              <svg class="main-menu__switch" version="1.1" id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19" height="19"
               viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
               <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
@@ -43,13 +45,19 @@
           <nav class="main-menu__site-nav site-nav">
             <ul class="site-nav__list">
               <li class="site-nav__item">
-                <a href="#">О сервисе</a>
+                <a class="site-nav__link" href="#">
+                  О сервисе
+                </a>
               </li>
               <li class="site-nav__item">
-                <a href="form.html">Направления</a>
+                <a class="site-nav__link" href="form.html">
+                  Направления
+                </a>
               </li>
               <li class="site-nav__item">
-                <a href="catalog.html">Попутчики</a>
+                <a class="site-nav__link" href="catalog.html">
+                  Попутчики
+                </a>
               </li>
             </ul>
           </nav>
@@ -60,7 +68,7 @@
               </li>
               <li class="contacts__item">
                 <div class="contacts__circle">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="contacts__circle-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
                   viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
                   <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
@@ -73,13 +81,13 @@
                   c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
                   </svg>
                 </div>
-                <a href="tel:88005558628" aria-label="Телефон">
+                <a class="contacts__link" href="tel:88005558628" aria-label="Телефон">
                   8 800 555-86-28
                 </a>
               </li>
               <li class="contacts__item">
                 <div class="contacts__circle">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="contacts__circle-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="13"
                   viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
                   <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
@@ -88,7 +96,8 @@
                   c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
                   </svg>
                 </div>
-                <a href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта">
+                <a class="contacts__link" href="mailto:mail@htmlacademy.ru"
+                aria-label="Электронная почта">
                   mail@htmlacademy.ru
                 </a>
               </li>
@@ -98,7 +107,7 @@
             <ul class="social-network">
               <li class="social-network__item">
                 <a href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="social-network__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11" height="21"
                   viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
                   <g>
@@ -110,7 +119,7 @@
               </li>
               <li class="social-network__item">
                 <a href="https://vk.com" aria-label="Погнали во Вконтакте">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="social-network__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23" height="12"
                   viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
                   <g>
@@ -136,7 +145,7 @@
               </li>
               <li class="social-network__item">
                 <a href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="social-network__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
                   viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                   <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
@@ -158,7 +167,7 @@
       <section class="page-main__contacts contacts">
         <ul class="contacts__list page-main__contacts-list">
           <li class="contacts__item contacts__button contacts__button--img">
-            <a href="tel:88005558628" aria-label="8 800 555-86-28">
+            <a class="contacts__link" href="tel:88005558628" aria-label="8 800 555-86-28">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
               viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
@@ -179,7 +188,8 @@
             </a>
           </li>
           <li class="contacts__item contacts__button contacts__button--img">
-            <a href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта">
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru"
+            aria-label="Электронная почта">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="14"
               viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
@@ -320,7 +330,7 @@
             </div>
           </li>
         </ul>
-        <a class="directions__to-all button" href="form.html">
+        <a class="directions__to-all button-yellow" href="form.html">
           <p>Показать все</p>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14"
@@ -363,11 +373,11 @@
                   </ul>
                 </div>
                 <div class="companion__one-row">
-                  <div class="companion__mode companion__mode--offline"></div>
+                  <div class="companion__mode mode"></div>
                   <h3 class="companion__name">Таня Фирсова</h3>
                 </div>
                 <div class="companion__level level">
-                  <svg width="63" height="63">
+                  <svg class="level__circle" width="63" height="63">
                     <circle r="30" cx="31" cy="31" fill="rgba(0, 0, 0, 0.6)"
                     stroke="#ff8d30" stroke-width="3" stroke-dasharray="195 5"
                     stroke-dashoffset="55">
@@ -390,8 +400,8 @@
                 </div>
                 <div class="companion__way-to-travel transport">
                   <ul class="transport__list">
-                    <li class="transport__item transport__item--active">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    <li class="transport__item">
+                      <svg class="transport__img--active" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19"
                       height="21" viewBox="0 0 19 21" style="enable-background:new
                       0 0 19 21;"xml:space="preserve">
@@ -405,7 +415,7 @@
                       </svg>
                     </li>
                     <li class="transport__item">
-                      <svg version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg"
+                      <svg class="transport__img" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17"
                       height="21" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
                       xml:space="preserve">
@@ -417,7 +427,7 @@
                       </svg>
                     </li>
                     <li class="transport__item">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      <svg class="transport__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24"
                       height="21" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
                       xml:space="preserve">
@@ -429,7 +439,7 @@
                       </svg>
                     </li>
                     <li class="transport__item">
-                      <svg version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg"
+                      <svg class="transport__img" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20"
                       height="21" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
                       xml:space="preserve">
@@ -466,11 +476,11 @@
                   </ul>
                 </div>
                 <div class="companion__one-row">
-                  <div class="companion__mode companion__mode--online"></div>
+                  <div class="companion__mode mode mode--online"></div>
                   <h3 class="companion__name">Петя Демин</h3>
                 </div>
                 <div class="companion__level level">
-                  <svg width="63" height="63">
+                  <svg class="level__circle" width="63" height="63">
                   <circle r="30" cx="31" cy="31" fill="rgba(0, 0, 0, 0.6)"
                   stroke="#ff8d30" stroke-width="3" stroke-dasharray="160 40"
                   stroke-dashoffset="60">
@@ -492,8 +502,8 @@
                 </div>
                 <div class="companion__way-to-travel transport">
                   <ul class="transport__list">
-                    <li class="transport__item transport__item--active">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    <li class="transport__item">
+                      <svg class="transport__img--active" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19"
                       height="21" viewBox="0 0 19 21" style="enable-background:new
                       0 0 19 21;"xml:space="preserve">
@@ -506,8 +516,8 @@
                       c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
                       </svg>
                     </li>
-                    <li class="transport__item transport__item--active">
-                      <svg version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg"
+                    <li class="transport__item">
+                      <svg class="transport__img--active" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17"
                       height="21" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
                       xml:space="preserve">
@@ -519,7 +529,7 @@
                       </svg>
                     </li>
                     <li class="transport__item">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      <svg class="transport__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24"
                       height="21" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
                       xml:space="preserve">
@@ -530,8 +540,8 @@
                       s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
                       </svg>
                     </li>
-                    <li class="transport__item transport__item--active">
-                      <svg version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg"
+                    <li class="transport__item">
+                      <svg class="transport__img--active" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20"
                       height="21" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
                       xml:space="preserve">
@@ -551,7 +561,7 @@
             </div>
           </li>
         </ul>
-        <a class="companions__to-all button" href="catalog.html" aria-label="Каталог">
+        <a class="companions__to-all button-yellow" href="catalog.html" aria-label="Каталог">
           <p>Показать всех</p>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14"
@@ -563,7 +573,7 @@
       <section class="page-main__price price">
         <h2 class="visually-hidden">Прайс-лист</h2>
         <h3 class="price__title">Добавьте свой профиль</h3>
-        <ol class="price__list">
+        <ol class="price__list price__list--ol">
           <li class="price__item">
             <p class="price__service">
               <span>Базовое размещение</span>
@@ -588,7 +598,7 @@
         </a>
         <div class="modal modal-show price">
           <h2 class="price__title">Бизнес-тарифы</h2>
-          <ul class="price__list">
+          <ul class="price__list price__list-ul">
             <li class="price__item">
               <p class="price__service">
                 <span>Реклама у блоггера</span>
@@ -630,12 +640,13 @@
         <div class="registration__contacts contacts">
           <ul class="contacts__list">
             <li class="contacts__item">
-              <a href="tel:88005558628" aria-label="Телефон">
+              <a class="contacts__link" href="tel:88005558628" aria-label="Телефон">
                 8 800 555-86-28
               </a>
             </li>
             <li class="contacts__item">
-              <a href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта">
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru"
+              aria-label="Электронная почта">
                 mail@htmlacademy.ru
               </a>
             </li>
@@ -654,9 +665,10 @@
         width="100px" height="19px">
       </a>
       <ul class="page-footer__social-network social-network">
-        <li class="social-network__item">
+        <li class="social-network__item social-network__item--orange">
           <a href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg class="social-network__img--blue" version="1.1" id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11" height="21"
             viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
             <g>
@@ -666,9 +678,10 @@
             </svg>
           </a>
         </li>
-        <li class="social-network__item">
+        <li class="social-network__item social-network__item--orange">
           <a href="https://vk.com" aria-label="Погнали во Вконтакте">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg class="social-network__img--blue" version="1.1" id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23" height="12"
             viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
             <g>
@@ -692,9 +705,10 @@
             </svg>
           </a>
         </li>
-        <li class="social-network__item">
+        <li class="social-network__item social-network__item--orange">
           <a href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg class="social-network__img--blue" version="1.1" id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
             viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
             <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
@@ -709,7 +723,7 @@
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          <svg class="copyright__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="34"
           viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
           <!--<style type="text/css">
