@@ -9,7 +9,7 @@
 }
 
 .contacts__link {
-  color: rgb(25, 33, 68);
+  color: #192144;
   text-decoration: none;
 }
 
@@ -18,11 +18,11 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: rgb(18, 25, 54);
+  background-color: #121936;
 }
 
 .contacts__circle-svg {
-  fill: rgb(255, 215, 75);
+  fill: #ffd74b;
   margin: auto;
 }
 
@@ -31,30 +31,30 @@
   font-family: "Blogger Sans", sans-serif;
   .font(17px; 30px);
   text-transform: uppercase;
-  color: rgb(22, 28, 53);
-  background-color: rgb(255, 215, 75);
+  color: #161c35;
+  background-color: #ffd74b;
   height: 50px;
   border-radius: 25px;
   border: none;
+}
 
-  &--text {
-    height: 40px;
-    width: 189px;
+.contacts__button--text {
+  height: 40px;
+  width: 189px;
+}
+
+.contacts__button--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+
+  &:first-child {
+    background-color: #ff8d30;
   }
 
-  &--img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-
-    &:first-child {
-      background-color: #ff8d30;
-    }
-
-    &:nth-child(2) {
-      background-color: #ffbd30;
-    }
+  &:nth-child(2) {
+    background-color: #ffbd30;
   }
 }
