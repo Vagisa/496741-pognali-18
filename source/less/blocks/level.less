@@ -1,0 +1,49 @@
+.level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 63px;
+  height: 63px;
+  position: absolute;
+}
+
+.level__circle {
+  position: absolute;
+}
+
+.level__circle--bottom {
+  bottom: 0;
+  width: 48px;
+  height: 48px;
+  fill: transparent;
+}
+
+.level__value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  color: @white;
+}
+
+.level__number {
+  margin: 0;
+  .font(24px; 24px);
+}
+
+.level__number--blue {
+  position: absolute;
+  bottom: 10px;
+  color: @blue;
+}
+
+.level__text {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  .font(14px; 14px; 400);
+}
+
+.level__title {
+  align-self: flex-start;
+  margin-top: 0;
+  width: 85px;
+}

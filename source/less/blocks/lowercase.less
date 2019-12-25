@@ -1,0 +1,26 @@
+.lowercase {
+  position: relative;
+  margin: 0;
+  .font(15px; 18px; 400);
+  text-transform: lowercase;
+  text-align: center;
+  color: @gray;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #edeff6;
+  }
+}
+
+.lowercase__title {
+  position: relative;
+  padding-left: 13px;
+  padding-right: 13px;
+  background-color: @white;
+  z-index: 1;
+}
