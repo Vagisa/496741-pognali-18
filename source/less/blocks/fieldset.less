@@ -1,0 +1,36 @@
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldset__legend {
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.fieldset__text {
+  padding: 16px 25px 20px;
+  border: 0;
+  width: 100%;
+  background-color: inherit;
+  resize: none;
+  .font();
+  font-weight: 400;
+  color: @gray;
+  box-sizing: border-box;
+}
+
+.fieldset__transport {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 7px 25px 15px;
+  box-sizing: border-box;
+}

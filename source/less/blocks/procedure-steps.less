@@ -1,3 +1,134 @@
 .procedure-steps {
-  background-color: red;
+  counter-reset: section;
+}
+
+.procedure-steps__item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: @white;
+  padding: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  &::before {
+    counter-increment: section;
+    content: "Шаг" counter(section) ".";
+    padding-right: 5px;
+    font-weight: 500;
+    .font(20px; 20px);
+  }
+}
+
+.procedure-steps__title {
+  margin: 0;
+  .font(20px; 20px);
+}
+
+.procedure-steps__intro {
+  font-weight: 300;
+  color: @gray;
+}
+
+.procedure-steps__label {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .font(16px; 16px; 500);
+  text-transform: uppercase;
+}
+
+.procedure-steps__unit {
+  opacity: 0.3;
+}
+
+.procedure-steps__number {
+  min-height: 47px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.procedure-steps__svg {
+  position: absolute;
+  fill:#606161;
+  opacity: 0.3;
+  padding: 13px;
+
+  &--minus {
+    left: 0;
+  }
+
+  &--plus {
+    right: 0;
+  }
+}
+
+.procedure-steps__input {
+  width: 100%;
+  align-self: stretch;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  font-family: "Blogger Sans", "Tahoma", sans-serif;
+  .font(16px; 16px; 500);
+  color: @blue;
+}
+
+.procedure-steps__with-kids {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 32px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  .font(15px; 15px; 300);
+  color: @gray;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cbced9;
+    border-radius: 4px;
+    fill: @blue;
+  }
+}
+
+.procedure-steps__checkbox {
+  &:checked {
+    &+.procedure-steps__with-kids{
+      &::before {
+        background: url(../img/tick.svg) center center no-repeat;
+        background-size: 9px 9px;
+      }
+    }
+  }
+}
+
+.procedure-steps__button {
+  height: 40px;
+  margin-left: -5px;
+  margin-right: -5px;
+  .font(17px; 30px);
+  font-family: "Blogger Sans", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  color: #161c35;
+  border: none;
+  border-radius: 20px;
+
+  &--next {
+    background-color: #ffd74b;
+  }
+
+  &--back {
+    background-color: @white;
+  }
 }

@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <div class="one-row">
         <a class="page-header__logo">
           <img src="img/logo-mobile-white@1x.png" alt="Логотип Погнали"
@@ -163,70 +165,74 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Погнали</h1>
-      <p class="page-main__slogan">В путешествие с крутыми попутчиками</p>
-      <section class="page-main__contacts contacts">
-        <ul class="contacts__list page-main__contacts-list">
-          <li class="contacts__item contacts__button contacts__button--img">
-            <a class="contacts__link" href="tel:88005558628" aria-label="8 800 555-86-28">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
-              viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-              <g>
-              <g id="UrwUhy_1_">
-              <g>
-              <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
-              c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
-              C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
-              c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z"/>
-              </g>
-              </g>
-              <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"/>
-              <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"/>
-              <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
-              </g>
-              </svg>
-            </a>
-          </li>
-          <li class="contacts__item contacts__button contacts__button--img">
-            <a class="contacts__link" href="mailto:mail@htmlacademy.ru"
-            aria-label="Электронная почта">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="14"
-              viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
-              <g>
-              <g>
-              <g>
-              <path class="st0" d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"/>
-              </g>
-              <g>
-              <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
-              c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
-              c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
-              L11.9,7.1z"/>
-              </g>
-              </g>
-              </g>
-              </svg>
-            </a>
-          </li>
-          <li class="contacts__item">
-            <button class="contacts__button contacts__button--text" type="button">
-              Авторизация
-            </button>
-          </li>
-        </ul>
-      </section>
-      <section class="page-main__reviews reviews">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <blockquote class="reviews__blockquote">
-          <p class="reviews__text">«Лучшее приложение, что я видел в жизни!»</p>
-          <p class="reviews__author-description">
-            <cite class="reviews__author-name">Мурат Эльтазин</cite>
-            главный редактор газеты «гаджетлайф»
-          </p>
-        </blockquote>
-      </section>
-      <section class="page-main__steps steps">
+      <div class="page-main__container container">
+        <p class="page-main__slogan">
+          В путешествие с крутыми попутчиками!
+        </p>
+        <section class="page-main__contacts contacts">
+          <ul class="page-main__contacts-list contacts__list contacts__list--special">
+            <li class="contacts__item contacts__button contacts__button--img">
+              <a class="contacts__link" href="tel:88005558628" aria-label="8 800 555-86-28">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
+                viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+                <g>
+                <g id="UrwUhy_1_">
+                <g>
+                <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
+                c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
+                C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
+                c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z"/>
+                </g>
+                </g>
+                <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"/>
+                <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"/>
+                <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
+                </g>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__item contacts__button contacts__button--img">
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru"
+              aria-label="Электронная почта">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="14"
+                viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+                <g>
+                <g>
+                <g>
+                <path class="st0" d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"/>
+                </g>
+                <g>
+                <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
+                c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
+                c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
+                L11.9,7.1z"/>
+                </g>
+                </g>
+                </g>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <button class="contacts__button contacts__button--text" type="button">
+                Авторизация
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section class="page-main__reviews reviews">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <blockquote class="reviews__blockquote">
+            <p class="reviews__text">«Лучшее приложение, что я видел в жизни!»</p>
+            <p class="reviews__author-description">
+              <cite class="reviews__author-name">Мурат Эльтазин</cite>
+              главный редактор газеты «гаджетлайф»
+            </p>
+          </blockquote>
+        </section>
+      </div>
+      <section class="page-main__steps steps container">
         <h2 class="visually-hidden">Порядок действий при работе с приложением</h2>
         <ol class="steps__list">
           <li class="steps__item">Выберите направление</li>
@@ -235,7 +241,7 @@
           <li class="steps__item">Путешествуйте вместе!</li>
         </ol>
       </section>
-      <section class="page-main__about-service about-service">
+      <section class="page-main__about-service about-service container">
         <h2 class="about-service__title">О сервисе</h2>
         <p class="about-service__slogan">Любое путешествие веселее с попутчиками,
           которые на одной волне с тобой! Делитесь своими идеями путешествий и
@@ -244,7 +250,7 @@
           А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
         </b>
       </section>
-      <section class="page-main__directions directions">
+      <section class="page-main__directions directions container">
         <header class="directions__header">
           <h2 class="directions__title">Направления</h2>
           <p class="directions__intro">
@@ -339,7 +345,7 @@
           </svg>
         </a>
       </section>
-      <section class="page-main__companions companions">
+      <section class="page-main__companions companions container">
         <header class="companions__header">
           <h2 class="companions__title">Попутчики</h2>
           <p class="companions__intro">
@@ -377,8 +383,8 @@
                   <h3 class="companion__name">Таня Фирсова</h3>
                 </div>
                 <div class="companion__level level">
-                  <svg class="level__circle" width="63" height="63">
-                    <circle r="30" cx="31" cy="31" fill="rgba(0, 0, 0, 0.6)"
+                  <svg class="level__circle level__circle--dark" width="63" height="63">
+                    <circle r="30" cx="31" cy="31"
                     stroke="#ff8d30" stroke-width="3" stroke-dasharray="195 5"
                     stroke-dashoffset="55">
                     </circle>
@@ -480,8 +486,8 @@
                   <h3 class="companion__name">Петя Демин</h3>
                 </div>
                 <div class="companion__level level">
-                  <svg class="level__circle" width="63" height="63">
-                  <circle r="30" cx="31" cy="31" fill="rgba(0, 0, 0, 0.6)"
+                  <svg class="level__circle level__circle--dark" width="63" height="63">
+                  <circle r="30" cx="31" cy="31"
                   stroke="#ff8d30" stroke-width="3" stroke-dasharray="160 40"
                   stroke-dashoffset="60">
                   </circle>
@@ -570,7 +576,7 @@
           </svg>
         </a>
       </section>
-      <section class="page-main__price price">
+      <section class="page-main__price price container">
         <h2 class="visually-hidden">Прайс-лист</h2>
         <h3 class="price__title">Добавьте свой профиль</h3>
         <ol class="price__list price__list--ol">
@@ -627,39 +633,106 @@
           <button class="modal__close" type="button">Закрыть окно</button>
         </div>
       </section>
-      <section class="registration">
+      <section class="page-main__registration registration container">
         <h2 class="visually-hidden">Регистрация</h2>
         <b class="registration__intro">Зарегистрировались?</b>
-        <p class="registration__authorization">Зарегистрируйтесь, это быстро и бесплатно!
-          Уже зарегистрированы? Тогда скорее <a href="#">авторизируйтесь</a>.
+        <p class="registration__authorization">
+          <span class="registration__authorization--line">
+            Зарегистрируйтесь,
+          </span>
+          <span class="registration__authorization--line">
+            это быстро и бесплатно!
+          </span>
+          <span class="registration__authorization--line">
+            Уже зарегистрированы? Тогда скорее <a href="#">авторизируйтесь</a>.
+          </span>
         </p>
         <form class="registration__email" action="https://echo.htmlacademy.ru" method="POST">
-          <input class="registration__input" type="email" name="email" placeholder="E-mail">
-          <button class="registration__button button" type="submit">Отправить</button>
+          <input class="registration__input" value="E-mail" type="email" name="email">
+          <button class="registration__button button" type="submit" aria-label="Отправить">
+            <svg class="registration__triangle" version="1.1" id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="10" height="14" viewBox="0 0 10 14"
+            style="enable-background:new 0 0 10 14;" xml:space="preserve">
+            <polygon points="0,14 0,0.1 10,7.1 "/>
+            </svg>
+          </button>
         </form>
         <div class="registration__contacts contacts">
+          <p class="contacts__intro">
+            <span>Остались вопросы?</span>
+            <span>Мы с радостью на них ответим!</span>
+          </p>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <a class="contacts__link" href="tel:88005558628" aria-label="Телефон">
-                8 800 555-86-28
+              
+              <a class="contacts__link"
+              href="tel:88005558628" aria-label="Телефон">
+                <div class="contacts__circle">
+                  <svg class="contacts__circle-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
+                  viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                  <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+                  c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+                  c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+                  c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+                  M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+                  c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+                  c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+                  c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+                  </svg>
+                </div>
+                <div class="contacts__text">8 800 555-86-28</div>
               </a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link" href="mailto:mail@htmlacademy.ru"
-              aria-label="Электронная почта">
-                mail@htmlacademy.ru
-              </a>
+              <a class="contacts__link"
+              href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта">
+                <div class="contacts__circle">
+                  <svg class="contacts__circle-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="13"
+                  viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                  <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+                  c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+                  L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+                  c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+                  </svg>
+                </div>
+                <div class="contacts__text">mail@htmlacademy.ru</div>
+                </a>
             </li>
           </ul>
         </div>
       </section>
-      <section class="address">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="address__postal">ул. Большая Конюшенная, 19/8</p>
-        <a class="address__button button" href="">Проложить маршрут</a>
+      <section class="page-main__address address">
+        <div class="address__text container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="one-row">
+            <div class="address__circle">
+              <svg class="address__pin" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="22"
+              viewBox="0 0 28 43" style="enable-background:new 0 0 28 43;" xml:space="preserve">
+              <path class="st0" d="M11.7,13.9c0-1.2,1-2.2,2.3-2.2s2.3,1,2.3,2.2c0,1.2-1,2.2-2.3,2.2C12.8,16.1,11.7,15.1,11.7,13.9z M14,8.1
+              c-3.2,0-5.9,2.6-5.9,5.8s2.6,5.8,5.9,5.8c3.2,0,5.9-2.6,5.9-5.8C19.9,10.7,17.2,8.1,14,8.1z M0,13.6c0,9.1,10.9,16.2,11.7,26.7v0.4
+              c0,1.2,1,2.2,2.3,2.2s2.3-1,2.3-2.2v-0.4C17.2,29.8,28,22.8,28,13.6C28,6.1,21.7,0,14,0C6.3,0,0,6.1,0,13.6z M14,4.5
+              c5.2,0,9.5,4.2,9.5,9.4c0,5.2-4.2,9.4-9.5,9.4s-9.5-4.2-9.5-9.4C4.5,8.7,8.8,4.5,14,4.5z"/>
+              </svg>
+            </div>
+            <p class="address__postal">ул. Большая Конюшенная, 19/8</p>
+          </div>
+          <a class="address__button button" href="">
+            <p>Проложить маршрут</p>
+            <svg class="address__triangle" version="1.1" id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="10" height="14" viewBox="0 0 10 14"
+            style="enable-background:new 0 0 10 14;" xml:space="preserve">
+            <polygon points="0,14 0,0.1 10,7.1 "/>
+            </svg>
+          </a>
+        </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <a href="index.html" class="page-footer__logo">
         <img src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали"
         width="100px" height="19px">
@@ -726,9 +799,6 @@
           <svg class="copyright__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="34"
           viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
-          <!--<style type="text/css">
-          .st0{fill:#231F20;}
-          </style>-->
           <path class="st0" d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8
           l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8
           l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9

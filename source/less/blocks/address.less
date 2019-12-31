@@ -1,3 +1,64 @@
 .address {
-  background-color: red;
+  min-height: 503px;
+  background-color: #eae6dd;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../img/map-mobile@1x.jpg") 0 180px no-repeat;
+  background-size: 320px auto;
+  color: #192144;
+}
+
+.address__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 156px;
+  margin-top: -25px;
+  padding-bottom: 25px;
+  padding-top: 50px;
+  background-color: #ffd74b;
+  .rounded-bottom(5);
+}
+
+.address__postal {
+  margin: 0;
+  padding-left: 17px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.address__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #121936;
+}
+
+.address__pin {
+  fill: #ffd74b;
+}
+
+.address__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 221px;
+  height: 56px;
+  margin-bottom: 10px;
+  padding-left: 22px;
+  padding-right: 21px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(25, 33, 68);
+  border-radius: 10px;
+  text-decoration: none;
+  .font(18px; 18px);
+  color: #1d2e5b;
+}
+
+.address__triangle {
+  fill: #1d2e5b;
 }

@@ -1,3 +1,50 @@
-.planned {
-  background-color: red;
+.planned__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  counter-reset: section;
+}
+
+.planned__item {
+  display: flex;
+  border-radius: 10px;
+  background-color: @white;
+  min-height: 104px;
+  padding: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+  
+  &::before {
+    counter-increment: section;
+    content: "" counter(section) ".";
+    padding-right: 5px;
+    font-weight: 500;
+  }
+}
+
+.planned__route {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.planned__companions,
+.planned__date {
+  width: 100%;
+  .font(14px; 14px; 500);
+  text-transform: uppercase;
+}
+
+.planned__button {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  .font(14px; 18px; 500);
+  text-transform: uppercase;
+  text-align: left;
+  color: #000000;
+  opacity: 0.3;
 }

@@ -2,44 +2,62 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
   width: 63px;
   height: 63px;
-  position: absolute;
+  &--big {
+    width: 105px;
+    height: 105px;
+  }
 }
 
 .level__circle {
   position: absolute;
-}
-
-.level__circle--bottom {
-  bottom: 0;
-  width: 48px;
-  height: 48px;
   fill: transparent;
+
+  &--bottom {
+    bottom: 0;
+    width: 48px;
+    height: 48px;
+  }
+
+  &--dark {
+    fill: rgba(0, 0, 0, 0.6);
+  }
 }
 
 .level__value {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
   z-index: 1;
   color: @white;
+  &--blue {
+    color: #161c35;
+  }
 }
 
 .level__number {
   margin: 0;
   .font(24px; 24px);
-}
-
-.level__number--blue {
-  position: absolute;
-  bottom: 10px;
-  color: @blue;
+  &--blue {
+    bottom: 10px;
+    .font(38px; 38px);
+    color: @blue;
+  }
 }
 
 .level__text {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   .font(14px; 14px; 400);
+  text-align: center;
+  &--gray {
+    width: 49px;
+    border-top: 2px solid #cbced9;
+    .font(18px; 22px);
+    color: @gray;
+  }
 }
 
 .level__title {
