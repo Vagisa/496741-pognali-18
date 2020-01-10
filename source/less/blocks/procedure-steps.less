@@ -26,6 +26,7 @@
 }
 
 .procedure-steps__intro {
+  line-height: 22px;
   font-weight: 300;
   color: @gray;
 }
@@ -47,6 +48,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   .font(16px; 16px; 500);
+  z-index: 1;
 
   &::after {
     position: absolute;
@@ -58,9 +60,23 @@
     width: 6px;
     height: 6px;
     border: solid 1px #cbced9;
+    z-index: 2;
   }
 
   &--selected {
+    &::before {
+      position: absolute;
+      top: 1px;
+      right: 53px;
+      content: "";
+      width: 50px;
+      height: 41px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      box-shadow: inset -55px 0 10px -10px @white;
+      z-index: 1;
+    }
+
     &::after {
       width: 8px;
       height: 8px;
@@ -69,7 +85,6 @@
     }
   }
 }
-
 .procedure-steps__unit {
   opacity: 0.3;
 }
@@ -91,6 +106,7 @@
     position: absolute;
     padding: 13px;
     left: 0;
+    z-index: 1;
   }
 
   &--plus {
@@ -101,6 +117,7 @@
 }
 
 .procedure-steps__input {
+  position: relative;
   width: 100%;
   min-height: 43px;
   padding-left: 10px;
@@ -173,6 +190,18 @@
   text-transform: uppercase;
   color: @blue;
   background-color: transparent;
+
+  &::before {
+    position: absolute;
+    top: 1px;
+    right: 53px;
+    content: "";
+    width: 50px;
+    height: 41px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 1;
+  }
 
   &--add {
     border: none;

@@ -992,25 +992,35 @@
               </li>
               <li class="procedure-steps__item">
                 <h4 class="procedure-steps__title">Развелечения</h4>
-                <p class="procedure-steps__intro">Наконец, расскажите о своих планах времяпровождения.
-                    Можно писать в свободной форме и ставить тэги.</p>
-                <div class="procedure-steps__entertainment entertainment">
-                  <label for="Bosnia-and-Herzegovina-plan">
-                    Босния и герцеговина
-                    <img src="img/flag-bosnia.svg"
-                    alt="Флаг Боснии и Герцеговины" width="35px" height="24px">
-                  </label>
-                  <textarea name="plan" cols="20" rows="10" id="Bosnia-and-Herzegovina-plan"
-                  placeholder="План действий"></textarea>
-                  <label for="Czech-Republic-plan">
-                    Чехия
-                    <img src="img/flag-czech.svg"
-                    alt="Флаг Чехии" width="35px" height="24px">
-                  </label>
-                  <textarea name="plan" cols="20" rows="10" id="Czech-Republic-plan">
-                    Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
-                  </textarea>
-                </div>
+                <p class="procedure-steps__intro">
+                  Наконец, расскажите о своих планах времяпровождения.
+                  Можно писать в свободной форме и ставить тэги.
+                </p>
+                <ul class="procedure-steps__entertainment entertainment">
+                  <li class="entertainment__item">
+                    <label class="entertainment__label" for="Bosnia-and-Herzegovina-plan">
+                      <span class="entertainment__titel">
+                        Босния и герцеговина
+                      </span>
+                      <img class="entertainment__flag" src="img/flag-bosnia.svg"
+                      alt="Флаг Боснии и Герцеговины" width="35px" height="24px">
+                    </label>
+                    <textarea class="entertainment__text" name="plan" cols="10" rows="5"
+                    id="Bosnia-and-Herzegovina-plan"
+                    placeholder="План действий"></textarea>
+                  </li>
+                  <li class="entertainment__item">
+                    <label class="entertainment__label" for="Czech-Republic-plan">
+                      <span class="entertainment__titel">
+                        Чехия
+                      </span>
+                      <img class="entertainment__flag" src="img/flag-czech.svg"
+                      alt="Флаг Чехии" width="35px" height="24px">
+                    </label class="entertainment__label">
+                    <textarea class="entertainment__text" name="plan" cols="20" rows="10"
+                    id="Czech-Republic-plan">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  </li>
+                </ul>
                 <button class="procedure-steps__button procedure-steps__button--next" type="submit">Отправить</button>
                 <button class="procedure-steps__button procedure-steps__button--back" type="button">
                   На шаг назад
