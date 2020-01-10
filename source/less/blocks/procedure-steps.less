@@ -31,12 +31,43 @@
 }
 
 .procedure-steps__label {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   .font(16px; 16px; 500);
   text-transform: uppercase;
+}
+
+.procedure-steps__option {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  .font(16px; 16px; 500);
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 163px;
+    margin-top: -4px;
+    content: "";
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    border: solid 1px #cbced9;
+  }
+
+  &--selected {
+    &::after {
+      width: 8px;
+      height: 8px;
+      background-color: @blue;
+      border: none;
+    }
+  }
 }
 
 .procedure-steps__unit {
@@ -44,7 +75,7 @@
 }
 
 .procedure-steps__number {
-  min-height: 47px;
+  min-height: 43px;
   margin-bottom: 12px;
   display: flex;
   align-items: center;
@@ -52,32 +83,101 @@
 }
 
 .procedure-steps__svg {
-  position: absolute;
   fill:#606161;
+  padding: 4px;
   opacity: 0.3;
-  padding: 13px;
 
   &--minus {
+    position: absolute;
+    padding: 13px;
     left: 0;
   }
 
   &--plus {
+    position: absolute;
+    padding: 13px;
     right: 0;
   }
 }
 
 .procedure-steps__input {
   width: 100%;
+  min-height: 43px;
+  padding-left: 10px;
+  padding-right: 10px;
   align-self: stretch;
   text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
   box-sizing: border-box;
   border: 1px solid #cbced9;
   border-radius: 4px;
   font-family: "Blogger Sans", "Tahoma", sans-serif;
   .font(16px; 16px; 500);
   color: @blue;
+  text-transform: uppercase;
+
+  &--text {
+    text-align: left;
+  }
+}
+
+.procedure-steps__flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 53px;
+  height: 43px;
+  margin-left: -1px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.procedure-steps__delete {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #edeff6;
+  border: none;
+  fill: #abacb2;
+}
+
+.procedure-steps__arrow {
+  position: absolute;
+  bottom: -16px;
+  left: 165px;
+  fill: #cbced9;
+}
+
+.procedure-steps__select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  min-height: 43px;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-self: stretch;
+  text-align: left;
+  box-sizing: border-box;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  font-family: "Blogger Sans", "Tahoma", sans-serif;
+  .font(16px; 16px; 500);
+  text-transform: uppercase;
+  color: @blue;
+  background-color: transparent;
+
+  &--add {
+    border: none;
+    background-color: #edeff6;
+  }
 }
 
 .procedure-steps__with-kids {
@@ -125,10 +225,12 @@
   border-radius: 20px;
 
   &--next {
+    margin-top: 15px;
     background-color: #ffd74b;
   }
 
   &--back {
+    margin-top: 10px;
     background-color: @white;
   }
 }

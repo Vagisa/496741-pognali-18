@@ -794,19 +794,74 @@
                 <h4 class="procedure-steps__title">Маршрут</h4>
                 <p class="procedure-steps__intro">Укажите страны, которые вы хотели по посетить.
                 Это может быть одна или сразу несколько.</p>
-                <input type="text" name="countries" value="Босния и Герцеговина"
-                id="Bosnia-and-Herzegovina">
-                <label for="Bosnia-and-Herzegovina"><img src="" alt="Флаг страны"></label>
-                <button class="select-item__button" type="button"
-                aria-label="Удалить стhану"></button>
-                <input type="text" name="countries" value="Чехия"
-                id="Czech-Republic">
-                <label for="Czech-Republic"><img src="" alt="Флаг страны"></label>
-                <button class="select-item__button" type="button"
-                aria-label="Удалить стhану"></button>
-                <button class="select-item__button modal-oppen" type="button">
-                  Выберите страну
-                </button>
+                <label class="procedure-steps__option procedure-steps__option--selected">
+                  <input class="procedure-steps__input procedure-steps__input--text"
+                  type="text" name="countries" value="Босния и Герцеговина">
+                  <div class="procedure-steps__flag">
+                    <img src="img/flag-bosnia.svg"
+                    alt="Флаг страны" width="35px" height="24px">
+                  </div> 
+                  <button class="procedure-steps__delete" type="button"
+                  aria-label="Удалить страну">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9"
+                    style="enable-background:new 0 0 9 9;" xml:space="preserve" width="9px" height="9px">
+                    <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
+                    C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
+                    L5.2,4.5z"/></svg>
+                  </button>
+                  <svg  class="procedure-steps__arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="5px" height="10px"
+                  viewBox="0 0 5 10" style="enable-background:new 0 0 5 10;" xml:space="preserve">
+                  <polygon class="st0" points="3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 "/>
+                  </svg>
+                </label>
+                <label class="procedure-steps__option procedure-steps__option--selected">
+                  <input class="procedure-steps__input procedure-steps__input--text"
+                  type="text" name="countries" value="Чехия">
+                  <div class="procedure-steps__flag">
+                    <img src="img/flag-czech.svg" alt="Флаг страны"
+                    width="35px" height="24px">
+                  </div>
+                  <button class="procedure-steps__delete" type="button"
+                  aria-label="Удалить страну">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9"
+                    style="enable-background:new 0 0 9 9;" xml:space="preserve" width="9px" height="9px">
+                    <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
+                    C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
+                    L5.2,4.5z"/></svg>
+                  </button>
+                  <svg class="procedure-steps__arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="5px" height="10px"
+                  viewBox="0 0 5 10" style="enable-background:new 0 0 5 10;" xml:space="preserve">
+                  <polygon class="st0" points="3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 "/>
+                  </svg>
+                </label>
+                <div class="procedure-steps__option">
+                  <button class="procedure-steps__select modal-oppen" type="button">
+                    <span>Выберите страну</span>
+                    <svg class="procedure-steps__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 9"
+                    style="enable-background:new 0 0 17 9;" xml:space="preserve" width="12px" height="7px">
+                    <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7
+                    s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/></svg>
+                  </button>
+                  <button class="procedure-steps__delete" type="button"
+                  aria-label="Удалить страну">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9"
+                    style="enable-background:new 0 0 9 9;" xml:space="preserve" width="9px" height="9px">
+                    <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
+                    C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
+                    L5.2,4.5z"/></svg>
+                  </button>
+                  <svg  class="procedure-steps__arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="5px" height="10px"
+                  viewBox="0 0 5 10" style="enable-background:new 0 0 5 10;" xml:space="preserve">
+                  <polygon class="st0" points="3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 "/>
+                  </svg>
+                </div>
                 <div class="modal modal-show">
                   <h2 class="modal__title">Выберите страну</h2>
                   <button class="modal__close" type="button" aria-label="Закрыть окно"></button>
@@ -919,11 +974,17 @@
                     </ul>
                   </div>
                 </div>
-                <button class="select-item__button" type="button"
-                aria-label="Удалить стhану"></button>
-                <button class="select-item__button" type="button"
-                aria-label="Удалить стhану"></button>
-                <button class="select__button" type="button">Добавить страну</button>
+                <div class="procedure-steps__option">
+                  <button class="procedure-steps__select procedure-steps__select--add" type="button">
+                    <span>Добавить страну</span>
+                    <svg class="procedure-steps__svg"
+                    version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="14"
+                    viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
+                    <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
+                    </svg>
+                  </button>
+                </div>
                 <button class="procedure-steps__button procedure-steps__button--next" type="button">Следующий шаг</button>
                 <button class="procedure-steps__button procedure-steps__button--back" type="button">
                   На шаг назад
@@ -936,13 +997,15 @@
                 <div class="procedure-steps__entertainment entertainment">
                   <label for="Bosnia-and-Herzegovina-plan">
                     Босния и герцеговина
-                    <img src="" alt="Флаг Боснии и Герцеговины">
+                    <img src="img/flag-bosnia.svg"
+                    alt="Флаг Боснии и Герцеговины" width="35px" height="24px">
                   </label>
                   <textarea name="plan" cols="20" rows="10" id="Bosnia-and-Herzegovina-plan"
                   placeholder="План действий"></textarea>
                   <label for="Czech-Republic-plan">
                     Чехия
-                    <img src="" alt="Флаг Чехии">
+                    <img src="img/flag-czech.svg"
+                    alt="Флаг Чехии" width="35px" height="24px">
                   </label>
                   <textarea name="plan" cols="20" rows="10" id="Czech-Republic-plan">
                     Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
