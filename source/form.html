@@ -862,85 +862,95 @@
                   <polygon class="st0" points="3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 "/>
                   </svg>
                 </div>
-                <div class="modal modal-show">
-                  <h2 class="modal__title">Выберите страну</h2>
-                  <button class="modal__close" type="button" aria-label="Закрыть окно"></button>
+                <div class="modal modal-show modal--countries">
+                  <div class="modal__header">
+                    <h2 class="modal__title">Выберите страну</h2>
+                    <button class="modal__close-back" type="button" aria-label="Закрыть окно">
+                      <svg class="modal__close modal__close--white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="9"
+                      viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
+                      <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
+                      C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2 L5.2,4.5z"/>
+                      </svg>
+                    </button>
+                  </div>
                   <div class="countries">
                     <ul class="countries__alphabet alphabet">
-                      <li class="alphabet__letter alphabet__letter--active">
-                        <button type="button" class="alphabet__button">А</button>
+                      <li class="alphabet__item alphabet__item--active">
+                        <button class="alphabet__letter alphabet__letter--lightblue"
+                        type="button" class="alphabet__button">А</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Б</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Б</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">В</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">В</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Г</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Г</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Д</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Д</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Е</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Е</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">З</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">З</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">И</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">И</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">К</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">К</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Л</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Л</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">М</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">М</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Н</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Н</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">О</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">О</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">П</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">П</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Р</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Р</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">С</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">С</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Т</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Т</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">У</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">У</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Ф</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Ф</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Х</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Х</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Ч</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Ч</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Ш</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Ш</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Э</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Э</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Ю</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Ю</button>
                       </li>
-                      <li class="alphabet__letter">
-                        <button type="button" class="alphabet__button">Я</button>
+                      <li class="alphabet__item">
+                        <button class="alphabet__letter" type="button" class="alphabet__button">Я</button>
                       </li>
                     </ul>
                     <ul class="countries__countries-list countries-list">

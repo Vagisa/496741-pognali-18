@@ -1,3 +1,30 @@
 .alphabet {
-  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: -0.5px;
+  margin-right: -0.5px;
+  padding: 0;
+  border-top: 0.5px solid #cbced9;
+  border-bottom: 0.5px solid #cbced9;
+  background-color: @white;
+}
+
+.alphabet__letter {
+  width: 44.2px;
+  height: 40px;
+  border: 0.5px solid #cbced9;
+  flex-grow: 1;
+  background-color: inherit;
+
+  &--blue {
+    color: @white;
+    background-color: @blue;
+    border-color: @blue;
+  }
+
+  &--lightblue {
+    background-color: #edeff6;
+  }
 }

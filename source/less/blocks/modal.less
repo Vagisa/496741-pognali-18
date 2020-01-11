@@ -1,14 +1,52 @@
 .modal {
-  display: none;
+  //display: none;
   position: absolute;
-  width: 270px;
-  min-height: 443px;
   overflow: hidden;
-  border-radius: 20px;
+  align-self: center;
+  z-index: 2;
   background-color: @white;
+  box-shadow: 0px 20px 50px 0px rgba(29, 46, 91, 0.1);
+
+  &--countries {
+    width: 220px;
+    min-height: 517px;
+    border: 1px solid #cbced9;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+  }
+
+  &--price {
+    width: 270px;
+    min-height: 443px;
+    margin-top: -35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+  }
 }
 
-.modal__close {
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 42px;
+  padding-left: 22px;
+  padding-right: 16px;
+  color: @white;
+  background-color: @blue;
+}
+
+.modal__title {
+  margin: 0;
+  .font(14px; 18px; 500);
+  text-transform: uppercase;
+}
+
+.modal__close-button {
   align-self: stretch;
   height: 60px;
   border: none;
@@ -16,4 +54,15 @@
   color: @blue;
   text-transform: uppercase;
   .font(16px; 24px; 700);
+}
+
+.modal__close-back {
+  background-color: transparent;
+  border: none;
+}
+
+.modal__close {
+  &--white {
+    fill: @white;
+  }
 }
