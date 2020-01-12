@@ -172,9 +172,33 @@
       </h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
-        <div class="filter__countries countries container">
-          <h3 class="countries__title">Фильтрация по странам</h3>
-          <button class="countries__toggle" type="button" aria-label="тумблер"></button>
+        <div class="filter__countries countries countries--popup container">
+          <h3 class="countries__title countries__title--popup">
+            <svg class="countries__svg-filter" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="15" height="10"
+            viewBox="0 0 15 10" style="enable-background:new 0 0 15 10;" xml:space="preserve">
+            <rect x="4" width="2" height="2"/>
+            <rect width="3" height="2"/>
+            <rect x="7" width="8" height="2"/>
+            <rect x="4" y="8" width="2" height="2"/>
+            <rect y="8" width="3" height="2"/>
+            <rect x="7" y="8" width="8" height="2"/>
+            <rect x="9" y="4" width="2" height="2"/>
+            <rect x="12" y="4" width="3" height="2"/>
+            <rect y="4" width="8" height="2"/>
+            </svg>
+            Фильтрация по странам
+            <button class="countries__toggle countries__toggle--opens" type="button" aria-label="тумблер">
+              <svg class="countries__svg-dots" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="3"
+              viewBox="0 0 27 5" style="enable-background:new 0 0 27 5;" xml:space="preserve">
+              <circle class="st0" cx="2.5" cy="2.5" r="2.5"/>
+              <circle class="st0" cx="13.5" cy="2.5" r="2.5"/>
+              <circle class="st0" cx="24.5" cy="2.5" r="2.5"/>
+              </svg>
+            </button>
+          </h3>
           <div class="countries__popup">
             <ul class="countries__parts-world">
               <li class="countries__part-world">
@@ -198,7 +222,7 @@
                 </button>
               </li>
             </ul>
-            <ul class="countries__alphabet alphabet">
+            <ul class="countries__alphabet alphabet alphabet--popup">
               <li class="alphabet__item alphabet__item--active">
                 <button class="alphabet__letter alphabet__letter--blue" type="button">А</button>
               </li>
@@ -304,7 +328,18 @@
                 <a class="countries-list__state" href="#">Азербайджан</a>
               </li>
             </ul>
-            <button class="countries__button" type="button">Свернуть</button>
+            <button class="countries-list__button" type="button">
+              <svg class="countries-list__svg-collapse" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12" height="12"
+              viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+              <path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9
+              L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9
+              L6.9,6z"/>
+              </svg>
+              <span class="countries-list__button-text">
+                Свернуть
+              </span>
+            </button>
           </div>
         </div>
         <form class="filter__form" action="https://echo.htmlacademy.ru" method="POST">
