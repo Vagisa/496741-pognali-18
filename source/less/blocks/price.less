@@ -16,9 +16,24 @@
 }
 
 .price__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 50px;
   .font(24px; 24px; 700; normal);
   color: #ff8d30;
+
+  &::after {
+    flex-shrink: 0;
+    content: "";
+    width: 103px;
+    height: 103px;
+    margin-left: 20px;
+    background-image: url(../img/rates@1x.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 103px;
+  }
 }
 
 .price__list {

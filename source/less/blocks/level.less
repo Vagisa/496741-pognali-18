@@ -17,6 +17,7 @@
 
   &--bottom {
     bottom: 0;
+    left: 10px;
     width: 48px;
     height: 48px;
   }
@@ -41,9 +42,18 @@
 .level__number {
   margin: 0;
   .font(24px; 24px);
+
   &--blue {
     bottom: 10px;
     .font(38px; 38px);
+    color: @blue;
+  }
+
+  &--little {
+    position: absolute;
+    top: 55px;
+    left: 22px;
+    .font(24px; 24px; 700);
     color: @blue;
   }
 }
@@ -52,6 +62,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   .font(14px; 14px; 400);
   text-align: center;
+  
   &--gray {
     width: 49px;
     border-top: 2px solid #cbced9;
@@ -62,6 +73,5 @@
 
 .level__title {
   align-self: flex-start;
-  margin-top: 0;
   width: 85px;
 }

@@ -198,6 +198,15 @@
               <circle class="st0" cx="24.5" cy="2.5" r="2.5"/>
               </svg>
             </button>
+            <button class="countries__toggle countries__toggle--close" type="button" aria-label="тумблер">
+              <svg class="countries__svg-collapse" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12" height="12"
+              viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+              <path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9
+              L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9
+              L6.9,6z"/>
+              </svg>
+            </button>
           </h3>
           <div class="countries__popup">
             <ul class="countries__parts-world">
@@ -329,87 +338,245 @@
               </li>
             </ul>
             <button class="countries-list__button" type="button">
-              <svg class="countries-list__svg-collapse" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              <svg class="countries__svg-collapse" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12" height="12"
               viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
               <path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9
               L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9
               L6.9,6z"/>
               </svg>
-              <span class="countries-list__button-text">
+              <span class="countries__button-text">
                 Свернуть
               </span>
             </button>
           </div>
         </div>
         <form class="filter__form" action="https://echo.htmlacademy.ru" method="POST">
+          <h3 class="filter__title">
+            Подберите идеального попутчика
+          </h3>
           <fieldset class="filter__fieldset">
             <legend class="filter__legend">
-              Хобби
-              <button class="filter__toggle" type="button" aria-label="тумблер"></button>
+              <button class="filter__toggle" type="button" aria-label="тумблер">
+                Хобби
+                <svg class="filter__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8" height="4"
+                viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                <polygon points="5,5 0,0 10,0 "/>
+                </svg>
+              </button>
+              <button class="filter__toggle-close" type="button" aria-label="тумблер">
+                <span class="filter__toggle-text">
+                  Хобби
+                </span>
+                <svg class="filter__svg filter__svg--rotate" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8" height="4"
+                viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                <polygon points="5,5 0,0 10,0 "/>
+                </svg>
+              </button>
             </legend>
           </fieldset>
           <fieldset class="filter__fieldset">
             <legend class="filter__legend">
-              Музыка
-              <button class="filter__toggle" type="button" aria-label="тумблер"></button>
+              <button class="filter__toggle" type="button" aria-label="тумблер">
+                Музыка
+                <svg class="filter__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8" height="4"
+                viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                <polygon points="5,5 0,0 10,0 "/>
+                </svg>
+              </button>
+              <button class="filter__toggle-close" type="button" aria-label="тумблер">
+                <span class="filter__toggle-text">
+                  Музыка
+                </span>
+                <svg class="filter__svg filter__svg--rotate" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8" height="4"
+                viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                <polygon points="5,5 0,0 10,0 "/>
+                </svg>
+              </button>
+              <div class="filter__options">
+                <input class="visually-hidden filter__checkbox" type="checkbox" id="rock"
+                name="music" value="rock" checked>
+                <label class="filter__label" for="rock">
+                  <span class="filter__label-text">
+                    Тяжелый рок
+                  </span>
+                </label>
+                <input class="visually-hidden filter__checkbox" type="checkbox" id="rap"
+                name="music" value="rap">
+                <label class="filter__label" for="rap">
+                  <span class="filter__label-text">
+                    Русский реп
+                  </span>
+                </label>
+                <input class="visually-hidden filter__checkbox" type="checkbox" id="eurodens"
+                name="music" value="eurodens">
+                <label class="filter__label" for="eurodens">
+                  <span class="filter__label-text">
+                    Евроденс
+                  </span>
+                </label>
+              </div>
             </legend>
-            <input class="visually-hidden" type="checkbox" id="rock"
-            name="music" value="rock" checked>
-            <label for="rock">Тяжелый рок</label>
-            <input class="visually-hidden" type="checkbox" id="rap"
-            name="music" value="rap">
-            <label for="rap">Русский реп</label>
-            <input class="visually-hidden" type="checkbox" id="eurodens"
-            name="music" value="eurodens">
-            <label for="eurodens">Евроденс</label>
           </fieldset>
           <fieldset class="filter__fieldset">
             <legend class="filter__legend">
-              Еда
-              <button class="filter__toggle" type="button" aria-label="тумблер"></button>
+              <button class="filter__toggle" type="button" aria-label="тумблер">
+                Еда
+                <svg class="filter__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8" height="4"
+                viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                <polygon points="5,5 0,0 10,0 "/>
+                </svg>
+              </button>
+              <button class="filter__toggle-close" type="button" aria-label="тумблер">
+                <span class="filter__toggle-text">
+                  Еда
+                </span>
+                <svg class="filter__svg filter__svg--rotate" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8" height="4"
+                viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                <polygon points="5,5 0,0 10,0 "/>
+                </svg>
+              </button>
             </legend>
           </fieldset>
           <fieldset class="filter__fieldset transport">
             <legend class="filter__legend">
-              Транспорт
-              <button class="filter__toggle" type="button" aria-label="тумблер"></button>
+              <button class="filter__toggle" type="button" aria-label="тумблер">
+                Транспорт
+                <svg class="filter__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8" height="4"
+                viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                <polygon points="5,5 0,0 10,0 "/>
+                </svg>
+              </button>
+              <button class="filter__toggle-close" type="button" aria-label="тумблер">
+                <span class="filter__toggle-text">
+                  Транспорт
+                </span>
+                <svg class="filter__svg filter__svg--rotate" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8" height="4"
+                viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                <polygon points="5,5 0,0 10,0 "/>
+                </svg>
+              </button>
+              <div class="filter__options">
+                <div class="transport__list">
+                  <input class="visually-hidden transport__option" type="checkbox" id="plane"
+                  name="transport" value="plane" checked>
+                  <label class="transport__label" for="plane">
+                    <div class="transport__item">
+                      <svg class="transport__img" version="1.1" id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14"
+                      height="16" viewBox="0 0 19 21" style="enable-background:new
+                      0 0 19 21;"xml:space="preserve">
+                      <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                      c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                      C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                      c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                      c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                      c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                      c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                      </svg>
+                    </div>
+                  </label>
+                  <input class="visually-hidden transport__option" type="checkbox" id="ground-transportation"
+                  name="transport" value="ground-transportation" checked>
+                  <label class="transport__label" for="ground-transportation">
+                    <div class="transport__item">
+                      <svg class="transport__img" version="1.1" id="svg2103"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13"
+                      height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
+                      xml:space="preserve">
+                      <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                      c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                      C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                      M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                      H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                      </svg>
+                    </div>
+                  </label>
+                  <input class="visually-hidden transport__option" type="checkbox" id="bike"
+                  name="transport" value="bike">
+                  <label class="transport__label" for="bike">
+                    <div class="transport__item">
+                      <svg class="transport__img" version="1.1" id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19"
+                      height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
+                      xml:space="preserve">
+                      <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                      S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                      l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                      l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                      s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                      </svg>
+                    </div>
+                  </label>
+                  <input class="visually-hidden transport__option" type="checkbox" id="on-foot"
+                  name="transport" value="on-foot" checked>
+                  <label class="transport__label" for="on-foot">
+                    <div class="transport__item">
+                      <svg class="transport__img" version="1.1" id="Icons_Run"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15"
+                      height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
+                      xml:space="preserve">
+                      <g>
+                      <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                      <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                      C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                      c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                      c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                      z"/>
+                      </g>
+                      </svg>
+                    </div>
+                  </label>
+                </div>
+              </div>
             </legend>
-            <input class="visually-hidden" type="checkbox" id="plane"
-            name="transport" value="plane" checked>
-            <label class="transport__item" for="plane">
-              <img src="" alt="На самолёте" width="32" height="32">
-            </label>
-            <input class="visually-hidden" type="checkbox" id="ground-transportation"
-            name="transport" value="ground-transportation" checked>
-            <label class="transport__item" for="ground-transportation">
-              <img src="" alt="Наземным транспортом" width="32" height="32">
-            </label>
-            <input class="visually-hidden" type="checkbox" id="bike"
-            name="transport" value="bike">
-            <label class="transport__item" for="bike">
-              <img src="" alt="На велосипеде" width="32" height="32">
-            </label>
-            <input class="visually-hidden" type="checkbox" id="on-foot"
-            name="transport" value="on-foot" checked>
-            <label class="transport__item" for="on-foot">
-              <img src="" alt="Пешком" width="32" height="32">
-            </label>
           </fieldset>
           <fieldset class="filter__fieldset">
             <legend class="filter__legend">
-              Левел
-              <button class="filter__toggle" type="button" aria-label="тумблер"></button>
-            </legend>
-            <input type="text" name="search" value="30">
-            <input type="text" name="search" value="100">
-            <div class="filter__range range">
-              <div class="range__scale">
-                <div class="range__bar"></div>
+              <button class="filter__toggle" type="button" aria-label="тумблер">
+                Левел
+                <svg class="filter__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8" height="4"
+                viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                <polygon points="5,5 0,0 10,0 "/>
+                </svg>
+              </button>
+              <button class="filter__toggle-close" type="button" aria-label="тумблер">
+                <span class="filter__toggle-text">
+                  Левел
+                </span>
+                <svg class="filter__svg filter__svg--rotate" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8" height="4"
+                viewBox="0 0 10 5" style="enable-background:new 0 0 10 5;" xml:space="preserve">
+                <polygon points="5,5 0,0 10,0 "/>
+                </svg>
+              </button>
+              <div class="filter__options">
+                <div class="filter__level">
+                  <input class="filter__input" type="text" name="search" value="30">
+                  <input class="filter__input" type="text" name="search" value="100">
+                </div>
+                <div class="filter__range range">
+                  <div class="range__scale"></div>
+                  <div class="range__bar">
+                    <div class="range__toggle range__toggle--min"></div>
+                    <div class="range__toggle range__toggle--max"></div>
+                  </div>
+                </div>
               </div>
-              <div class="range__toggle range__toggle--min"></div>
-              <div class="range__toggle range__toggle--max"></div>
-            </div>
+            </legend>
           </fieldset>
           <button class="filter__button" type="submit">Показать</button>
         </form>
@@ -473,83 +640,87 @@
                 </li>
               </ul>
             </div>
-            <div class="traveler__way-to-travel transport">
-              <h4 class="transport__title lowercase">
-                <span class="lowercase__title">Транспорт:</span>
-              </h4>
-              <ul class="transport__list">
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img--active" version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14"
-                  height="16" viewBox="0 0 19 21" style="enable-background:new
-                  0 0 19 21;"xml:space="preserve">
-                  <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                  c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                  C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                  c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                  c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                  c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                  c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
-                  </svg>
-                </li>
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img" version="1.1" id="svg2103"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13"
-                  height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
-                  xml:space="preserve">
-                  <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                  c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                  C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                  M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                  H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
-                  </svg>
-                </li>
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img" version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19"
-                  height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
-                  xml:space="preserve">
-                  <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                  S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                  l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                  l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                  s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
-                  </svg>
-                </li>
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img" version="1.1" id="Icons_Run"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15"
-                  height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
-                  xml:space="preserve">
-                  <g>
-                  <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                  <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-                  C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-                  c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-                  c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-                  z"/>
-                  </g>
-                  </svg>
-                </li>
-              </ul>
-            </div>
-            <div class="traveler__level level">
-              <h4 class="level__title lowercase">
-                <span class="lowercase__title">Левел:</span>
-              </h4>
-              <svg class="level__circle level__circle--bottom" width="48" height="48">
-                <circle r="22.5" cx="24" cy="24" fill="rgba(0, 0, 0, 0)"
-                stroke="#ff8d30" stroke-width="3" stroke-dasharray="135 5"
-                stroke-dashoffset="35">
-                </circle>
-              </svg>
-              <p class="level__value">
-                <span class="level__number level__number--blue">99</span>
-              </p>
+            <div class="traveler__one-row">
+              <div class="traveler__way-to-travel transport">
+                <h4 class="transport__title lowercase">
+                  <span class="lowercase__title">Транспорт:</span>
+                </h4>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img--active" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14"
+                    height="16" viewBox="0 0 19 21" style="enable-background:new
+                    0 0 19 21;"xml:space="preserve">
+                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                    </svg>
+                  </li>
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img" version="1.1" id="svg2103"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13"
+                    height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
+                    xml:space="preserve">
+                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                    </svg>
+                  </li>
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19"
+                    height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
+                    xml:space="preserve">
+                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                    </svg>
+                  </li>
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img" version="1.1" id="Icons_Run"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15"
+                    height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
+                    xml:space="preserve">
+                    <g>
+                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                    <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                    C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                    c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                    c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                    z"/>
+                    </g>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="traveler__level level">
+                <h4 class="level__title lowercase">
+                  <span class="lowercase__title lowercase__title--right">
+                    Левел:
+                  </span>
+                </h4>
+                <svg class="level__circle level__circle--bottom" width="48" height="48">
+                  <circle r="22.5" cx="24" cy="24" fill="rgba(0, 0, 0, 0)"
+                  stroke="#ff8d30" stroke-width="3" stroke-dasharray="135 5"
+                  stroke-dashoffset="35">
+                  </circle>
+                </svg>
+                <p class="level__value">
+                  <span class="level__number level__number--little">99</span>
+                </p>
+              </div>
             </div>
             <button class="traveler__button" type="button" aria-label="Отправить приглашение">
               Позвать!
@@ -607,83 +778,87 @@
                 </li>
               </ul>
             </div>
-            <div class="traveler__way-to-travel transport">
-              <h4 class="transport__title lowercase">
-                <span class="lowercase__title">Транспорт:</span>
-              </h4>
-              <ul class="transport__list">
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img--active" version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14"
-                  height="16" viewBox="0 0 19 21" style="enable-background:new
-                  0 0 19 21;"xml:space="preserve">
-                  <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                  c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                  C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                  c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                  c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                  c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                  c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
-                  </svg>
-                </li>
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img--active" version="1.1" id="svg2103"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13"
-                  height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
-                  xml:space="preserve">
-                  <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                  c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                  C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                  M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                  H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
-                  </svg>
-                </li>
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img" version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19"
-                  height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
-                  xml:space="preserve">
-                  <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                  S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                  l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                  l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                  s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
-                  </svg>
-                </li>
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img--active" version="1.1" id="Icons_Run"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15"
-                  height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
-                  xml:space="preserve">
-                  <g>
-                  <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                  <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-                  C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-                  c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-                  c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-                  z"/>
-                  </g>
-                  </svg>
-                </li>
-              </ul>
-            </div>
-            <div class="traveler__level level">
-              <h4 class="level__title lowercase">
-                <span class="lowercase__title">Левел:</span>
-              </h4>
-              <svg class="level__circle level__circle--bottom" width="48" height="48">
-                <circle r="22.5" cx="24" cy="24" fill="rgba(0, 0, 0, 0)"
-                stroke="#ff8d30" stroke-width="3" stroke-dasharray="120 20"
-                stroke-dashoffset="35">
-                </circle>
-              </svg>
-              <p class="level__value">
-                <span class="level__number level__number--blue">80</span>
-              </p>
+            <div class="traveler__one-row">
+              <div class="traveler__way-to-travel transport">
+                <h4 class="transport__title lowercase">
+                  <span class="lowercase__title">Транспорт:</span>
+                </h4>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img--active" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14"
+                    height="16" viewBox="0 0 19 21" style="enable-background:new
+                    0 0 19 21;"xml:space="preserve">
+                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                    </svg>
+                  </li>
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img--active" version="1.1" id="svg2103"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13"
+                    height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
+                    xml:space="preserve">
+                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                    </svg>
+                  </li>
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19"
+                    height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
+                    xml:space="preserve">
+                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                    </svg>
+                  </li>
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img--active" version="1.1" id="Icons_Run"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15"
+                    height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
+                    xml:space="preserve">
+                    <g>
+                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                    <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                    C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                    c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                    c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                    z"/>
+                    </g>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="traveler__level level">
+                <h4 class="level__title lowercase">
+                  <span class="lowercase__title lowercase__title--right">
+                    Левел:
+                  </span>
+                </h4>
+                <svg class="level__circle level__circle--bottom" width="48" height="48">
+                  <circle r="22.5" cx="24" cy="24" fill="rgba(0, 0, 0, 0)"
+                  stroke="#ff8d30" stroke-width="3" stroke-dasharray="120 20"
+                  stroke-dashoffset="35">
+                  </circle>
+                </svg>
+                <p class="level__value">
+                  <span class="level__number level__number--little">80</span>
+                </p>
+              </div>
             </div>
             <button class="traveler__button" type="button" aria-label="Отправить приглашение">
               Позвать!
@@ -746,83 +921,87 @@
                 </li>
               </ul>
             </div>
-            <div class="traveler__way-to-travel transport">
-              <h4 class="transport__title lowercase">
-                <span class="lowercase__title">Транспорт:</span>
-              </h4>
-              <ul class="transport__list">
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img--active" version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14"
-                  height="16" viewBox="0 0 19 21" style="enable-background:new
-                  0 0 19 21;"xml:space="preserve">
-                  <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                  c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                  C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                  c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                  c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                  c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                  c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
-                  </svg>
-                </li>
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img" version="1.1" id="svg2103"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13"
-                  height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
-                  xml:space="preserve">
-                  <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                  c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                  C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                  M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                  H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
-                  </svg>
-                </li>
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img--active" version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19"
-                  height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
-                  xml:space="preserve">
-                  <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                  S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                  l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                  l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                  s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
-                  </svg>
-                </li>
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img" version="1.1" id="Icons_Run"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15"
-                  height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
-                  xml:space="preserve">
-                  <g>
-                  <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                  <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-                  C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-                  c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-                  c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-                  z"/>
-                  </g>
-                  </svg>
-                </li>
-              </ul>
-            </div>
-            <div class="traveler__level level">
-              <h4 class="level__title lowercase">
-                <span class="lowercase__title">Левел:</span>
-              </h4>
-              <svg class="level__circle level__circle--bottom" width="48" height="48">
-                <circle r="22.5" cx="24" cy="24" fill="rgba(0, 0, 0, 0)"
-                stroke="#ff8d30" stroke-width="3" stroke-dasharray="35 105"
-                stroke-dashoffset="35">
-                </circle>
-              </svg>
-              <p class="level__value">
-                <span class="level__number level__number--blue">25</span>
-              </p>
+            <div class="traveler__one-row">
+              <div class="traveler__way-to-travel transport">
+                <h4 class="transport__title lowercase">
+                  <span class="lowercase__title">Транспорт:</span>
+                </h4>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img--active" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14"
+                    height="16" viewBox="0 0 19 21" style="enable-background:new
+                    0 0 19 21;"xml:space="preserve">
+                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                    </svg>
+                  </li>
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img" version="1.1" id="svg2103"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13"
+                    height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
+                    xml:space="preserve">
+                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                    </svg>
+                  </li>
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img--active" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19"
+                    height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
+                    xml:space="preserve">
+                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                    </svg>
+                  </li>
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img" version="1.1" id="Icons_Run"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15"
+                    height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
+                    xml:space="preserve">
+                    <g>
+                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                    <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                    C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                    c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                    c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                    z"/>
+                    </g>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="traveler__level level">
+                <h4 class="level__title lowercase">
+                  <span class="lowercase__title lowercase__title--right">
+                    Левел:
+                  </span>
+                </h4>
+                <svg class="level__circle level__circle--bottom" width="48" height="48">
+                  <circle r="22.5" cx="24" cy="24" fill="rgba(0, 0, 0, 0)"
+                  stroke="#ff8d30" stroke-width="3" stroke-dasharray="35 105"
+                  stroke-dashoffset="35">
+                  </circle>
+                </svg>
+                <p class="level__value">
+                  <span class="level__number level__number--little">25</span>
+                </p>
+              </div>
             </div>
             <button class="traveler__button" type="button" aria-label="Отправить приглашение">
               Позвать!
@@ -879,83 +1058,87 @@
                 </li>
               </ul>
             </div>
-            <div class="traveler__way-to-travel transport">
-              <h4 class="transport__title lowercase">
-                <span class="lowercase__title">Транспорт:</span>
-              </h4>
-              <ul class="transport__list">
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img--active" version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14"
-                  height="16" viewBox="0 0 19 21" style="enable-background:new
-                  0 0 19 21;"xml:space="preserve">
-                  <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                  c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                  C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                  c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                  c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                  c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                  c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
-                  </svg>
-                </li>
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img--active" version="1.1" id="svg2103"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13"
-                  height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
-                  xml:space="preserve">
-                  <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                  c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                  C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                  M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                  H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
-                  </svg>
-                </li>
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img" version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19"
-                  height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
-                  xml:space="preserve">
-                  <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                  S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                  l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                  l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                  s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
-                  </svg>
-                </li>
-                <li class="transport__item transport__item--grey">
-                  <svg class="transport__img" version="1.1" id="Icons_Run"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15"
-                  height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
-                  xml:space="preserve">
-                  <g>
-                  <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                  <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-                  C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-                  c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-                  c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-                  z"/>
-                  </g>
-                  </svg>
-                </li>
-              </ul>
-            </div>
-            <div class="traveler__level level">
-              <h4 class="level__title lowercase">
-                <span class="lowercase__title">Левел:</span>
-              </h4>
-              <svg class="level__circle level__circle--bottom" width="48" height="48">
-                <circle r="22.5" cx="24" cy="24" fill="rgba(0, 0, 0, 0)"
-                stroke="#ff8d30" stroke-width="3" stroke-dasharray="70 70"
-                stroke-dashoffset="35">
-                </circle>
-              </svg>
-              <p class="level__value">
-                <span class="level__number level__number--blue">50</span>
-              </p>
+            <div class="traveler__one-row">
+              <div class="traveler__way-to-travel transport">
+                <h4 class="transport__title lowercase">
+                  <span class="lowercase__title">Транспорт:</span>
+                </h4>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img--active" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14"
+                    height="16" viewBox="0 0 19 21" style="enable-background:new
+                    0 0 19 21;"xml:space="preserve">
+                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                    </svg>
+                  </li>
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img--active" version="1.1" id="svg2103"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13"
+                    height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;"
+                    xml:space="preserve">
+                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                    </svg>
+                  </li>
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19"
+                    height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;"
+                    xml:space="preserve">
+                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                    </svg>
+                  </li>
+                  <li class="transport__item transport__item--grey">
+                    <svg class="transport__img" version="1.1" id="Icons_Run"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15"
+                    height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;"
+                    xml:space="preserve">
+                    <g>
+                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                    <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                    C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                    c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                    c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                    z"/>
+                    </g>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="traveler__level level">
+                <h4 class="level__title lowercase">
+                  <span class="lowercase__title lowercase__title--right">
+                    Левел:
+                  </span>
+                </h4>
+                <svg class="level__circle level__circle--bottom" width="48" height="48">
+                  <circle r="22.5" cx="24" cy="24" fill="rgba(0, 0, 0, 0)"
+                  stroke="#ff8d30" stroke-width="3" stroke-dasharray="70 70"
+                  stroke-dashoffset="35">
+                  </circle>
+                </svg>
+                <p class="level__value">
+                  <span class="level__number level__number--little">50</span>
+                </p>
+              </div>
             </div>
             <button class="traveler__button" type="button" aria-label="Отправить приглашение">
               Позвать!

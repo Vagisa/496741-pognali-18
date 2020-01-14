@@ -19,6 +19,7 @@
     .font(16px; 22px; 700);
     color: #192144;
     text-transform: uppercase;
+    margin-bottom: 0;
   }
 }
 
@@ -28,6 +29,14 @@
 
 .countries__svg-dots {
   fill: #192144;
+}
+
+.countries__svg-collapse {
+  fill: #1a2245;
+}
+
+.countries__button-text {
+  padding-left: 12px;
 }
 
 .countries__list {
@@ -71,24 +80,28 @@
 
 .countries__item {
   display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .countries__name {
+  margin: 0;
+  padding-left: 15px;
   .font(15px; 18px; 500);
   text-transform: uppercase;
   color: @blue;
 }
 
 .countries__flag {
-  position: relative;
+  
   width: 35px;
   height: 24px;
-  margin-top: -12px;
   z-index: 2;
 }
 
 .countries__popup {
-  display: flex;
+  display: none;
+  //display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 644px;
@@ -103,4 +116,15 @@
   height: 25px;
   padding: 0;
   border: none;
+  background-color: transparent;
+
+  &--opens:active {
+    .countries__popup {
+      display: flex;
+    }
+  }
+
+  &--close {
+    display: none;
+  }
 }
