@@ -85,6 +85,7 @@
     }
   }
 }
+
 .procedure-steps__unit {
   opacity: 0.3;
 }
@@ -98,7 +99,7 @@
 }
 
 .procedure-steps__svg {
-  fill:#606161;
+  fill: #606161;
   padding: 4px;
   opacity: 0.3;
 
@@ -231,14 +232,10 @@
   }
 }
 
-.procedure-steps__checkbox {
-  &:checked {
-    &+.procedure-steps__with-kids{
-      &::before {
-        background: url(../img/tick.svg) center center no-repeat;
-        background-size: 9px 9px;
-      }
-    }
+.procedure-steps__checkbox:checked + .procedure-steps__with-kids{
+  &::before {
+    background: url(../img/tick.svg) center center no-repeat;
+    background-size: 9px 9px;
   }
 }
 

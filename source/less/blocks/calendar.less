@@ -54,6 +54,7 @@
   .font(14px; 18px; 300);
   color: @gray;
   background-color: #edeff6;
+
   &:nth-child(7) {
     border-right: 2px solid #cbced9;
   }
@@ -70,6 +71,7 @@
 
   &:not(&--last)&:hover {
     position: relative;
+
     &::before {
       content: "";
       width: 30px;
@@ -77,7 +79,7 @@
       position: absolute;
       top: -2px;
       left: -2px;
-    border: 2px solid #ff5c23;
+      border: 2px solid #ff5c23;
     }
   }
 }
