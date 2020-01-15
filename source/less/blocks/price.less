@@ -6,63 +6,99 @@
   color: @gray;
 }
 
+.price__rounded {
+
+  width: 320px;
+  height: 25px;
+  margin-top: -50px;
+  background-color: #192144;
+  .rounded-bottom(1);
+}
+
 .price__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
   .font(24px; 24px; 700; normal);
   color: #ff8d30;
+
+  &::after {
+    flex-shrink: 0;
+    content: "";
+    width: 103px;
+    height: 103px;
+    margin-left: 20px;
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 103px;
+  }
 }
 
 .price__list {
   flex-grow: 1;
   list-style: none;
   counter-reset: section;
-}
+  margin: 0;
 
-.price__list--ol {
-  padding-left: 25px;
-}
+  &--ol {
+    padding-left: 25px;
+  }
 
-.price__list--ul {
-  padding: 25px;
-  align-self: stretch;
+  &--ul {
+    padding: 25px;
+    align-self: stretch;
+  }
 }
 
 .price__item {
   display: flex;
   justify-content: space-between;
   font-weight: 300;
-}
 
-.price__item--ol::after {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  counter-increment: section;
-  content: "" counter(section) "";
-  width: 34px;
-  height: 34px;
-  margin-top: 5px;
-  border-radius: 50%;
-  color: #ffffff;
-}
-
-.price__item--ol {
   &:first-child {
     .price__service {
       border-top: 1px solid #e1e3e9;
     }
+  }
 
+  &--ol {
     &::after {
-      background-color: #ffa530;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      counter-increment: section;
+      content: "" counter(section) "";
+      width: 34px;
+      height: 34px;
+      margin-top: 5px;
+      border-radius: 50%;
+      color: #ffffff;
     }
-  }
 
-  &:nth-child(2)::after {
-    background-color: #ffbd30;
-  }
+    &:first-child {
+      .price__service {
+        border-top: 1px solid #e1e3e9;
+      }
 
-  &:nth-child(3)::after {
-    background-color: #ffd74b;
+      &::after {
+        background-color: #ffa530;
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        background-color: #ffbd30;
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        background-color: #ffd74b;
+      }
+    }
   }
 }
 

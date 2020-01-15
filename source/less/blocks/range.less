@@ -1,0 +1,47 @@
+.range {
+  width: 100%;
+  height: 2px;
+  margin: 25px 0;
+  border-radius: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.range__scale {
+  height: 100%;
+  width: 71px;
+  background-color: @blue;
+  opacity: 0.2;
+  flex-grow: 1;
+}
+
+.range__bar {
+  position: relative;
+  height: 100%;
+  width: 149px;
+  background-color: @blue;
+  opacity: 1;
+  flex-grow: 1;
+
+  &::before {
+    position: absolute;
+    left: -5px;
+    top: -4px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: -4px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+    border-radius: 50%;
+  }
+}

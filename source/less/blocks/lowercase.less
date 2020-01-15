@@ -1,9 +1,9 @@
 .lowercase {
   position: relative;
-  margin: 0;
+  margin: 15px 0 10px;
   .font(15px; 18px; 400);
   text-transform: lowercase;
-  text-align: center;
+  text-align: left;
   color: @gray;
 
   &::after {
@@ -23,4 +23,10 @@
   padding-right: 13px;
   background-color: @white;
   z-index: 1;
+  margin-left: 15px;
+
+  &--right {
+    margin-left: 0;
+    margin-right: 12px;
+  }
 }

@@ -1,3 +1,28 @@
 .slider {
-  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10.5px;
+  margin: 0;
+  list-style: none;
+}
+
+.slider__item {
+  width: 21px;
+  text-align: center;
+}
+
+.slider__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 6px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #7f7e3d;
+  opacity: 0.3;
+
+  &--active {
+    background-color: @blue;
+    opacity: 1;
+  }
 }

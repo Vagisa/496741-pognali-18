@@ -5,9 +5,20 @@
   font-style: @font-style;
 }
 
-.rounded(@z-index) {
+.rounded-bottom(@z-index) {
   position: relative;
+  margin-bottom: -25px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  z-index: @z-index;
+}
+
+.rounded-top(@z-index) {
+  position: relative;
+  margin-top: -25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   z-index: @z-index;
 }

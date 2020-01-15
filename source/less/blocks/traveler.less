@@ -41,19 +41,21 @@
 }
 
 .traveler__hashtags {
-  padding: 25px;
+  padding: 0 25px;
 }
 
 .traveler__level {
   position: relative;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 75px;
-  height: 68px;
+  width: 77px;
+  height: 92px;
   z-index: 10;
 }
 
 .traveler__way-to-travel {
+  width: 100%;
   padding-left: 25px;
 }
 
@@ -61,6 +63,7 @@
   align-self: center;
   width: 230px;
   height: 40px;
+  margin-top: 15px;
   .font(17px; 30px; 700);
   color: #161c35;
   text-transform: uppercase;
@@ -68,4 +71,10 @@
   background-color: #ffd74b;
   border: none;
   border-radius: 20px;
+}
+
+.traveler__one-row {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
