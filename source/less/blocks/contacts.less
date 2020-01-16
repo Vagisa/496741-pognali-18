@@ -1,3 +1,9 @@
+.conntacts {
+  &--tablet {
+    display: none;
+  }
+}
+
 .contacts__intro {
   display: flex;
   justify-content: center;
@@ -19,13 +25,19 @@
     margin-bottom: -20px;
   }
 }
-/*
+
 @media (min-width: @tablet-width) {
+  .conntacts {
+    &--tablet {
+      display: block;
+    }
+  }
+
   .contacts__list {
     display: none;
   }
 }
-*/
+
 .contacts__item {
   display: inline-flex;
   list-style: none;

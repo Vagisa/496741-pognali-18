@@ -1,12 +1,23 @@
 .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   min-height: 73px;
+
+  &--minor {
+    min-height: 58px;
+  }
 }
 
 .page-header__popup {
   display: none;
 }
-/*
+
+.page-header__logo {
+  display: inline-flex;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     min-height: 132px;
@@ -18,4 +29,3 @@
     min-height: 110px;
   }
 }
-*/

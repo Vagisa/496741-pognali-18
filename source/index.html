@@ -10,9 +10,13 @@
   <body>
     <header class="page-header container">
       <div class="one-row">
-        <a class="page-header__logo">
-          <img src="img/logo-mobile-white@1x.png" alt="Логотип Погнали"
+        <a href="index.html" class="page-header__logo logo">
+          <img class="logo__mobile" src="img/logo-mobile-white@1x.png" alt="Логотип Погнали"
           width="100px" height="19px">
+          <img class="logo__tablet" src="img/logo-tablet-white@1x.png" alt="Логотип Погнали"
+          width="164px" height="42px">
+          <img class="logo__desktop" src="img/logo-desktop-white@1x.png" alt="Логотип Погнали"
+          width="198px" height="52px">
         </a>
         <button class="main-menu__switch" type="button" aria-label="Открыть меню">
           <svg class="main-menu__open" version="1.1" id="Layer_1"
@@ -25,6 +29,13 @@
           </g>
           </svg>
         </button>
+        <div class="main-menu__contacts contacts conntacts--tablet">
+          <div class="contacts__item">
+            <button class="contacts__button contacts__button--text" type="button">
+              Авторизация
+            </button>
+          </div>
+        </div>
       </div>
       <div class="page-header__popup">
         <div class="main-menu">
@@ -43,6 +54,7 @@
               L10.3,9z"/>
               </svg>
             </button>
+            <div></div>
           </div>
           <nav class="main-menu__site-nav site-nav">
             <ul class="site-nav__list">
@@ -733,9 +745,13 @@
       </section>
     </main>
     <footer class="page-footer container">
-      <a href="index.html" class="page-footer__logo">
-        <img src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали"
+      <a href="index.html" class="page-footer__logo logo">
+        <img class="logo__mobile" src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали"
         width="100px" height="19px">
+        <img class="logo__tablet" src="img/logo-tablet-blue@1x.png" alt="Логотип Погнали"
+        width="164px" height="42px">
+        <img class="logo__desktop" src="img/logo-desktop-blue@1x.png" alt="Логотип Погнали"
+        width="198px" height="52px">
       </a>
       <ul class="page-footer__social-network social-network">
         <li class="social-network__item social-network__item--orange">

@@ -1,6 +1,11 @@
 .page-main {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #161c35;
 }
 
 .page-main__slogan {
@@ -77,10 +82,10 @@
   background-color: #ffd74b;
 }
 
-/*
 @media (min-width: @tablet-width) {
   .page-main {
     position: relative;
+    width: 768px;
   }
 
   .page-main__container {
@@ -108,6 +113,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-main {
+    width: 1440px;
+  }
+
   .page-main__container {
     min-height: 641px;
     background: url("../img/traveller-illustration-desktop@1x.png") 600px 0 no-repeat,
@@ -120,4 +129,3 @@
 
   }
 }
-*/
