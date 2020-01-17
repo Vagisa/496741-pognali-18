@@ -10,6 +10,13 @@
   }
 }
 
+.page-header__item {
+  &:nth-child(2),
+  &:nth-child(3) {
+    display: none;
+  }
+}
+
 .page-header__popup {
   display: none;
 }
@@ -20,7 +27,20 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    min-height: 132px;
+    min-height: 130px;
+  }
+
+  .page-header__item {
+    width: 30%;
+
+    &:last-child {
+      text-align: right;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+    display: block;
+  }
   }
 }
 

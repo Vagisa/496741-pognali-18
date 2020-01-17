@@ -1,19 +1,12 @@
 .traveler {
   position: relative;
   display: flex;
-  flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.traveler__header {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 20px;
+  flex-wrap: wrap;
+  padding: 16px 0 22px;
 }
 
 .traveler__avatar {
-  position: relative;
-  height: 70px;
+  padding-left: 18px;
 }
 
 .traveler__photo {
@@ -22,13 +15,13 @@
 
 .traveler__like {
   position: absolute;
-  bottom: 0;
-  left: 50px;
+  top: 54px;
+  left: 68px;
 }
 
 .traveler__mode {
   margin-top: 8px;
-  margin-right: 2px;
+  margin-right: 22px;
 }
 
 .traveler__name {
@@ -42,6 +35,11 @@
 
 .traveler__hashtags {
   padding: 0 25px;
+  flex-grow: 1;
+}
+
+.traveler__countries {
+  flex-grow: 1;
 }
 
 .traveler__level {
@@ -63,7 +61,7 @@
   align-self: center;
   width: 230px;
   height: 40px;
-  margin-top: 15px;
+  margin: 15px 20px 0;
   .font(17px; 30px; 700);
   color: #161c35;
   text-transform: uppercase;
@@ -77,4 +75,16 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  flex-grow: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .traveler {
+    padding-top: 35px;
+    padding-bottom: 27px;
+  }
+
+  .traveler__like {
+    position: inherit;
+  }
 }

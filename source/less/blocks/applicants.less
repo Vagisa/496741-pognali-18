@@ -1,20 +1,18 @@
 .applicants {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .applicants__list {
   display: flex;
   flex-direction: column;
-  padding: 0 25px;
+  padding: 0;
   list-style: none;
 }
 
 .applicants__item {
   background-color: @white;
   border-radius: 20px;
-  width: 270px;
   min-height: 390px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -24,6 +22,7 @@
 .applicants__to-all {
   display: flex;
   align-items: center;
+  align-self: center;
   .font(17px; 30px; 700);
   text-decoration: none;
   text-transform: uppercase;
@@ -38,7 +37,6 @@
 .applicants__slider {
   display: flex;
   justify-content: center;
-  width: 270px;
   height: 50px;
   border-radius: 20px;
   overflow: hidden;
@@ -55,4 +53,34 @@
 .applicants__line {
   width: 1px;
   height: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .applicants__item {
+    min-height: 270px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .applicants__to-all {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .applicants__slider {
+    display: flex;
+    justify-content: space-between;
+    background-color: @white;
+    height: 100px;
+  }
+
+  .applicants__previous {
+    margin-left: auto;
+  }
+
+  .applicants__previous,
+  .applicants__next {
+    flex-grow: 0;
+    width: 60px;
+  }
 }

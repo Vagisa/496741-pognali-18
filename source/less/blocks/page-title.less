@@ -29,11 +29,16 @@
   }
 }
 
+.page-title__link {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-title {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    min-height: 145px;
+    min-height: 146px;
     padding-top: 45px;
     padding-bottom: 30px;
     .font(60px, 70px, 700);
@@ -57,5 +62,25 @@
         width: 287px;
       }
     }
+  }
+
+  .page-title__link {
+    min-height: 64px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: @white;
+    .font(20px; 24px);
+    text-transform: uppercase;
+  }
+
+  .page-title__text {
+    margin: 0;
+  }
+
+  .page-title__return {
+    fill: @white;
+    margin-right: 34px;
+    margin-left: 30px;
   }
 }

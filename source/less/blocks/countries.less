@@ -1,10 +1,11 @@
 .countries {
   &--popup {
-    margin-top: 25px;
+    padding-top: 25px;
     background-color: #e2e5f2;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
   }
+  
 }
 
 .countries__title {
@@ -123,5 +124,46 @@
 
   &--close {
     display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .countries {
+    &--popup {
+      padding-top: 40px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+  }
+
+  .countries__parts-world {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .countries__button {
+    .font(20px; 24px; 700);
+  }
+
+  .countries__popup {
+    min-height: 490px;
+    padding-bottom: 75px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .countries__countries-list {
+    width: 200px;
+  }
+
+  .countries__list {
+    display: flex;
+  }
+
+  .countries__name {
+    padding-left: 10px;
+    padding-right: 27px;
   }
 }
