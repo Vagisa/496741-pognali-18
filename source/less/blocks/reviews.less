@@ -5,13 +5,41 @@
 .reviews__text {
   width: 150px;
   font-weight: 300;
+
+  &::first-letter {
+    margin-left: 10px;
+  }
 }
 
 .reviews__author-description {
+  display: flex;
+  flex-direction: column;
   width: 156px;
   margin-bottom: 0;
 }
 
 .reviews__author-name {
   font-style: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__blockquote {
+    margin: 35px;
+  }
+  
+  .reviews__text {
+    width: 310px;
+    font-size: 28px;
+    line-height: 33px;
+
+    &::first-letter {
+      margin-left: 20px;
+    }
+  }
+
+  .reviews__author-description {
+    width: 310px;
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
