@@ -43,3 +43,20 @@
 .transport__option:checked + .transport__label .transport__img {
   fill: @blue;
 }
+
+@media (min-width: @tablet-width) {
+  .transport__list {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .transport__title {
+    display: none;
+  }
+  
+  .transport__item {
+    &--grey {
+      background-color: transparent;
+    }
+  } 
+}
