@@ -8,7 +8,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 121px;
   padding: 5px 0;
 }
 
@@ -16,6 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 33px;
   height: 32px;
   list-style: none;
@@ -46,8 +46,10 @@
 
 @media (min-width: @tablet-width) {
   .transport__list {
-    flex-direction: column;
-    width: auto;
+    &--column {
+      flex-direction: column;
+      width: auto;
+    }
   }
 
   .transport__title {

@@ -6,12 +6,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 188px;
   list-style: none;
-  padding: 0;
+  padding: 0 30px;
 
   &--left {
     justify-content: flex-start;
+    padding: 0;
   }
 }
 
@@ -23,5 +23,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .font(20px; 24px);
+  .hashtags__list {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &--left {
+      width: 240px;
+    }
+  }
 }

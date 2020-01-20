@@ -1,4 +1,7 @@
 .directions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #edeff6;
   color: #444444;
 }
@@ -26,13 +29,11 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.directions__photo {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: @white;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .directions__flag {
@@ -40,7 +41,6 @@
 }
 
 .directions__img {
-  position: relative;
   width: 35px;
   height: 24px;
   margin-top: -12px;
@@ -65,6 +65,7 @@
   flex-shrink: 0;
   margin: 0;
   .font(21px; 21px; 700);
+  color: #161c35;
 }
 
 .directions__companions {
@@ -88,4 +89,92 @@
   flex-shrink: 0;
   line-height: 18px;
   opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .directions {
+    background-image: url("../img/flags-back@1x.png");
+    background-position: 440px 120px;
+    background-repeat: no-repeat;
+  }
+
+  .directions__header {
+    padding: 0;
+  }
+
+  .directions__title {
+    margin-top: 45px;
+    margin-bottom: 0;
+    padding: 35px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .directions__intro {
+    width: 345px;
+    margin: 0;
+    padding: 27px 35px 20px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .directions__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 70px 35px 49px;
+    min-height: 440px;
+  }
+
+  .directions__item {
+    min-height: 140px;
+    flex-direction: row;
+    border-radius: 20px;
+    margin: 0;
+  }
+
+  .directions__description {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 0;
+    padding: 30px;
+    order: -1;
+    flex-grow: 1;
+  }
+
+  .directions__photo {
+    width: 186px;
+  }
+
+  .directions__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 70px;
+    height: 47px;
+    margin-top: -23.5px;
+    margin-right: -35px;
+  }
+
+  .directions__companions {
+    order: 1;
+  }
+
+  .directions__town {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .directions__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .directions__companions {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

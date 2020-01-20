@@ -11,4 +11,29 @@
   .font(18px; 18px);
   border-radius: 10px;
   color: #1d2e5b;
+  box-sizing: border-box;
+
+  &--tablet {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button-yellow {
+    width: auto;
+    height: 81px;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+    
+    &--tablet {
+      display: flex;
+      width: 274px;
+      margin-top: 32px;
+    }
+  }
 }
