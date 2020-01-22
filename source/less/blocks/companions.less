@@ -53,7 +53,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .companions {
     background:
     url("../img/rogovaya-back-desktop@1x.png") 408px 120px no-repeat,
@@ -111,5 +111,33 @@
 
   .companions__to-all {
     margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .companions {
+    background:
+    url("../img/rogovaya-back-desktop@1x.png") 191px 445px no-repeat,
+    url("../img/smolov-back-desktop@1x.png") 547px 193px no-repeat;
+    background-color: #192144;
+  }
+
+  .companions__header {
+    float: left;
+    padding-right: 35px;
+    padding-bottom: 40px;
+    padding-left: 35px;
+  }
+
+  .companions__list {
+    float: right;
+    width: 630px;
+    margin: 0;
+    margin-top: 123px;
+  }
+
+  .companions__to-all {
+    float: left;
+    margin: 15px 70px 74px;
   }
 }

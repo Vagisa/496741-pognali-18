@@ -76,6 +76,7 @@
   }
 
   .registration__authorization {
+    width: 688px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -99,6 +100,9 @@
 
   .registration__input {
     height: 81px;
+    padding-left: 36px;
+    font-size: 24px;
+    line-height: 24px;
   }
 
   .registration__button {
@@ -110,5 +114,31 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .registration__email {
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+
+  .registration__button {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 326px;
+    padding: 0 38px;
+    font-family: "Blogger Sans", "Tahoma", sans-serif;
+    .font(24px; 24px);
+    color: @blue;
+
+    &::before {
+      content: "Регистрация";
+    }
+  }
+
+  .registration__contacts {
+    margin-bottom: 29px;
   }
 }

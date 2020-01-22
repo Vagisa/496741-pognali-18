@@ -79,7 +79,7 @@
               <li class="contacts__item">
                 <button class="contacts__button" type="button">Авторизация</button>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--phone">
                 <div class="contacts__circle">
                   <svg class="contacts__circle-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
@@ -94,11 +94,11 @@
                   c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
                   </svg>
                 </div>
-                <a class="contacts__link" href="tel:88005558628" aria-label="Телефон">
+                <a class="contacts__text contacts__text--blue" href="tel:88005558628" aria-label="Телефон">
                   8 800 555-86-28
                 </a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--email">
                 <div class="contacts__circle">
                   <svg class="contacts__circle-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="13"
@@ -109,7 +109,7 @@
                   c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
                   </svg>
                 </div>
-                <a class="contacts__link" href="mailto:mail@htmlacademy.ru"
+                <a class="contacts__text contacts__text--blue" href="mailto:mail@htmlacademy.ru"
                 aria-label="Электронная почта">
                   mail@htmlacademy.ru
                 </a>
@@ -119,8 +119,8 @@
           <div class="main-menu__footer">
             <ul class="social-network">
               <li class="social-network__item">
-                <a href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
-                  <svg class="social-network__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <a class="social-network__link" href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
+                  <svg class="social-network__img social-network__img--facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11" height="21"
                   viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
                   <g>
@@ -131,8 +131,8 @@
                 </a>
               </li>
               <li class="social-network__item">
-                <a href="https://vk.com" aria-label="Погнали во Вконтакте">
-                  <svg class="social-network__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <a  class="social-network__link" href="https://vk.com" aria-label="Погнали во Вконтакте">
+                  <svg class="social-network__img social-network__img--vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23" height="12"
                   viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
                   <g>
@@ -157,8 +157,8 @@
                 </a>
               </li>
               <li class="social-network__item">
-                <a href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
-                  <svg class="social-network__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <a  class="social-network__link" href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
+                  <svg class="social-network__img social-network__img--instagram" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
                   viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                   <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
@@ -181,7 +181,7 @@
           В путешествие с крутыми попутчиками!
         </p>
         <section class="page-main__contacts contacts">
-          <ul class="page-main__contacts-list contacts__list contacts__list--special">
+          <ul class="page-main__contacts-list contacts__list contacts__list--row">
             <li class="contacts__item contacts__button contacts__button--img">
               <a class="contacts__link" href="tel:88005558628" aria-label="8 800 555-86-28">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -362,7 +362,7 @@
             </div>
           </li>
         </ul>
-        <a class="directions__to-all button-yellow" href="form.html">
+        <a class="directions__to-all button-yellow button-yellow--desktop" href="form.html">
           <p>Показать все</p>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14"
@@ -593,7 +593,7 @@
             </div>
           </li>
         </ul>
-        <a class="companions__to-all button-yellow" href="catalog.html" aria-label="Каталог">
+        <a class="companions__to-all button-yellow button-yellow--companions" href="catalog.html" aria-label="Каталог">
           <p>Показать всех</p>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14"
@@ -701,8 +701,12 @@
         </form>
         <div class="registration__contacts contacts">
           <p class="contacts__intro">
-            <span>Остались вопросы?</span>
-            <span>Мы с радостью на них ответим!</span>
+            <span class="registration__authorization-line">
+              Остались вопросы?
+            </span>
+            <span class="registration__authorization-line">
+              Мы с радостью на них ответим!
+            </span>
           </p>
           <ul class="contacts__list">
             <li class="contacts__item">
@@ -747,7 +751,7 @@
       <section class="page-main__address address">
         <div class="address__text container">
           <h2 class="visually-hidden">Контакты</h2>
-          <div class="one-row">
+          <div class="one-row one-row--address">
             <div class="address__circle">
               <svg class="address__pin" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="22"
@@ -783,8 +787,8 @@
       </a>
       <ul class="page-footer__social-network social-network">
         <li class="social-network__item social-network__item--orange">
-          <a href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
-            <svg class="social-network__img--blue" version="1.1" id="Layer_1"
+          <a class="social-network__link" href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
+            <svg class="social-network__img social-network__img--blue social-network__img--facebook" version="1.1" id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11" height="21"
             viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
@@ -796,8 +800,8 @@
           </a>
         </li>
         <li class="social-network__item social-network__item--orange">
-          <a href="https://vk.com" aria-label="Погнали во Вконтакте">
-            <svg class="social-network__img--blue" version="1.1" id="Layer_1"
+          <a class="social-network__link" href="https://vk.com" aria-label="Погнали во Вконтакте">
+            <svg class="social-network__img social-network__img--blue social-network__img--vk" version="1.1" id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23" height="12"
             viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
@@ -823,8 +827,8 @@
           </a>
         </li>
         <li class="social-network__item social-network__item--orange">
-          <a href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
-            <svg class="social-network__img--blue" version="1.1" id="Layer_1"
+          <a class="social-network__link" href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
+            <svg class="social-network__img social-network__img--blue social-network__img--instagram" version="1.1" id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
             viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">

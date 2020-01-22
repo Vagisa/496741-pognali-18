@@ -21,8 +21,20 @@
 }
 
 .directions__list {
+  position: relative;
   list-style: none;
   padding: 0;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 81px;
+    z-index: 1;
+    box-shadow: inset 0 -81px 41px -41px #edeff6;
+  }
 }
 
 .directions__item {
@@ -91,7 +103,7 @@
   opacity: 0.3;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .directions {
     background-image: url("../img/flags-back@1x.png");
     background-position: 440px 120px;
@@ -150,13 +162,11 @@
 
   .directions__img {
     position: absolute;
-    top: 50%;
-    right: 0;
-
+    top: 16px;
+    right: -35px;
     width: 70px;
     height: 47px;
-    margin-top: -23.5px;
-    margin-right: -35px;
+    margin-top: 0;
   }
 
   .directions__companions {
@@ -176,5 +186,30 @@
   .directions__companions {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .directions {
+    display: block;
+    background-position: 1092px 149px;
+  }
+
+  .directions__header {
+    float: right;
+    margin-top: 89px;
+    margin-right: 140px;
+  }
+
+  .directions__list {
+    float: left;
+    min-width: 560px;
+    margin: 89px 70px;
+    padding-top: 74px;
+  }
+
+  .directions__to-all {
+    float: left;
+    width: 274px;
   }
 }

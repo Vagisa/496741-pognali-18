@@ -36,7 +36,6 @@
     justify-content: space-between;
     min-height: 695px;
     margin-right: -40px;
-    align-items: flex-start;
     background-image: url("../img/about-tablet@1x.png");
     background-position: 345px bottom;
     background-repeat: no-repeat;
@@ -63,5 +62,29 @@
     padding: 20px 35px;
     font-size: 21px;
     line-height: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-service__body {
+    min-height: 695px;
+    margin-right: 0;
+    align-items: flex-start;
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: 690px bottom;
+    background-repeat: no-repeat;
+  }
+
+  .about-service__title {
+    margin-top: 25px;
+    padding: 35px 71px;
+  }
+
+  .about-service__slogan {
+    padding: 25px 71px;
+  }
+
+  .about-service__advice {
+    padding: 20px 71px;
   }
 }

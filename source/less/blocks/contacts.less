@@ -17,11 +17,15 @@
 }
 
 .contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-bottom: 4px;
+  //margin-bottom: 4px;
 
-  &--special {
+  &--row {
+    flex-direction: row;
     margin-bottom: -20px;
   }
 }
@@ -29,14 +33,18 @@
 .contacts__item {
   display: inline-flex;
   list-style: none;
+  align-items: center;
   .font();
   text-transform: uppercase;
+
+  &--phone {
+    margin-top: auto;
+  }
 }
 
 .contacts__link {
   display: inline-flex;
   align-items: center;
-  color: #192144;
   text-decoration: none;
 }
 
@@ -58,6 +66,11 @@
 .contacts__text {
   color: #ffd74b;
   padding-left: 16px;
+
+  &--blue {
+    color: #192144;
+    text-decoration: none;
+  }
 }
 
 .contacts__button {
@@ -133,5 +146,15 @@
 
   .contacts__text {
     padding-left: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__list {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 868px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
