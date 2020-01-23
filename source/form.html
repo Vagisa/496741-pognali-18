@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="page-header page-header--minor container">
-      <div class="one-row">
+      <div class="one-row one-row--min">
         <a href="index.html" class="page-header__logo logo" aria-label="Главная страница">
           <img class="logo__mobile" src="img/logo-mobile-white@1x.png" alt="Логотип Погнали"
           width="100px" height="19px">
@@ -27,7 +27,7 @@
           </g>
           </svg>
         </button>
-        <div class="main-menu__contacts contacts conntacts--tablet">
+        <div class="main-menu__contacts contacts contacts--tablet">
           <div class="contacts__item">
             <button class="contacts__button contacts__button--text" type="button">
               Авторизация
@@ -38,11 +38,15 @@
       <div class="page-header__popup">
         <div class="main-menu">
           <div class="main-menu__one-row one-row">
-            <a href="index.html" class="main-menu__logo">
-              <img src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали"
+            <a href="index.html" class="main-menu__logo logo">
+              <img class="logo__mobile" src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали"
               width="100px" height="19px">
+              <img class="logo__tablet" src="img/logo-tablet-blue@1x.png" alt="Логотип Погнали"
+              width="164px" height="42px">
+              <img class="logo__desktop" src="img/logo-desktop-blue@1x.png" alt="Логотип Погнали"
+              width="198px" height="52px">
             </a>
-            <button class="main-menu__switch switch" type="button">
+            <button class="main-menu__switch switch" type="button" aria-label="Закрыть меню">
               <svg class="switch__close" version="1.1" id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19" height="19"
@@ -52,6 +56,13 @@
               L10.3,9z"/>
               </svg>
             </button>
+            <div class="main-menu__contacts contacts contacts--tablet">
+              <div class="contacts__item">
+                <button class="contacts__button contacts__button--text" type="button">
+                  Авторизация
+                </button>
+              </div>
+            </div>
           </div>
           <nav class="main-menu__site-nav site-nav">
             <ul class="site-nav__list">
@@ -74,13 +85,14 @@
           </nav>
           <div class="main-menu__contacts contacts">
             <ul class="contacts__list">
-              <li class="contacts__item">
-                <button class="contacts__button" type="button">Авторизация</button>
+              <li class="contacts__item contacts__item--authorization">
+                <button class="contacts__button contacts__button--text" type="button">
+                  Авторизация
+                </button>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--phone">
                 <div class="contacts__circle">
-                  <svg class="contacts__circle-svg" version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
+                  <svg class="contacts__circle-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
                   viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
                   <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
@@ -93,14 +105,13 @@
                   c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
                   </svg>
                 </div>
-                <a class="contacts__link" href="tel:88005558628" aria-label="Телефон">
+                <a class="contacts__text contacts__text--blue" href="tel:88005558628" aria-label="Телефон">
                   8 800 555-86-28
                 </a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--email">
                 <div class="contacts__circle">
-                  <svg class="contacts__circle-svg" version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
+                  <svg class="contacts__circle-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="13"
                   viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
                   <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
@@ -109,7 +120,8 @@
                   c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
                   </svg>
                 </div>
-                <a class="contacts__link" href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта">
+                <a class="contacts__text contacts__text--blue" href="mailto:mail@htmlacademy.ru"
+                aria-label="Электронная почта">
                   mail@htmlacademy.ru
                 </a>
               </li>
@@ -118,8 +130,8 @@
           <div class="main-menu__footer">
             <ul class="social-network">
               <li class="social-network__item">
-                <a href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
-                  <svg class="social-network__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <a class="social-network__link" href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
+                  <svg class="social-network__img social-network__img--facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11" height="21"
                   viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
                   <g>
@@ -130,8 +142,8 @@
                 </a>
               </li>
               <li class="social-network__item">
-                <a href="https://vk.com" aria-label="Погнали во Вконтакте">
-                  <svg class="social-network__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <a  class="social-network__link" href="https://vk.com" aria-label="Погнали во Вконтакте">
+                  <svg class="social-network__img social-network__img--vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23" height="12"
                   viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
                   <g>
@@ -156,8 +168,8 @@
                 </a>
               </li>
               <li class="social-network__item">
-                <a href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
-                  <svg class="social-network__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                <a  class="social-network__link" href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
+                  <svg class="social-network__img social-network__img--instagram" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
                   viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                   <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
@@ -170,6 +182,53 @@
               </li>
             </ul>
           </div>
+          <section class="main-menu__contacts-minor contacts">
+            <ul class="page-main__contacts-list contacts__list contacts__list--row">
+              <li class="contacts__item contacts__button contacts__button--img">
+                <a class="contacts__link" href="tel:88005558628" aria-label="8 800 555-86-28">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+                  <g>
+                  <g id="UrwUhy_1_">
+                  <g>
+                  <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
+                  c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
+                  C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
+                  c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z"></path>
+                  </g>
+                  </g>
+                  <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"></path>
+                  <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"></path>
+                  <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"></path>
+                  </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__item contacts__button contacts__button--img">
+                <a class="contacts__link" href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="14" viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+                  <g>
+                  <g>
+                  <g>
+                  <path class="st0" d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"></path>
+                  </g>
+                  <g>
+                  <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
+                  c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
+                  c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
+                  L11.9,7.1z"></path>
+                  </g>
+                  </g>
+                  </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__item contacts__item--authorization">
+                <button class="contacts__button contacts__button--text" type="button">
+                  Авторизация
+                </button>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
     </header>
@@ -179,8 +238,11 @@
       </h1>
       <section class="my-page container">
         <div class="my-page__card">
-          <img class="my-page__photo" src="img/demin-mobile@2x.jpg"
-          width="100" height="100" alt="Аватарка Пети Демина">
+          <div class="my-page__photo">
+            <img class="my-page__img" src="img/demin-mobile@2x.jpg"
+            width="100" height="100" alt="Аватарка Пети Демина">
+            <span class="my-page__caption">Фото</span>
+          </div>
           <div class="my-page__level level level--big">
             <svg class="level__circle" width="105" height="105">
               <circle r="50" cx="52" cy="52"

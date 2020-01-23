@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="page-header container">
-      <div class="one-row">
+      <div class="one-row one-row--min">
         <a href="index.html" class="page-header__logo logo">
           <img class="logo__mobile" src="img/logo-mobile-white@1x.png" alt="Логотип Погнали"
           width="100px" height="19px">
@@ -29,7 +29,7 @@
           </g>
           </svg>
         </button>
-        <div class="main-menu__contacts contacts conntacts--tablet">
+        <div class="main-menu__contacts contacts contacts--tablet">
           <div class="contacts__item">
             <button class="contacts__button contacts__button--text" type="button">
               Авторизация
@@ -40,9 +40,13 @@
       <div class="page-header__popup">
         <div class="main-menu">
           <div class="main-menu__one-row one-row">
-            <a href="index.html" class="main-menu__logo">
-              <img src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали"
+            <a href="index.html" class="main-menu__logo logo">
+              <img class="logo__mobile" src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали"
               width="100px" height="19px">
+              <img class="logo__tablet" src="img/logo-tablet-blue@1x.png" alt="Логотип Погнали"
+              width="164px" height="42px">
+              <img class="logo__desktop" src="img/logo-desktop-blue@1x.png" alt="Логотип Погнали"
+              width="198px" height="52px">
             </a>
             <button class="main-menu__switch switch" type="button" aria-label="Закрыть меню">
               <svg class="switch__close" version="1.1" id="Layer_1"
@@ -54,6 +58,13 @@
               L10.3,9z"/>
               </svg>
             </button>
+            <div class="main-menu__contacts contacts contacts--tablet">
+              <div class="contacts__item">
+                <button class="contacts__button contacts__button--text" type="button">
+                  Авторизация
+                </button>
+              </div>
+            </div>
           </div>
           <nav class="main-menu__site-nav site-nav">
             <ul class="site-nav__list">
@@ -76,8 +87,10 @@
           </nav>
           <div class="main-menu__contacts contacts">
             <ul class="contacts__list">
-              <li class="contacts__item">
-                <button class="contacts__button" type="button">Авторизация</button>
+              <li class="contacts__item contacts__item--authorization">
+                <button class="contacts__button contacts__button--text" type="button">
+                  Авторизация
+                </button>
               </li>
               <li class="contacts__item contacts__item--phone">
                 <div class="contacts__circle">
@@ -225,7 +238,7 @@
                 </svg>
               </a>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--authorization">
               <button class="contacts__button contacts__button--text" type="button">
                 Авторизация
               </button>

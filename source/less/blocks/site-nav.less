@@ -13,3 +13,30 @@
   text-decoration: none;
   color: #192144;
 }
+
+@media (min-width: @tablet-width) {
+  .site-nav__item {
+    text-align: left;
+    font-size: 60px;
+    line-height: 71px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-nav__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .site-nav__item {
+    margin-left: 25px;
+    margin-right: 5px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .site-nav__link {
+    color: @white;
+  }
+}
