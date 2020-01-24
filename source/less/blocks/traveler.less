@@ -155,5 +155,75 @@
     width: 48px;
     height: 48px;
   }
+}
 
+@media (min-width: @desktop-width) {
+  .traveler {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    padding-left: 285px;
+  }
+
+  .traveler__avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 285px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .traveler__countries {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    margin-top: 45px;
+    float: right;
+  }
+
+  .traveler__mode {
+    order: 0;
+    margin: 0;
+    margin-left: 32px;
+  }
+
+  .traveler__name {
+    order: 1;
+    flex-grow: 1;
+    padding: 0;
+    margin-left: 20px;
+  }
+
+  .traveler__hashtags {
+    order: 2;
+    width: 100%;
+    padding: 0;
+    margin-left: 50px;
+  }
+
+  .traveler__button {
+    order: 3;
+    margin-left: 55px;
+  }
+
+  .traveler__like {
+    order: 4;
+  }
+
+  .traveler__one-row {
+    flex-direction: row;
+    order: 5;
+    width: 240px;
+    margin-left: auto;
+    margin-right: 40px;
+    flex-grow: 0;
+  }
+
+  .traveler__way-to-travel {
+    width: auto;
+  }
 }

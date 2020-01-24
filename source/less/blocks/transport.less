@@ -9,6 +9,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 0;
+
+  &--column {
+    justify-content: flex-start;
+  }
 }
 
 .transport__item {
@@ -55,10 +59,19 @@
   .transport__title {
     display: none;
   }
-  
+
   .transport__item {
     &--grey {
       background-color: transparent;
     }
-  } 
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .transport__list {
+    &--column {
+      flex-direction: row;
+      width: auto;
+    }
+  }
 }

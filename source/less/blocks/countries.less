@@ -5,7 +5,6 @@
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
   }
-  
 }
 
 .countries__title {
@@ -166,5 +165,15 @@
     padding-left: 10px;
     padding-right: 27px;
     .font(20px; 30px; 500);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .countries__list {
+    flex-direction: column;
+  }
+
+  .countries__title {
+    display: none;
   }
 }
