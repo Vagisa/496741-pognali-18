@@ -1,6 +1,6 @@
 .social-network {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   min-width: 108px;
   list-style: none;
   padding: 0;
@@ -33,6 +33,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .social-network {
+    justify-content: flex-start;
+  }
+
   .social-network__link {
     width: 60px;
     height: 60px;

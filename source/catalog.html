@@ -6,26 +6,28 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header page-header--minor container">
-      <div class="one-row one-row--min">
-        <a href="index.html" class="page-header__logo logo" aria-label="Главная страница">
-          <img class="logo__mobile" src="img/logo-mobile-white@1x.png" alt="Логотип Погнали"
-          width="100px" height="19px">
-          <img class="logo__tablet" src="img/logo-tablet-white@1x.png" alt="Логотип Погнали"
-          width="164px" height="42px">
-          <img class="logo__desktop" src="img/logo-desktop-white@1x.png" alt="Логотип Погнали"
-          width="198px" height="52px">
+    <header class="page-header page-header--minor">
+      <div class="main-menu main-menu--opened container">
+        <a href="index.html" class="page-header__logo logo">
+          <div class="main-menu__img main-menu__img--white">
+            <img class="logo__mobile" src="img/logo-mobile-white@1x.png" alt="Логотип Погнали"
+            width="100px" height="19px">
+            <img class="logo__tablet" src="img/logo-tablet-white@1x.png" alt="Логотип Погнали"
+            width="164px" height="42px">
+            <img class="logo__desktop" src="img/logo-desktop-white@1x.png" alt="Логотип Погнали"
+            width="198px" height="52px">
+          </div>
+          <div class="main-menu__img main-menu__img--blue">
+            <img class="logo__mobile" src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали"
+            width="100px" height="19px">
+            <img class="logo__tablet" src="img/logo-tablet-blue@1x.png" alt="Логотип Погнали"
+            width="164px" height="42px">
+            <img class="logo__desktop" src="img/logo-desktop-blue@1x.png" alt="Логотип Погнали"
+            width="198px" height="52px">
+          </div>
         </a>
-        <button class="main-menu__switch switch" type="button" aria-label="Открыть меню">
-          <svg class="switch__open" version="1.1" id="Layer_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25" height="11"
-          viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
-          <g>
-          <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
-          <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
-          </g>
-          </svg>
+        <button class="main-menu__switch main-menu__switch--nojs" type="button" aria-label="Открыть меню">
+          <span class="visually-hidden">Открыть/Закрыть меню</span>
         </button>
         <div class="main-menu__contacts contacts contacts--tablet">
           <div class="contacts__item">
@@ -34,36 +36,7 @@
             </button>
           </div>
         </div>
-      </div>
-      <div class="page-header__popup">
-        <div class="main-menu">
-          <div class="main-menu__one-row one-row">
-            <a href="index.html" class="main-menu__logo logo">
-              <img class="logo__mobile" src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали"
-              width="100px" height="19px">
-              <img class="logo__tablet" src="img/logo-tablet-blue@1x.png" alt="Логотип Погнали"
-              width="164px" height="42px">
-              <img class="logo__desktop" src="img/logo-desktop-blue@1x.png" alt="Логотип Погнали"
-              width="198px" height="52px">
-            </a>
-            <button class="main-menu__switch switch" type="button" aria-label="Закрыть меню">
-              <svg class="switch__close" version="1.1" id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19" height="19"
-              viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
-              L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
-              L10.3,9z"/>
-              </svg>
-            </button>
-            <div class="main-menu__contacts contacts contacts--tablet">
-              <div class="contacts__item">
-                <button class="contacts__button contacts__button--text" type="button">
-                  Авторизация
-                </button>
-              </div>
-            </div>
-          </div>
+        <div class="main-menu__popup">
           <nav class="main-menu__site-nav site-nav">
             <ul class="site-nav__list">
               <li class="site-nav__item">
@@ -182,7 +155,7 @@
               </li>
             </ul>
           </div>
-          <section class="main-menu__contacts-minor contacts">
+          <div class="main-menu__contacts-minor contacts">
             <ul class="page-main__contacts-list contacts__list contacts__list--row">
               <li class="contacts__item contacts__button contacts__button--img">
                 <a class="contacts__link" href="tel:88005558628" aria-label="8 800 555-86-28">
@@ -228,7 +201,7 @@
                 </button>
               </li>
             </ul>
-          </section>
+          </div>
         </div>
       </div>
     </header>
@@ -1334,5 +1307,26 @@
         </a>
       </div>
     </footer>
+    <script>
+      var menuMain = document.querySelector('.main-menu');
+      var menuSwitch = document.querySelector('.main-menu__switch');
+      var popupMenu = document.querySelector('.main-menu__popup');
+    
+      //navMain.classList.remove('main-nav--nojs');
+    
+      menuSwitch.addEventListener('click', function() {
+        if (menuMain.classList.contains('main-menu--closed')) {
+          menuMain.classList.remove('main-menu--closed');
+          menuMain.classList.add('main-menu--opened');
+          popupMenu.classList.add('main-menu__popup--js');
+        } else {
+          menuMain.classList.add('main-menu--closed');
+          menuMain.classList.remove('main-menu--opened');
+        }
+      });
+      menuMain.classList.add('main-menu--closed');
+      menuMain.classList.remove('main-menu--opened');
+      menuSwitch.classList.remove('main-menu__switch--nojs');
+    </script>
   </body>
 </html>
