@@ -5,17 +5,18 @@
   background-color: #edeff6;
 }
 
-.my-page__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.my-page__form {
   position: relative;
-  min-height: 158px;
-  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  margin-bottom: 35px;
 }
 
 .my-page__photo {
-  align-self: flex-end;
+  margin-right: 20px;
 }
 
 .my-page__img {
@@ -29,12 +30,17 @@
 }
 
 .my-page__level {
-  top: 24px;
-  left: 0;
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  flex-shrink: 0;
 }
 
 .my-page__button {
+  flex-grow: 1;
   height: 40px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   background-color: #dfe3f0;
   border-radius: 20px;
   border: none;
@@ -44,31 +50,62 @@
   cursor: pointer;
 }
 
-.my-page__form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
-  margin-bottom: 25px;
+.my-page__hashtags {
+  flex-grow: 1;
 }
+
+.my-page__transport {
+  flex-grow: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .my-page__level {
+    margin-left: 0;
+    order: 1;
+  }
+
+  .my-page__transport {
+    width: 308px;
+    flex-grow: 0;
+    order: 2;
+  }
+  
+  .my-page__photo {
+    width: 94px;
+    height: 94px;
+    border-radius: 5px;
+    margin-right: 0;
+    background-color: #dfe3f0;
+    order: 3;
+  }
+
+  .my-page__img {
+    width: 94px;
+    height: 94px;
+  }
+
+  .my-page__button {
+    width: 100%;
+    height: 60px;
+    order: 4;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+  }
+
+  .my-page__hashtags {
+    order: 5;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .my-page {
-    position: relative;
-  }
-
-  .my-page__card {
-    position: absolute;
-    top: -150px;
-    right: 155px;
-    flex-direction: row;
-    align-items: center;
-    width: 331px;
-    padding: 0;
-    z-index: 1;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .my-page__level {
-    position: relative;
     order: -1;
     margin-bottom: 47px;
   }
@@ -79,8 +116,8 @@
     justify-content: space-between;
     width: 191px;
     height: 237px;
-    background-color: #dfe3f0;
     border-radius: 10px;
+    z-index: 1;
   }
 
   .my-page__img {

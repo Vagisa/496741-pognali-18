@@ -1,16 +1,18 @@
 .modal {
-  display: none;
+  //display: none;
   position: absolute;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   align-self: center;
-  z-index: 2;
+  z-index: 1;
   background-color: @white;
   box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
 
   &--countries {
+    top: 0;
     width: 220px;
     min-height: 517px;
-    border: 1px solid #cbced9;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 10px;
@@ -29,6 +31,7 @@
 }
 
 .modal__header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;

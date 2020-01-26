@@ -210,35 +210,35 @@
         Направления
       </h1>
       <section class="my-page container">
-        <div class="my-page__card">
+        <form class="my-page__form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="my-page__level">
+            <div class="level level--big">
+              <svg class="level__circle" width="100" height="100">
+                <circle r="47" cx="50" cy="50"
+                stroke="#ff8d30" stroke-width="3" stroke-dasharray="320 80"
+                stroke-dashoffset="165">
+                </circle>
+              </svg>
+              <p class="level__value level__value--blue">
+                <span class="level__number level__number--blue">80</span>
+                <span class="level__text level__text--gray">level</span>
+              </p>
+            </div>
+          </div>
           <div class="my-page__photo">
             <img class="my-page__img" src="img/demin-mobile@2x.jpg"
             width="100" height="100" alt="Аватарка Пети Демина">
             <span class="my-page__caption">Фото</span>
           </div>
-          <div class="my-page__level level level--big">
-            <svg class="level__circle" width="105" height="105">
-              <circle r="50" cx="52" cy="52"
-              stroke="#ff8d30" stroke-width="3" stroke-dasharray="320 80"
-              stroke-dashoffset="165">
-              </circle>
-            </svg>
-            <p class="level__value level__value--blue">
-              <span class="level__number level__number--blue">80</span>
-              <span class="level__text level__text--gray">level</span>
-            </p>
-          </div>
           <button class="my-page__button" type="button">
             Сменить фото
           </button>
-        </div>
-        <form class="my-page__form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="fieldset my-page__hashtags hashtags">
-            <legend class="fieldset__legend">Тэги</legend>
+          <div class="fieldset my-page__hashtags hashtags">
+            <div class="fieldset__legend">Тэги</div>
             <textarea class="fieldset__text" name="hashtags">#бургер #бар #футбол #концерт #крафт</textarea>
-          </fieldset>
-          <fieldset class="fieldset my-page__transport transport">
-            <legend class="fieldset__legend">Транспорт</legend>
+          </div>
+          <div class="fieldset my-page__transport transport">
+            <div class="fieldset__legend">Транспорт</div>
             <div class="fieldset__transport transport__list">
               <input class="visually-hidden" type="checkbox" id="plane"
               name="transport" value="plane" checked>
@@ -302,7 +302,7 @@
                 </svg>
               </label>
             </div>
-          </fieldset>
+          </div>
         </form>
       </section>
       <section class="plans">
@@ -355,42 +355,20 @@
                   <span class="procedure-steps__unit">чел.</span>
                 </label>
                 <div class="procedure-steps__number">
-                  <svg class="procedure-steps__svg procedure-steps__svg--minus"
-                  version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  width="14" height="2"
-                  viewBox="0 0 14 2" style="enable-background:new 0 0 14 2;" xml:space="preserve">
-                  <rect class="st0" width="14" height="2"/>
-                  </svg>
+                  <div class="procedure-steps__sign procedure-steps__sign--minus"></div>
                   <input class="procedure-steps__input" id="companions-number"
                   type="text" value="2">
-                  <svg class="procedure-steps__svg procedure-steps__svg--plus"
-                  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="14"
-                  viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
-                  <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
-                  </svg>
+                  <div class="procedure-steps__sign procedure-steps__sign--plus"></div>
                 </div>
-                <label class="procedure-steps__label" for="duration">
+                <label class="procedure-steps__label procedure-steps__label--duration" for="duration">
                   <span>Длительность:</span>
                   <span class="procedure-steps__unit">дн.</span>
                 </label>
-                <div class="procedure-steps__number">
-                  <svg class="procedure-steps__svg procedure-steps__svg--minus"
-                  version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  width="14" height="2"
-                  viewBox="0 0 14 2" style="enable-background:new 0 0 14 2;" xml:space="preserve">
-                  <rect class="st0" width="14" height="2"/>
-                  </svg>
+                <div class="procedure-steps__number procedure-steps__number--duration">
+                  <div class="procedure-steps__sign procedure-steps__sign--minus"></div>
                   <input class="procedure-steps__input" id="duration"
                   type="text" value="2">
-                  <svg class="procedure-steps__svg procedure-steps__svg--plus"
-                  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="14"
-                  viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
-                  <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
-                  </svg>
+                  <div class="procedure-steps__sign procedure-steps__sign--plus"></div>
                 </div>
                 <input class="visually-hidden procedure-steps__checkbox" id="with-kids"
                 type="checkbox" checked value="with-kids">
@@ -642,13 +620,27 @@
                   </ul>
                   <table class="calendar__days">
                     <tr>
-                      <th class="calendar__day-week">П</th>
-                      <th class="calendar__day-week">В</th>
-                      <th class="calendar__day-week">С</th>
-                      <th class="calendar__day-week">Ч</th>
-                      <th class="calendar__day-week">П</th>
-                      <th class="calendar__day-week calendar__day-week--holiday">С</th>
-                      <th class="calendar__day-week calendar__day-week--holiday">В</th>
+                      <th class="calendar__day-week">
+                        П<span class="calendar__desktop">н</span>
+                      </th>
+                      <th class="calendar__day-week">
+                        В<span class="calendar__desktop">т</span>
+                      </th>
+                      <th class="calendar__day-week">
+                        С<span class="calendar__desktop">р</span>
+                      </th>
+                      <th class="calendar__day-week">
+                        Ч<span class="calendar__desktop">т</span>
+                      </th>
+                      <th class="calendar__day-week">
+                        П<span class="calendar__desktop">т</span>
+                      </th>
+                      <th class="calendar__day-week calendar__day-week--holiday">
+                        С<span class="calendar__desktop">б</span>
+                      </th>
+                      <th class="calendar__day-week calendar__day-week--holiday">
+                        В<span class="calendar__desktop">с</span>
+                      </th>
                     </tr>
                     <tr>
                       <td class="calendar__day calendar__day--last">
@@ -832,216 +824,228 @@
                     </tr>
                   </table>
                 </div>
-                <button class="procedure-steps__button procedure-steps__button--next"
-                type="button">Следующий шаг</button>
+                <button class="procedure-steps__button procedure-steps__button--next" type="button">
+                  Следующий шаг
+                  <svg class="procedure-steps__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14"
+                  viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                  <polygon points="0,14 0,0.1 10,7.1 "></polygon>
+                  </svg>
+                </button>
               </li>
               <li class="procedure-steps__item">
                 <h4 class="procedure-steps__title">Маршрут</h4>
                 <p class="procedure-steps__intro">Укажите страны, которые вы хотели по посетить.
                 Это может быть одна или сразу несколько.</p>
-                <label class="procedure-steps__option procedure-steps__option--selected">
-                  <input class="procedure-steps__input procedure-steps__input--text"
-                  type="text" name="countries" value="Босния и Герцеговина">
-                  <div class="procedure-steps__flag">
-                    <img src="img/flag-bosnia.svg"
-                    alt="Флаг страны" width="35px" height="24px">
-                  </div>
-                  <button class="procedure-steps__delete" type="button"
-                  aria-label="Удалить страну">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9"
-                    style="enable-background:new 0 0 9 9;" xml:space="preserve" width="9px" height="9px">
-                    <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
-                    C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
-                    L5.2,4.5z"/></svg>
-                  </button>
-                  <svg  class="procedure-steps__arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="5px" height="10px"
-                  viewBox="0 0 5 10" style="enable-background:new 0 0 5 10;" xml:space="preserve">
-                  <polygon class="st0" points="3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 "/>
-                  </svg>
-                </label>
-                <label class="procedure-steps__option procedure-steps__option--selected">
-                  <input class="procedure-steps__input procedure-steps__input--text"
-                  type="text" name="countries" value="Чехия">
-                  <div class="procedure-steps__flag">
-                    <img src="img/flag-czech.svg" alt="Флаг страны"
-                    width="35px" height="24px">
-                  </div>
-                  <button class="procedure-steps__delete" type="button"
-                  aria-label="Удалить страну">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9"
-                    style="enable-background:new 0 0 9 9;" xml:space="preserve" width="9px" height="9px">
-                    <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
-                    C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
-                    L5.2,4.5z"/></svg>
-                  </button>
-                  <svg class="procedure-steps__arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="5px" height="10px"
-                  viewBox="0 0 5 10" style="enable-background:new 0 0 5 10;" xml:space="preserve">
-                  <polygon class="st0" points="3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 "/>
-                  </svg>
-                </label>
-                <div class="procedure-steps__option">
-                  <button class="procedure-steps__select modal-oppen" type="button">
-                    <span>Выберите страну</span>
-                    <svg class="procedure-steps__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 9"
-                    style="enable-background:new 0 0 17 9;" xml:space="preserve" width="12px" height="7px">
-                    <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7
-                    s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/></svg>
-                  </button>
-                  <button class="procedure-steps__delete" type="button"
-                  aria-label="Удалить страну">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9"
-                    style="enable-background:new 0 0 9 9;" xml:space="preserve" width="9px" height="9px">
-                    <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
-                    C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
-                    L5.2,4.5z"/></svg>
-                  </button>
-                  <svg  class="procedure-steps__arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="5px" height="10px"
-                  viewBox="0 0 5 10" style="enable-background:new 0 0 5 10;" xml:space="preserve">
-                  <polygon class="st0" points="3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 "/>
-                  </svg>
-                </div>
-                <div class="modal modal-show modal--countries">
-                  <div class="modal__header">
-                    <h2 class="modal__title">Выберите страну</h2>
-                    <button class="modal__close-back" type="button" aria-label="Закрыть окно">
-                      <svg class="modal__close modal__close--white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="9"
-                      viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
+                <div class="procedure-steps__table">
+                  <label class="procedure-steps__option procedure-steps__option--selected">
+                    <input class="procedure-steps__input procedure-steps__input--text"
+                    type="text" name="countries" value="Босния и Герцеговина">
+                    <div class="procedure-steps__flag">
+                      <img src="img/flag-bosnia.svg"
+                      alt="Флаг страны" width="35px" height="24px">
+                    </div>
+                    <button class="procedure-steps__delete" type="button"
+                    aria-label="Удалить страну">
+                      <svg class="procedure-steps__delete-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9"
+                      style="enable-background:new 0 0 9 9;" xml:space="preserve" width="9px" height="9px">
                       <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
-                      C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2 L5.2,4.5z"/>
-                      </svg>
+                      C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
+                      L5.2,4.5z"/></svg>
+                    </button>
+                    <svg  class="procedure-steps__arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="5px" height="10px"
+                    viewBox="0 0 5 10" style="enable-background:new 0 0 5 10;" xml:space="preserve">
+                    <polygon class="st0" points="3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 "/>
+                    </svg>
+                  </label>
+                  <label class="procedure-steps__option procedure-steps__option--selected">
+                    <input class="procedure-steps__input procedure-steps__input--text"
+                    type="text" name="countries" value="Чехия">
+                    <div class="procedure-steps__flag">
+                      <img src="img/flag-czech.svg" alt="Флаг страны"
+                      width="35px" height="24px">
+                    </div>
+                    <button class="procedure-steps__delete" type="button"
+                    aria-label="Удалить страну">
+                      <svg class="procedure-steps__delete-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9"
+                      style="enable-background:new 0 0 9 9;" xml:space="preserve" width="9px" height="9px">
+                      <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
+                      C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
+                      L5.2,4.5z"/></svg>
+                    </button>
+                    <svg class="procedure-steps__arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="5px" height="10px"
+                    viewBox="0 0 5 10" style="enable-background:new 0 0 5 10;" xml:space="preserve">
+                    <polygon class="st0" points="3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 "/>
+                    </svg>
+                  </label>
+                  <div class="procedure-steps__option">
+                    <button class="procedure-steps__select modal-oppen" type="button">
+                      <span>Выберите страну</span>
+                    </button>
+                    <button class="procedure-steps__delete" type="button"
+                    aria-label="Удалить страну">
+                      <svg class="procedure-steps__delete-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9"
+                      style="enable-background:new 0 0 9 9;" xml:space="preserve" width="9px" height="9px">
+                      <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
+                      C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
+                      L5.2,4.5z"/></svg>
+                    </button>
+                    <svg  class="procedure-steps__arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="5px" height="10px"
+                    viewBox="0 0 5 10" style="enable-background:new 0 0 5 10;" xml:space="preserve">
+                    <polygon class="st0" points="3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 "/>
+                    </svg>
+                        
+                    <div class="modal modal-show modal--countries">
+                      <div class="modal__header">
+                        <h2 class="modal__title">Выберите страну</h2>
+                        <button class="modal__close-back" type="button" aria-label="Закрыть окно">
+                          <svg class="modal__close modal__close--white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="9"
+                          viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
+                          <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
+                          C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2 L5.2,4.5z"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="countries">
+                        <ul class="countries__alphabet alphabet">
+                          <li class="alphabet__item alphabet__item--active">
+                            <button class="alphabet__letter alphabet__letter--lightblue"
+                            type="button" class="alphabet__button">А</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Б</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">В</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Г</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Д</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Е</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">З</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">И</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">К</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Л</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">М</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Н</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">О</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">П</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Р</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">С</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Т</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">У</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Ф</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Х</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Ч</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Ш</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Э</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Ю</button>
+                          </li>
+                          <li class="alphabet__item">
+                            <button class="alphabet__letter" type="button" class="alphabet__button">Я</button>
+                          </li>
+                        </ul>
+                        <ul class="countries__countries-list countries-list countries-list--mini">
+                          <li class="countries-list__item">
+                            <a class="countries-list__state" href="#">Афганистан</a>
+                          </li>
+                          <li class="countries-list__item">
+                            <a class="countries-list__state" href="#">Албания</a>
+                          </li>
+                          <li class="countries-list__item">
+                            <a class="countries-list__state" href="#">Алжир</a>
+                          </li>
+                          <li class="countries-list__item">
+                            <a class="countries-list__state" href="#">Андорра</a>
+                          </li>
+                          <li class="countries-list__item">
+                            <a class="countries-list__state" href="#">Аргентина</a>
+                          </li>
+                          <li class="countries-list__item">
+                            <a class="countries-list__state" href="#">Армения</a>
+                          </li>
+                          <li class="countries-list__item">
+                            <a class="countries-list__state" href="#">Австралия</a>
+                          </li>
+                          <li class="countries-list__item">
+                            <a class="countries-list__state" href="#">Австрия</a>
+                          </li>
+                          <li class="countries-list__item">
+                            <a class="countries-list__state" href="#">Азербайджан</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="procedure-steps__option procedure-steps__option--add">
+                    <button class="procedure-steps__select procedure-steps__select--add" type="button">
+                      <span>Добавить страну</span>
                     </button>
                   </div>
-                  <div class="countries">
-                    <ul class="countries__alphabet alphabet">
-                      <li class="alphabet__item alphabet__item--active">
-                        <button class="alphabet__letter alphabet__letter--lightblue"
-                        type="button" class="alphabet__button">А</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Б</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">В</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Г</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Д</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Е</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">З</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">И</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">К</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Л</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">М</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Н</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">О</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">П</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Р</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">С</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Т</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">У</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Ф</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Х</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Ч</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Ш</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Э</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Ю</button>
-                      </li>
-                      <li class="alphabet__item">
-                        <button class="alphabet__letter" type="button" class="alphabet__button">Я</button>
-                      </li>
-                    </ul>
-                    <ul class="countries__countries-list countries-list countries-list--mini">
-                      <li class="countries-list__item">
-                        <a class="countries-list__state" href="#">Афганистан</a>
-                      </li>
-                      <li class="countries-list__item">
-                        <a class="countries-list__state" href="#">Албания</a>
-                      </li>
-                      <li class="countries-list__item">
-                        <a class="countries-list__state" href="#">Алжир</a>
-                      </li>
-                      <li class="countries-list__item">
-                        <a class="countries-list__state" href="#">Андорра</a>
-                      </li>
-                      <li class="countries-list__item">
-                        <a class="countries-list__state" href="#">Аргентина</a>
-                      </li>
-                      <li class="countries-list__item">
-                        <a class="countries-list__state" href="#">Армения</a>
-                      </li>
-                      <li class="countries-list__item">
-                        <a class="countries-list__state" href="#">Австралия</a>
-                      </li>
-                      <li class="countries-list__item">
-                        <a class="countries-list__state" href="#">Австрия</a>
-                      </li>
-                      <li class="countries-list__item">
-                        <a class="countries-list__state" href="#">Азербайджан</a>
-                      </li>
-                    </ul>
-                  </div>
                 </div>
-                <div class="procedure-steps__option">
-                  <button class="procedure-steps__select procedure-steps__select--add" type="button">
-                    <span>Добавить страну</span>
-                    <svg class="procedure-steps__svg"
-                    version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" height="14"
-                    viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
-                    <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
-                    </svg>
-                  </button>
-                </div>
-                <button class="procedure-steps__button procedure-steps__button--next" type="button">Следующий шаг</button>
+                <button class="procedure-steps__button procedure-steps__button--next" type="button">
+                  Следующий шаг
+                  <svg class="procedure-steps__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14"
+                  viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                  <polygon points="0,14 0,0.1 10,7.1 "></polygon>
+                  </svg>
+                </button>
                 <button class="procedure-steps__button procedure-steps__button--back" type="button">
+                  <svg class="procedure-steps__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14"
+                  viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                  <polygon points="0,7.1 10,0.1 10,14 "/>
+                  </svg>
                   На шаг назад
                 </button>
               </li>
@@ -1072,12 +1076,24 @@
                       <img class="entertainment__flag" src="img/flag-czech.svg"
                       alt="Флаг Чехии" width="35px" height="24px">
                     </label class="entertainment__label">
-                    <textarea class="entertainment__text" name="plan" cols="20" rows="10"
+                    <textarea class="entertainment__text" name="plan" cols="10" rows="5"
                     id="Czech-Republic-plan">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                   </li>
                 </ul>
-                <button class="procedure-steps__button procedure-steps__button--next" type="submit">Отправить</button>
+                <button class="procedure-steps__button procedure-steps__button--next" type="submit">
+                  Отправить
+                  <svg class="procedure-steps__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14"
+                  viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                  <polygon points="0,14 0,0.1 10,7.1 "></polygon>
+                  </svg>
+                </button>
                 <button class="procedure-steps__button procedure-steps__button--back" type="button">
+                  <svg class="procedure-steps__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="14"
+                  viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+                  <polygon points="0,7.1 10,0.1 10,14 "/>
+                  </svg>
                   На шаг назад
                 </button>
               </li>
@@ -1097,8 +1113,8 @@
       </a>
       <ul class="page-footer__social-network social-network">
         <li class="social-network__item social-network__item--orange">
-          <a href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
-            <svg class="social-network__img--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          <a class="social-network__link" href="https://ru-ru.facebook.com" aria-label="Погнали в Фейсбуке">
+            <svg class="social-network__img social-network__img--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11" height="21"
             viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
             <g>
@@ -1109,8 +1125,8 @@
           </a>
         </li>
         <li class="social-network__item social-network__item--orange">
-          <a href="https://vk.com" aria-label="Погнали во Вконтакте">
-            <svg class="social-network__img--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          <a class="social-network__link" href="https://vk.com" aria-label="Погнали во Вконтакте">
+            <svg class="social-network__img social-network__img--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23" height="12"
             viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
             <g>
@@ -1135,8 +1151,8 @@
           </a>
         </li>
         <li class="social-network__item social-network__item--orange">
-          <a href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
-            <svg class="social-network__img--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          <a class="social-network__link" href="https://www.instagram.com" aria-label="Погнали в Инстаграме">
+            <svg class="social-network__img social-network__img--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18"
             viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
             <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5

@@ -3,12 +3,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  margin-left: -0.5px;
-  margin-right: -0.5px;
   padding: 0;
-  border-top: 0.5px solid #cbced9;
-  border-bottom: 0.5px solid #cbced9;
   background-color: @white;
+  border: 0.5px solid #cbced9;
+  border-top: none;
 
   &--popup {
     margin-left: 25px;
@@ -16,12 +14,18 @@
   }
 }
 
+.alphabet__item {
+  width: 43px;
+  flex-grow: 1;
+}
+
 .alphabet__letter {
-  width: 44.2px;
+  width: 100%;
   height: 40px;
   border: 0.5px solid #cbced9;
-  flex-grow: 1;
   background-color: inherit;
+  color: @blue;
+  box-sizing: border-box;
 
   &--checked {
     color: @white;

@@ -3,25 +3,28 @@
   flex-direction: column;
   border: 1px solid #cbced9;
   border-radius: 10px;
-  margin: 10px 0;
+  margin: 0;
+  margin-top: 28.5px;
   padding: 0;
 }
 
 .fieldset__legend {
+  margin-top: -26.5px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 18px 20px;
+  color: @blue;
   line-height: 18px;
   text-transform: uppercase;
+  background-color: #edeff6;
 }
 
 .fieldset__text {
-  padding: 16px 25px 20px;
+  padding: 0 25px 20px;
   border: 0;
   width: 100%;
   background-color: inherit;
   resize: none;
-  .font();
   font-weight: 400;
   color: @gray;
   box-sizing: border-box;
@@ -31,7 +34,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 7px 25px 15px;
+  padding: 0 25px 15px;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset {
+    margin-top: 30px;
+    margin-bottom: 28.5px;
+  }
+
+  .fieldset__legend {
+    margin-top: 0;
+    margin-bottom: -30px;
+    .font(20px; 20px; 500);
+    order: 2;
+  }
+
+  .fieldset__text {
+    order: 1;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .fieldset__transport {
+    justify-content: space-between;
+    padding: 25px 55px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  
+  
 }

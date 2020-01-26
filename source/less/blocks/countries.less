@@ -1,4 +1,11 @@
 .countries {
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1;
+  flex-grow: 1;
+
   &--popup {
     padding-top: 25px;
     background-color: #e2e5f2;
@@ -155,6 +162,7 @@
 
   .countries__countries-list {
     width: 200px;
+    z-index: 1;
   }
 
   .countries__list {
