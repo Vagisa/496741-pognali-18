@@ -12,19 +12,45 @@
 .companion__description {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .companion__name {
-  margin-top: 15px;
-  margin-bottom: 21px;
+  margin: 15px 12px 21px;
   color: #1d2e5b;
   .font(21px; 21px);
 }
 
 .companion__one-row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 150px;
+}
+
+@media (min-width: 768px) {
+  .companion__photo {
+    width: 100%;
+  }
+
+  .companion__description {
+    height: auto;
+  }
+
+  .companion__way-to-travel {
+    padding: 9px 10px 24px;
+  }
+
+  .companion__hashtags {
+    padding: 8px 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .companion__name {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 13px 18px 14px;
+  }
 }

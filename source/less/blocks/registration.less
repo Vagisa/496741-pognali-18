@@ -18,32 +18,38 @@
   flex-wrap: wrap;
   font-weight: 300;
   text-align: center;
+}
 
-  &--line {
-    width: 200px;
-  }
+.registration__authorization-line {
+  width: 200px;
+}
+
+.registration__link {
+  color: #ffd74b;
 }
 
 .registration__email {
-  width: 270px;
   position: relative;
+  align-self: stretch;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .registration__input {
   height: 62px;
-  width: 246px;
+  width: 100%;
   padding: 0;
   padding-left: 24px;
-  border-radius: 10px;
   border: none;
   .font(18px; 18px);
   color: rgba(68, 68, 68, 0.3);
+  box-sizing: border-box;
 }
 
 .registration__button {
   position: absolute;
   right: 0;
-  height: 62px;
+  height: 100%;
   width: 60px;
   background-color: #ffd74b;
   border-radius: 10px;
@@ -53,4 +59,87 @@
 
 .registration__triangle {
   fill: #1d2e5b;
+}
+
+@media (min-width: @tablet-width) {
+  .registration {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .registration__intro {
+    margin: 0;
+    padding: 35px;
+    font-size: 45px;
+    line-height: 45px;
+    align-self: center;
+  }
+
+  .registration__authorization {
+    width: 688px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .registration__authorization-line {
+    width: auto;
+
+    &:not(:first-child) {
+      margin-left: 6px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+  }
+
+  .registration__email {
+    margin: 30px 35px;
+    border-radius: 20px;
+  }
+
+  .registration__input {
+    height: 81px;
+    padding-left: 36px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .registration__button {
+    border-radius: 0;
+    width: 82px;
+  }
+
+  .registration__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .registration__email {
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+
+  .registration__button {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 326px;
+    padding: 0 38px;
+    font-family: "Blogger Sans", "Tahoma", sans-serif;
+    .font(24px; 24px);
+    color: @blue;
+
+    &::before {
+      content: "Регистрация";
+    }
+  }
+
+  .registration__contacts {
+    margin-bottom: 29px;
+    min-width: 868px;
+  }
 }

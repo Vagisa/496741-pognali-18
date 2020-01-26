@@ -11,7 +11,30 @@
   .rounded-top(3);
 }
 
+.page-footer__logo {
+  margin-top: 15px;
+}
+
 .page-footer__copyright {
   border-top: 1px solid #e1e3e9;
   padding-top: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    align-items: center;
+    min-height: 74px;
+    padding-left: 40px;
+    padding-right: 40px;
+    .rounded-top-tablet(3);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding-left: 60px;
+    padding-right: 60px;
+    .rounded-top-desktop(3);
+  }
 }

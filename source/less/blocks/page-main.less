@@ -1,6 +1,11 @@
 .page-main {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #161c35;
 }
 
 .page-main__slogan {
@@ -18,7 +23,8 @@
   align-items: flex-end;
   min-height: 255px;
   margin-bottom: 20px;
-  background: url("../img/traveller-illustration-mobile@1x.png") 85px 0 no-repeat,
+  background:
+    url("../img/traveller-illustration-mobile@1x.png") 85px 0 no-repeat,
     url("../img/globe-back-mobile@1x.jpg") 0 -220px no-repeat;
 }
 
@@ -33,14 +39,28 @@
 }
 
 .page-main__about-service {
+  position: relative;
   margin-top: -265px;
-  padding-top: 70px;
+  padding-top: 265px;
   padding-bottom: 85px;
   background-color: #192144;
   background-image: url("../img/about-mobile@1x.png");
-  background-position: 25px bottom;
+  background-position: 25px 307px;
   background-repeat: no-repeat;
   .rounded-bottom(10);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 307px;
+    left: -36px;
+    width: 132px;
+    height: 132px;
+    border-radius: 5px;
+    z-index: -1;
+    background-color: #141b3b;
+    transform: skewX(-15deg);
+  }
 }
 
 .page-main__directions {
@@ -51,14 +71,26 @@
 }
 
 .page-main__companions {
+  position: relative;
   margin-top: 0;
   padding-bottom: 25px;
   padding-top: 70px;
-  //.rounded-bottom(8);
+  z-index: 8;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: -19px;
+    width: 132px;
+    height: 132px;
+    border-radius: 20px;
+    z-index: -1;
+    background-color: #141b3b;
+  }
 }
 
 .page-main__price {
-  min-height: 400px;
   margin-top: 0;
   padding-bottom: 25px;
   padding-top: 50px;
@@ -73,51 +105,200 @@
 }
 
 .page-main__address {
-  margin-top: -50px;
+  margin-top: 0;
   background-color: #ffd74b;
 }
 
-/*
 @media (min-width: @tablet-width) {
   .page-main {
     position: relative;
+    width: 768px;
   }
 
   .page-main__container {
     min-height: 863px;
-    background: url("../img/traveller-illustration-tablet@1x.png") 285px 272px no-repeat,
-    url("../img/globe-back-tablet@1x.jpg") -350px 252px no-repeat;
+    background:
+      url("../img/traveller-illustration-tablet@1x.png") 285px 272px no-repeat,
+      url("../img/globe-back-tablet@1x.jpg") -350px 252px no-repeat;
+    background-color: #182044;
   }
 
   .page-main__slogan {
-    width: 100%;
     min-height: 250px;
     margin: 0;
+    padding-left: 67px;
+    padding-right: 67px;
+    .font(60px; 70px);
   }
+
   .page-main__contacts {
     min-height: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     background: none;
+    display: none;
   }
+
   .page-main__reviews {
     min-height: 260px;
+    padding-top: 40px;
   }
+
   .page-main__about-service {
-    margin-top: 0;
+    margin-top: -140px;
+    padding-top: 140px;
+    .rounded-bottom-tablet(10);
+    background-image: none;
+    padding-bottom: 90px;
+
+    &::before {
+      top: 236px;
+      left: 40px;
+      width: 688px;
+      height: 213px;
+      border-radius: 20px;
+      transform: skewX(0deg);
+    }
+  }
+
+  .page-main__directions {
+    padding: 40px;
+    .rounded-bottom-tablet(9);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 450px;
+      left: 40px;
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+      z-index: -1;
+    }
+  }
+
+  .page-main__companions {
+    padding-bottom: 40px;
+    .rounded-bottom-tablet(8);
+
+    &::before {
+      content: "";
+      top: 120px;
+      left: 40px;
+      width: 213px;
+      height: 213px;
+    }
+  }
+
+  .page-main__price {
+    .rounded-bottom-tablet(7);
+    padding-top: 40px;
+    padding-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 190px;
+      left: 530px;
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+      z-index: -2;
+    }
+  }
+
+  .page-main__registration {
+    .rounded-bottom-tablet(6);
+    padding-bottom: 40px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-main {
+    width: 1440px;
+  }
+
   .page-main__container {
+    display: flex;
+    justify-content: space-between;
     min-height: 641px;
-    background: url("../img/traveller-illustration-desktop@1x.png") 600px 0 no-repeat,
-    url("../img/globe-back-desktop@1x.jpg") -190px -100px no-repeat;
+    background:
+      url("../img/traveller-illustration-desktop@1x.png") 600px 0 no-repeat,
+      url("../img/globe-back-desktop@1x.jpg") -190px -100px no-repeat;
   }
 
   .page-main__steps {
     margin-top: -90px;
     margin-bottom: 89px;
+  }
 
+  .page-main__slogan {
+    width: 400px;
+    padding-top: 70px;
+    text-align: left;
+  }
+
+  .page-main__about-service {
+    margin-top: 0;
+    padding-top: 71px;
+    padding-bottom: 0;
+    .rounded-bottom-desktop(10);
+
+    &::before {
+      top: 71px;
+      left: 60px;
+      width: 213px;
+      height: 213px;
+    }
+  }
+
+  .page-main__directions {
+    padding: 60px;
+    .rounded-bottom-desktop(9);
+
+    &::before {
+      top: 149px;
+      left: 60px;
+    }
+  }
+
+  .page-main__companions {
+    padding-bottom: 60px;
+    .rounded-bottom-desktop(8);
+
+    &::before {
+      left: 60px;
+      top: 128px;
+    }
+  }
+
+  .page-main__price {
+    .rounded-bottom-desktop(7);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &::before {
+      top: 294px;
+      left: 750px;
+      width: 444px;
+      height: 300px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+      z-index: -2;
+    }
+  }
+
+  .page-main__registration {
+    .rounded-bottom-desktop(6);
+    padding-bottom: 60px;
+  }
+
+  .page-main__contacts {
+    display: flex;
+    align-self: flex-start;
+    position: absolute;
+    top: -95px;
+    right: 60px;
   }
 }
-*/

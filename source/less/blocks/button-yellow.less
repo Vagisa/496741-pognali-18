@@ -11,4 +11,49 @@
   .font(18px; 18px);
   border-radius: 10px;
   color: #1d2e5b;
+  box-sizing: border-box;
+
+  &--tablet {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button-yellow {
+    width: auto;
+    height: 81px;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+
+    &--tablet {
+      display: flex;
+      width: 274px;
+      margin-top: 32px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button-yellow {
+    &--tablet {
+      width: 274px;
+      margin: 64px 71px;
+    }
+
+    &--desktop {
+      display: flex;
+      min-width: 274px;
+      margin: 80px 103px;
+    }
+
+    &--companions {
+      display: flex;
+      min-width: 280px;
+    }
+  }
 }

@@ -1,0 +1,44 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__tablet {
+  display: none;
+}
+
+.logo__desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    margin-top: 0;
+  }
+
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__tablet {
+    display: block;
+  }
+
+  .logo__desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: block;
+  }
+}

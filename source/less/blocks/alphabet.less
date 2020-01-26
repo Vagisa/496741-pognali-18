@@ -23,7 +23,7 @@
   flex-grow: 1;
   background-color: inherit;
 
-  &--blue {
+  &--checked {
     color: @white;
     background-color: @blue;
     border-color: @blue;
@@ -31,5 +31,35 @@
 
   &--lightblue {
     background-color: #edeff6;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .alphabet {
+    background-color: inherit;
+    border: none;
+    margin-left: 12px;
+    margin-right: 12px;
+
+    &--popup {
+      width: 414px;
+    }
+  }
+
+  .alphabet__letter {
+    background-color: pink;
+    width: 76px;
+    height: 83px;
+    flex-shrink: 0;
+    .font(60px; 60px; 700);
+    color: #192144;
+    opacity: 0.2;
+
+    &--checked {
+      opacity: 1;
+      color: inherit;
+      background-color: inherit;
+      border: none;
+    }
   }
 }

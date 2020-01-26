@@ -1,15 +1,16 @@
-.about-service {
+.about-service__body {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  min-height: 520px;
+  justify-content: space-between;
+  min-height: 308px;
 }
 
 .about-service__title {
   .font(24px; 24px; 700; normal);
   color: #ff8d30;
-  padding-right: 25px;
-  padding-left: 25px;
+  margin-top: 47px;
+  margin-bottom: 50px;
+  padding: 25px;
 }
 
 .about-service__slogan {
@@ -22,4 +23,68 @@
   font-weight: 700;
   padding-right: 25px;
   padding-left: 25px;
+}
+
+.about-service__to-all {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .about-service__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 695px;
+    margin-right: -40px;
+    background-image: url("../img/about-tablet@1x.png");
+    background-position: 345px bottom;
+    background-repeat: no-repeat;
+  }
+
+  .about-service__title {
+    margin-top: 96px;
+    margin-bottom: 0;
+    padding: 35px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .about-service__slogan {
+    width: 300px;
+    margin: 0;
+    padding: 7px 35px 20px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .about-service__advice {
+    width: 300px;
+    padding: 20px 35px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-service__body {
+    min-height: 695px;
+    margin-right: 0;
+    align-items: flex-start;
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: 690px bottom;
+    background-repeat: no-repeat;
+  }
+
+  .about-service__title {
+    margin-top: 25px;
+    padding: 35px 71px;
+  }
+
+  .about-service__slogan {
+    padding: 25px 71px;
+  }
+
+  .about-service__advice {
+    padding: 20px 71px;
+  }
 }
