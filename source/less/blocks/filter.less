@@ -1,7 +1,13 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
 .filter__form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex-wrap: wrap;
   min-height: 335px;
   background-color: #ffd74b;
   border-radius: 20px;
@@ -19,12 +25,16 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   border: none;
 }
 
 .filter__legend {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   border-top: 1px solid #f3c72b;
 }
@@ -142,11 +152,12 @@
 .filter__label {
   position: relative;
   display: flex;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  min-height: 30px;
 }
 
 .filter__label-text {
+  display: flex;
+  align-items: center;
   .font(15px; 15px; 400);
   color: @gray;
   padding-left: 10px;
@@ -154,10 +165,12 @@
 
 .filter__options {
   display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .filter__toggle:focus ~ .filter__options {
-  display: block;
+  display: flex;
 }
 
 .filter__toggle-close:focus + .filter__options {
@@ -166,13 +179,7 @@
 
 .filter__options:hover,
 .filter__options:focus {
-  display: block;
-}
-
-.filter__form:focus,
-.filter__form:hover,
-.filter__form:active {
-  display: block;
+  display: flex;
 }
 
 .filter__checkbox + .filter__label::before {
@@ -181,6 +188,7 @@
   height: 18px;
   border-radius: 4px;
   background-color: @white;
+  align-self: center;
 }
 
 .filter__checkbox:checked + .filter__label::after {
@@ -205,18 +213,141 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .filter__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  .filter__form {
+    margin: 46px 40px 43px;
+    padding: 37px 35px;
+  }
+
+  .filter__legend {
+    border: none;
+  }
+
+  .filter__label-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .filter__checkbox + .filter__label::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+
+  .filter__checkbox:checked + .filter__label::after {
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    margin-top: -8px;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-size: 12px;
+  }
+
+  .filter__button {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    border-radius: 25px;
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: 1439px) {
+  .filter__title {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f3c72b;
+  }
+
+  .filter__fieldset {
+    &:nth-last-child(2) {
+      padding-bottom: 35px;
+      border-bottom: 1px solid #f3c72b;
+    }
+  }
+
+  .filter__legend {
+    flex-direction: row;
+  }
+
+  .filter__label {
+    min-height: 50px;
+
+    &:nth-child(2) {
+      width: 167px;
+    }
+
+    &:nth-child(4) {
+      width: 175px;
+    }
+
+    .filter__level {
+      height: 44px;
+      align-self: center;
+      order: 1;
+    }
+  
+    .filter__input {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  
+    .filter__range {
+      flex-shrink: 0;
+    }
+  }
+
+  .filter__toggle {
+    width: 120px;
+    flex-shrink: 0;
+    .font(20px; 30px; 500);
+  }
+
+  .filter__options {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter__toggle:focus + .filter__toggle-close {
+    display: none;
+  }
+
+  .filter__svg {
+    display: none;
+  }
+
+  .filter__button {
+    margin-top: 36px;}
+}
+
 @media (min-width: @desktop-width) {
   .filter {
+  }
+
+  .filter__pickup {
+    align-self: flex-end;
     position: relative;
+    margin-top: 160px;
   }
 
   .filter__form {
     position: absolute;
-    bottom: -906px;
-    right: 60px;
+    top: 0;
+    right: 0;
+    flex-direction: column;
     width: 195px;
-    min-height: 725px;
-    padding: 45px;
     margin: 0;
+    padding: 45px;
+  }
+
+  .filter__label {
+    min-height: 40px;
   }
 }

@@ -1,5 +1,4 @@
 .countries-list {
-  padding: 18px 25px;
   list-style: none;
   z-index: 1;
 
@@ -25,22 +24,23 @@
   text-decoration: none;
 }
 
-.countries-list__button {
-  height: 40px;
-  .font(17px; 30px; 700);
-  color: #161c35;
-  text-transform: uppercase;
-  background-color: #d6daed;
-  border: none;
-  border-radius: 20px;
-}
-
 @media (min-width: @tablet-width) {
-  .countries-list__button {
-    height: 100px;
-    flex-grow: 1;
-    margin-left: 35px;
-    margin-right: 35px;
+  .countries-list {
+    &--mini {
+      justify-content: flex-start;
+      align-self: stretch;
+      width: 190px;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      border: none;
+      border-left: 1px solid #cbced9;
+      border-radius: 0;
+      flex-grow: 0;
+    }
+  }
+
+  .countries-list__item {
     font-size: 20px;
+    line-height: 30px;
   }
 }

@@ -403,7 +403,7 @@
                     stroke-dashoffset="55">
                     </circle>
                   </svg>
-                  <p class="level__value">
+                  <p class="level__value level__value--dark">
                     <span class="level__number">99</span>
                     <span class="level__text">level</span>
                   </p>
@@ -506,7 +506,7 @@
                   stroke-dashoffset="60">
                   </circle>
                   </svg>
-                  <p class="level__value">
+                  <p class="level__value level__value--dark">
                     <span class="level__number">80</span>
                     <span class="level__text">level</span>
                   </p>
@@ -615,7 +615,7 @@
               </p>
             </li>
           </ol>
-          <a class="price__to-all modal-oppen" href="#">
+          <a class="price__to-all modal-open" href="#">
             <div class="price__business">
               <svg class="price__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="21"
@@ -629,35 +629,35 @@
             </div>
             <div>Показать тарифы для бизнеса</div>
           </a>
-          <div class="modal modal-show price modal--price">
-            <h2 class="price__title">Бизнес-тарифы</h2>
+          <div class="modal modal-show price modal--price modal--closed">
+            <h2 class="price__title price__title--modal">Бизнес-тарифы</h2>
             <ul class="price__list price__list--ul">
-              <li class="price__item">
+              <li class="price__item price__item--ul">
                 <p class="price__service">
                   <span>Реклама у блоггера</span>
                   <span class="price__cost">300 000 руб./пост</span>
                 </p>
               </li>
-              <li class="price__item">
+              <li class="price__item price__item--ul">
                 <p class="price__service">
                   <span>Накрутка подписчиков</span>
                   <span class="price__cost">от 1 руб./шт.</span>
                 </p>
               </li>
-              <li class="price__item">
+              <li class="price__item price__item--ul">
                 <p class="price__service">
                   <span>Лайки от ботов</span>
                   <span class="price__cost">от 20 коп./лайк</span>
                 </p>
               </li>
-              <li class="price__item">
+              <li class="price__item price__item--ul">
                 <p class="price__service">
                   <span>Ваш продакт-плейсмент</span>
                   <span class="price__cost">Индивидуально</span>
                 </p>
               </li>
             </ul>
-            <button class="modal__close-button" type="button">Закрыть окно</button>
+            <button class="modal__close-button modal-close" type="button">Закрыть окно</button>
           </div>
         </div>
       </section>
@@ -850,7 +850,8 @@
     
       //navMain.classList.remove('main-nav--nojs');
     
-      menuSwitch.addEventListener('click', function() {
+      menuSwitch.addEventListener('click', function(evt) {
+        evt.preventDefault();
         if (menuMain.classList.contains('main-menu--closed')) {
           menuMain.classList.remove('main-menu--closed');
           menuMain.classList.add('main-menu--opened');
@@ -863,6 +864,21 @@
       menuMain.classList.add('main-menu--closed');
       menuMain.classList.remove('main-menu--opened');
       menuSwitch.classList.remove('main-menu__switch--nojs');
+
+      var modal = document.querySelector('.modal');
+      var modalOpen = document.querySelector('.modal-open');
+      var modalClose = document.querySelector('.modal-close');
+    
+      modalOpen.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        modal.classList.remove('modal--closed');
+        modal.classList.add('modal--opened');
+      });
+      modalClose.addEventListener('click', function(evt) {
+        evt.preventDefault(); 
+        modal.classList.add('modal--closed');
+        modal.classList.remove('modal--opened');
+      });
     </script>
   </body>
 </html>

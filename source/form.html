@@ -234,8 +234,8 @@
             Сменить фото
           </button>
           <div class="fieldset my-page__hashtags hashtags">
-            <div class="fieldset__legend">Тэги</div>
-            <textarea class="fieldset__text" name="hashtags">#бургер #бар #футбол #концерт #крафт</textarea>
+            <div class="fieldset__legend fieldset__legend--text">Тэги</div>
+            <textarea class="fieldset__text" name="hashtags" rows="1" cols="1">#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
           <div class="fieldset my-page__transport transport">
             <div class="fieldset__legend">Транспорт</div>
@@ -333,14 +333,19 @@
             <h3 class="plans__title procedure__title">Добавить план:</h3>
             <ul class="procedure__slider slider">
               <li class="slider__item slider__item--switch1">
-                <button class="slider__button slider__button--active" type="button"
-                aria-label="Первый шаг"></button>
+                <button class="slider__button slider__button--active" type="button" aria-label="Первый шаг">
+                  <div class="slider__text">Даты</div>
+                </button>
               </li>
               <li class="slider__item slider__item--switch2">
-                <button class="slider__button" type="button" aria-label="Второй шаг"></button>
+                <button class="slider__button" type="button" aria-label="Второй шаг">
+                  <div class="slider__text">Маршрут</div>
+                </button>
               </li>
               <li class="slider__item slider__item--switch3">
-                <button class="slider__button" type="button" aria-label="Третий шаг"></button>
+                <button class="slider__button" type="button" aria-label="Третий шаг">
+                  <div class="slider__text">Развлечения</div>
+                </button>
               </li>
             </ul>
           </div>
@@ -775,7 +780,7 @@
                         <label for="25-march">25</label>
                         <input class="visually-hidden" type="checkbox" disabled id="25-march">
                       </td>
-                      <td class="calendar__day calendar__day--selected">
+                      <td class="calendar__day calendar__day--selected calendar__day--entry">
                         <label for="26-march">26</label>
                         <input class="visually-hidden" type="checkbox" checked id="26-march">
                       </td>
@@ -783,7 +788,7 @@
                         <label for="27-march">27</label>
                         <input class="visually-hidden" type="checkbox" checked id="27-march">
                       </td>
-                      <td class="calendar__day calendar__day--selected">
+                      <td class="calendar__day calendar__day--selected calendar__day--departure">
                         <label for="28-march">28</label>
                         <input class="visually-hidden" type="checkbox" checked id="28-march">
                       </td>
@@ -835,7 +840,24 @@
               </li>
               <li class="procedure-steps__item">
                 <h4 class="procedure-steps__title">Маршрут</h4>
-                <p class="procedure-steps__intro">Укажите страны, которые вы хотели по посетить.
+                <ul class="procedure__slider slider slider--desktop">
+                  <li class="slider__item slider__item--switch1">
+                    <button class="slider__button slider__button--active" type="button" aria-label="Первый шаг">
+                      <div class="slider__text">Даты</div>
+                    </button>
+                  </li>
+                  <li class="slider__item slider__item--switch2">
+                    <button class="slider__button" type="button" aria-label="Второй шаг">
+                      <div class="slider__text">Маршрут</div>
+                    </button>
+                  </li>
+                  <li class="slider__item slider__item--switch3">
+                    <button class="slider__button" type="button" aria-label="Третий шаг">
+                      <div class="slider__text">Развлечения</div>
+                    </button>
+                  </li>
+                </ul>
+                <p class="procedure-steps__intro">Укажите страны, которые вы хотели по посетить
                 Это может быть одна или сразу несколько.</p>
                 <div class="procedure-steps__table">
                   <label class="procedure-steps__option procedure-steps__option--selected">
@@ -882,8 +904,8 @@
                     <polygon class="st0" points="3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 "/>
                     </svg>
                   </label>
-                  <div class="procedure-steps__option">
-                    <button class="procedure-steps__select modal-oppen" type="button">
+                  <div class="procedure-steps__option procedure-steps__option--choice">
+                    <button class="procedure-steps__select modal__switch-open" type="button">
                       <span>Выберите страну</span>
                     </button>
                     <button class="procedure-steps__delete" type="button"
@@ -901,10 +923,10 @@
                     <polygon class="st0" points="3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 "/>
                     </svg>
                         
-                    <div class="modal modal-show modal--countries">
+                    <div class="modal modal-show modal--closed">
                       <div class="modal__header">
                         <h2 class="modal__title">Выберите страну</h2>
-                        <button class="modal__close-back" type="button" aria-label="Закрыть окно">
+                        <button class="modal__switch-close" type="button" aria-label="Закрыть окно">
                           <svg class="modal__close modal__close--white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="9"
                           viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
@@ -913,7 +935,7 @@
                           </svg>
                         </button>
                       </div>
-                      <div class="countries">
+                      <div class="countries countries--modal">
                         <ul class="countries__alphabet alphabet">
                           <li class="alphabet__item alphabet__item--active">
                             <button class="alphabet__letter alphabet__letter--lightblue"
@@ -1051,6 +1073,23 @@
               </li>
               <li class="procedure-steps__item">
                 <h4 class="procedure-steps__title">Развелечения</h4>
+                <ul class="procedure__slider slider slider--desktop">
+                  <li class="slider__item slider__item--switch1">
+                    <button class="slider__button slider__button--active" type="button" aria-label="Первый шаг">
+                      <div class="slider__text">Даты</div>
+                    </button>
+                  </li>
+                  <li class="slider__item slider__item--switch2">
+                    <button class="slider__button" type="button" aria-label="Второй шаг">
+                      <div class="slider__text">Маршрут</div>
+                    </button>
+                  </li>
+                  <li class="slider__item slider__item--switch3">
+                    <button class="slider__button" type="button" aria-label="Третий шаг">
+                      <div class="slider__text">Развлечения</div>
+                    </button>
+                  </li>
+                </ul>
                 <p class="procedure-steps__intro">
                   Наконец, расскажите о своих планах времяпровождения.
                   Можно писать в свободной форме и ставить тэги.
@@ -1185,7 +1224,8 @@
     
       //navMain.classList.remove('main-nav--nojs');
     
-      menuSwitch.addEventListener('click', function() {
+      menuSwitch.addEventListener('click', function(evt) {
+        evt.preventDefault();
         if (menuMain.classList.contains('main-menu--closed')) {
           menuMain.classList.remove('main-menu--closed');
           menuMain.classList.add('main-menu--opened');
@@ -1198,6 +1238,21 @@
       menuMain.classList.add('main-menu--closed');
       menuMain.classList.remove('main-menu--opened');
       menuSwitch.classList.remove('main-menu__switch--nojs');
+
+      var modal = document.querySelector('.modal');
+      var modalSwitchOpen = document.querySelector('.modal__switch-open');
+      var modalSwitchClose = document.querySelector('.modal__switch-close');
+    
+      modalSwitchOpen.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        modal.classList.remove('modal--closed');
+        modal.classList.add('modal--opened');
+      });
+      modalSwitchClose.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        modal.classList.add('modal--closed');
+        modal.classList.remove('modal--opened');
+      });
     </script>
   </body>
 </html>

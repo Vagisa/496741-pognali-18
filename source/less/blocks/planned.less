@@ -42,8 +42,10 @@
 }
 
 .planned__button {
-  padding: 0;
+  align-self: stretch;
+  height: 100%;
   margin: 0;
+  align-self: stretch;
   border: none;
   background-color: transparent;
   .font(14px; 18px; 500);
@@ -62,8 +64,8 @@
   .planned__item {
     justify-content: space-between;
     flex-direction: row;
-    min-height: 102px;
-    padding: 25px 0 20px;
+    min-height: 147px;
+    padding: 0;
 
     &::after {
       content: "";
@@ -77,7 +79,7 @@
   .planned__route {
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
+    flex-grow: 1;align-items: center;
     padding: 0 35px;
     order: 1;
 
@@ -87,6 +89,8 @@
   }
 
   .planned__companions {
+    display: flex;
+    align-items: center;
     margin: 0;
     font-size: 20px;
     line-height: 20px;
@@ -95,8 +99,8 @@
   }
 
   .planned__date {
+    display: flex;
     margin: 0;
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
@@ -105,10 +109,42 @@
   }
 
   .planned__button {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     font-size: 20px;
     line-height: 20px;
-    padding-right: 35px;
+    padding: 38.5px;
     order: 6;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .planned__list {
+    margin-right: 0;
+    margin-left: 64px;
+    margin-bottom: 38px;
+  }
+
+  .planned__item {
+    min-height: 97px;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    padding: 0;
+    &::after {
+      display: none;
+    }
+  }
+
+  .planned__route {
+    justify-content: flex-start;
+    width: 494px;
+    flex-grow: 0;
+
+    &::before {
+      order: 0;
+      padding-right: 35px;
+    }
   }
 }

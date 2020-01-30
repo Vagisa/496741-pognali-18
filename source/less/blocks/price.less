@@ -34,6 +34,15 @@
   padding-top: 28px;
   .font(24px; 24px; 700; normal);
   color: #ff8d30;
+
+  &--modal {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    padding: 0;
+  }
 }
 
 .price__list {
@@ -145,6 +154,11 @@
     font-size: 45px;
     line-height: 45px;
     align-self: center;
+
+    &--modal {
+      margin-bottom: 0;
+      padding: 15px;
+    }
   }
 
   .price__list {
@@ -155,6 +169,10 @@
 
     &--ol {
       padding-left: 0;
+    }
+
+    &--ul {
+      margin: 0 65px;
     }
   }
 
@@ -180,6 +198,12 @@
           border-top: 1px solid #d6d9e6;
         }
       }
+    }
+
+    &--ul {
+      min-height: 56px;
+      font-size: 22px;
+      line-height: 28px;
     }
   }
 

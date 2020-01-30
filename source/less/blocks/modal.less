@@ -1,32 +1,34 @@
 .modal {
-  //display: none;
   position: absolute;
-  display: flex;
   flex-direction: column;
-  overflow: hidden;
   align-self: center;
-  z-index: 1;
-  background-color: @white;
-  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+  z-index: 2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  top: 0;
+  width: 220px;
+  min-height: 517px;
 
-  &--countries {
-    top: 0;
-    width: 220px;
-    min-height: 517px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  &--opened {
+    display: flex;
+  }
+
+  &--closed {
+    display: none;
   }
 
   &--price {
     width: 270px;
     min-height: 443px;
-    margin-top: -35px;
-    //display: flex;
+    margin-top: 15px;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
+    background-color: @white;
+    box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+    overflow: hidden;
   }
 }
 
@@ -34,15 +36,18 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   min-height: 42px;
   padding-left: 22px;
-  padding-right: 16px;
+  padding-right: 0;
   color: @white;
   background-color: @blue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .modal__title {
+  display: flex;
+  align-items: center;
   margin: 0;
   .font(14px; 18px; 500);
   text-transform: uppercase;
@@ -51,6 +56,7 @@
 .modal__close-button {
   align-self: stretch;
   height: 60px;
+  margin-top: 10px;
   border: none;
   background-color: #f3f4f8;
   color: @blue;
@@ -58,7 +64,10 @@
   .font(16px; 24px; 700);
 }
 
-.modal__close-back {
+.modal__switch-close {
+  flex-grow: 1;
+  padding-right: 17px;
+  text-align: right;
   background-color: transparent;
   border: none;
 }
@@ -66,5 +75,52 @@
 .modal__close {
   &--white {
     fill: @white;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    width: 369px;
+    min-height: 486px;
+
+    &--price {
+      top: 25px;
+      width: 688px;
+      border-radius: 30px;
+    }
+  }
+
+  .modal__header {
+    height: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-shrink: 0;
+    border-top-right-radius: 5px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .modal__close {
+    width: 18px;
+    height: 18px;
+  }
+
+  .modal__close-button {
+    height: 108px;
+    margin-top: 25px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal {
+    width: 730px;
+
+    &--price {
+      top: 155px;
+    }
   }
 }

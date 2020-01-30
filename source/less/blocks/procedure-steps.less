@@ -312,6 +312,10 @@
   width: 100%;
 }
 
+.procedure-steps__entertainment {
+  margin: 0;
+}
+
 @media (min-width: @tablet-width) {
   .procedure-steps {
     margin: 30px 35px;
@@ -453,16 +457,11 @@
     width: 100%;
 
     &::after {
-      position: absolute;
-      top: 50%;
       right: 128px;
       margin-top: -7.5px;
-      content: "";
-      border-radius: 50%;
       width: 13px;
       height: 13px;
-      border: solid 1px #cbced9;
-      z-index: 2;
+      z-index: 1;
     }
 
     &--selected {
@@ -517,6 +516,8 @@
   }
 
   .procedure-steps__select {
+    font-size: 20px;
+    line-height: 20px;
     width: 367px;
     height: 68px;
     padding: 0 25px;
@@ -567,8 +568,119 @@
       box-shadow: inset 0 -81px 41px -41px @white;
     }
   }
+
+  .procedure-steps__entertainment {
+    width: 100%;
+  }
 }
 
-.procedure-steps__entertainment {
-  width: 100%;
+@media (min-width: @desktop-width) {
+  .procedure-steps {
+    margin: 45px 0;
+  }
+
+  .procedure-steps__item {
+    position: relative;
+    border-radius: 60px;
+    padding: 100px 160px 107px;
+    align-content: space-between;
+
+    &::before {
+      width: auto;
+      padding-right: 12px;
+    }
+  }
+
+  .procedure-steps__intro {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 35px 410px 60px 0;
+    border-bottom: 1px solid #cbced9;
+  }
+
+  .procedure-steps__number {
+    width: 181px;
+    margin-left: -310px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+
+    &--duration {
+      margin-top: 15px;
+    }
+  }
+
+  .procedure-steps__label {
+    align-items: center;
+    width: 530px;
+    height: 70px;
+    padding: 0;
+    padding-right: 50px;
+    border: none;
+
+    &--duration {
+      margin-top: 15px;
+    }
+  }
+
+  .procedure-steps__input {
+    width: 50px;
+    flex-grow: 1;
+  }
+
+  .procedure-steps__sign {
+    width: 58px;
+  }
+
+  .procedure-steps__with-kids {
+    height: 70px;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+
+  .procedure-steps__calendar {
+    margin-top: 32px;
+    margin-bottom: 36px;
+    padding-bottom: 81px;
+  }
+
+  .procedure-steps__flag {
+    width: 271px;
+  }
+
+  .procedure-steps__table {
+    padding-bottom: 143px;
+    &::after {
+      right: 222px;
+    }
+  }
+
+  .procedure-steps__delete {
+    right: 0;
+  }
+
+  .procedure-steps__option {
+    &::after {
+      right: 216px;
+    }
+  }
+
+  .procedure-steps__select {
+    width: 730px;
+  }
+
+  .procedure-steps__button {
+    margin-top: -81px;
+    z-index: 1;
+    &--back {
+      width: 250px;
+      margin-left: auto;
+      margin-right: -35px;
+      flex-grow: 0;
+    }
+  }
+
+  .procedure-steps__entertainment {
+    width: 730px;
+    margin-bottom: 81px;
+  }
 }

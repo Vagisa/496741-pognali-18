@@ -5,6 +5,7 @@
   border-radius: 1px;
   display: flex;
   justify-content: space-between;
+  flex-shrink: 1;
 }
 
 .range__scale {
@@ -43,5 +44,22 @@
     height: 10px;
     background-color: inherit;
     border-radius: 50%;
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: 1439px) {
+  .range {
+    width: 282px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .range__scale {
+    width: 30%;
+  }
+
+  .range__bar {
+    width: 70%;
   }
 }

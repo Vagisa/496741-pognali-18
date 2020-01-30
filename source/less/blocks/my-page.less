@@ -1,5 +1,4 @@
 .my-page {
-  min-height: 425px;
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #edeff6;
@@ -38,6 +37,7 @@
 
 .my-page__button {
   flex-grow: 1;
+  width: 100%;
   height: 40px;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -51,6 +51,8 @@
 }
 
 .my-page__hashtags {
+  width: 100%;
+  min-height: 87px;
   flex-grow: 1;
 }
 
@@ -59,6 +61,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .my-page {
+    padding-top: 40px;
+  }
+
+  .my-page__form {
+    margin: 35px;
+  }
+
   .my-page__level {
     margin-left: 0;
     order: 1;
@@ -85,7 +95,6 @@
   }
 
   .my-page__button {
-    width: 100%;
     height: 60px;
     order: 4;
     font-size: 20px;
@@ -105,12 +114,19 @@
     padding-bottom: 60px;
   }
 
+  .my-page__form {
+    align-items: stretch;
+    margin: 45px 0;
+  }
+
   .my-page__level {
-    order: -1;
-    margin-bottom: 47px;
+    width: 0;
   }
 
   .my-page__photo {
+    position: absolute;
+    top: -214px;
+    right: 93px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -136,5 +152,17 @@
 
   .my-page__button {
     display: none;
+  }
+
+  .my-page__hashtags {
+    order: 1;
+    flex-grow: 0;
+    width: 730px;
+    margin-right: 140px;
+    margin-left: 65px;
+  }
+
+  .my-page__transport {
+    flex-grow: 1;
   }
 }

@@ -8,7 +8,6 @@
 
 .entertainment {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -138,5 +137,31 @@
 
   .entertainment__text {
     min-height: 142px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .entertainment {
+    position: relative;
+    border: none;
+  }
+
+  .entertainment__item {
+    margin: 0;
+   
+    &:not(:last-child) {
+      &::before {
+        right: -45px;
+      }
+    }
+
+    &::after {
+      right: -51px;
+    }
+  }
+
+  .entertainment__flag {
+    position: absolute;
+    right: -155px;
   }
 }

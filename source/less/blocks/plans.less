@@ -8,8 +8,8 @@
 }
 
 .plans__planned {
-  min-height: 405px;
   .rounded-top(1);
+  padding-bottom: 50px;
   background-color: #dfe3f0;
 }
 
@@ -68,6 +68,21 @@
 @media (min-width: @desktop-width) {
   .plans {
     width: 1440px;
+  }
+
+  .plans__title {
+    padding-left: 64px;
+  }
+
+  .plans__planned {
+    margin-top: -60px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+
+  .plans__add {
+    .rounded-top-desktop(2);
+    padding-top: 48px;
   }
 }
 

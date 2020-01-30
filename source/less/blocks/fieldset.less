@@ -3,7 +3,6 @@
   flex-direction: column;
   border: 1px solid #cbced9;
   border-radius: 10px;
-  margin: 0;
   margin-top: 28.5px;
   padding: 0;
 }
@@ -20,6 +19,7 @@
 }
 
 .fieldset__text {
+  flex-grow: 1;
   padding: 0 25px 20px;
   border: 0;
   width: 100%;
@@ -53,7 +53,7 @@
 
   .fieldset__text {
     order: 1;
-    padding-top: 40px;
+    padding-top: 32px;
     padding-bottom: 10px;
     font-size: 20px;
     line-height: 24px;
@@ -66,6 +66,25 @@
 }
 
 @media (min-width: @desktop-width) {
-  
-  
+  .fieldset {
+    min-height: 93px;
+    justify-content: space-between;
+  }
+
+  .fieldset__text {
+    padding: 35px 40px 0;
+  }
+
+  .fieldset__transport {
+    justify-content: center;
+    padding: 0;
+    padding-top: 13px;
+    flex-grow: 1;
+  }
+
+  .fieldset__legend {
+    &--text {
+      margin-left: 25px;
+    }
+  }
 }

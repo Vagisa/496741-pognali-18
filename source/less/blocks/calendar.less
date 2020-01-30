@@ -84,11 +84,11 @@
 
     &::before {
       content: "";
-      width: 30px;
-      height: 31px;
+      width: 29px;
+      height: 30px;
       position: absolute;
-      top: -2px;
-      left: -2px;
+      top: -1px;
+      left: -1px;
       border: 2px solid #ff5c23;
     }
   }
@@ -126,10 +126,74 @@
   }
 
   .calendar__day {
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
+
+    &:not(&--last)&:hover {
+      position: relative;
+  
+      &::before {
+        content: "";
+        width: 70px;
+        height: 64px;
+        top: -2px;
+        left: -2px;
+        border-width: 4px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .calendar__month {
+    transform: translateX(-2000px);
+  }
+
+  .calendar__day {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 10px 14px 29px;
+    text-align: left;
+
+    &:not(&--last)&:hover {
+      position: relative;
+  
+      &::before {
+        content: "";
+        width: 138px;
+        height: 66px;
+        top: -2px;
+        left: -2px;
+      }
+    }
+
+    &--entry {
+      &::after {
+        content: "Заезд";
+      }
+    }
+    
+    &--departure {
+      &::after {
+        content: "Выезд";
+      }
+    }
+
+    &--entry,
+    &--departure {
+      position: relative;
+    
+      &::after {
+        position: absolute;
+        top: 35px;
+        left: 15px;
+        width: 100%;
+        height: 100%;
+        color: white;
+      }
+    }
   }
 }

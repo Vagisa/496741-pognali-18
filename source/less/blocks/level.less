@@ -36,12 +36,15 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  z-index: 1;
   color: @white;
   margin: 0;
 
   &--blue {
     color: #161c35;
+  }
+
+  &--dark {
+    z-index: 1;
   }
 }
 
@@ -110,6 +113,16 @@
       align-self: center;
       .font(24px; 24px; 700);
       color: @blue;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .level {
+    &--big {
+      top: -167px;
+      right: 330px;
+      z-index: 1;
     }
   }
 }
