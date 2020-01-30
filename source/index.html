@@ -847,9 +847,7 @@
       var menuMain = document.querySelector('.main-menu');
       var menuSwitch = document.querySelector('.main-menu__switch');
       var popupMenu = document.querySelector('.main-menu__popup');
-    
-      //navMain.classList.remove('main-nav--nojs');
-    
+
       menuSwitch.addEventListener('click', function(evt) {
         evt.preventDefault();
         if (menuMain.classList.contains('main-menu--closed')) {
@@ -868,14 +866,14 @@
       var modal = document.querySelector('.modal');
       var modalOpen = document.querySelector('.modal-open');
       var modalClose = document.querySelector('.modal-close');
-    
+
       modalOpen.addEventListener('click', function(evt) {
         evt.preventDefault();
         modal.classList.remove('modal--closed');
         modal.classList.add('modal--opened');
       });
       modalClose.addEventListener('click', function(evt) {
-        evt.preventDefault(); 
+        evt.preventDefault();
         modal.classList.add('modal--closed');
         modal.classList.remove('modal--opened');
       });

@@ -1847,7 +1847,7 @@
       var menuMain = document.querySelector('.main-menu');
       var menuSwitch = document.querySelector('.main-menu__switch');
       var popupMenu = document.querySelector('.main-menu__popup');
-    
+
       menuSwitch.addEventListener('click', function(evt) {
         evt.preventDefault();
         if (menuMain.classList.contains('main-menu--closed')) {
@@ -1868,7 +1868,7 @@
       var countriesPopup = document.querySelector('.countries__popup');
       var countriesPopupTablet = document.querySelector('.countries__popup-tablet');
       var countriesPartsWordButton = document.querySelector('.countries__parts-world-button');
-    
+
       countriesToggle.addEventListener('click', function(evt) {
         evt.preventDefault();
         if (countries.classList.contains('countries--closed')) {
@@ -1892,7 +1892,7 @@
       });
 
       document.querySelectorAll(".countries__toggle").forEach(element => {
-        element.classList.remove('countries__toggle--nojs');  
+        element.classList.remove('countries__toggle--nojs');
       });
       countriesPopupTablet.classList.remove('countries__popup-tablet--nojs');
 
